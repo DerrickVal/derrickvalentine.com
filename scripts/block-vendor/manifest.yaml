@@ -1,0 +1,33 @@
+# Curated registry installs for derrickvalentine.com.
+#
+# IDs must match each provider's shadcn CLI name (copy from the component/block
+# page toolbar "Copy command" on shadcnstudio.com / shadcnblocks.com,
+# e.g. @ss-components/avatar-15 -> id: avatar-15).
+#
+# registry: @shadcn (public) | @shadcnblocks | @shadcn-studio | @ss-blocks | @ss-components
+# skip: true   -> temporarily exclude an entry from `pnpm run vendor:blocks`
+#
+# Commands:
+#   pnpm run vendor:blocks                              # install every entry below
+#   pnpm run vendor:blocks -- only @ss-blocks/<id>      # install one (auto-appends new ids here)
+#   pnpm run vendor:blocks -- only <id> --dry-run       # preview, no disk/CLI side effects
+#   pnpm run vendor:blocks:search -- @ss-blocks <query> # discover candidates
+
+blocks:
+  # --- Base primitives (public shadcn registry, new-york). Safe to (re)pull. ---
+  - id: button
+    registry: "@shadcn"
+    note: "Base Button primitive (new-york) — replaces the radix-vega scaffold default"
+  - id: sheet
+    registry: "@shadcn"
+    note: "Sheet (Radix Dialog drawer) — for the mobile nav"
+
+  # --- Shadcn Studio blocks/components get added below as we build each page
+  #     (Home hero, Services, Work/Before-After, Pricing tiers, FAQ, Contact).
+  #     Pick the exact id from the toolbar, then `vendor:blocks -- only @ss-blocks/<id>`. ---
+  - id: avatar-15
+    registry: "@ss-components"
+    note: "Studio install proof-of-life (avatar group). Unused so far — safe to remove, or keep for a future testimonials / 'who I work with' row."
+  - id: hero-section-37
+    registry: "@ss-blocks"
+    note: "Hero 37 (marketing-ui) — Home hero: animated headline, dual CTAs, partner logos + logo marquee. Navbar split out to components/layout/navbar.tsx; rendered on app/page.tsx."

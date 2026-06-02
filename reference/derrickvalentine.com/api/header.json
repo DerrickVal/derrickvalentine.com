@@ -1,0 +1,314 @@
+[
+  {
+    "id": 2805,
+    "date": "2022-03-29T21:57:23",
+    "date_gmt": "2022-03-29T21:57:23",
+    "guid": {
+      "rendered": "https://wgl-demo.net/bili/?post_type=header&#038;p=2805"
+    },
+    "modified": "2022-07-13T21:36:49",
+    "modified_gmt": "2022-07-13T21:36:49",
+    "slug": "header-overlay-homepage-3",
+    "status": "publish",
+    "type": "header",
+    "link": "https://derrickvalentine.com/header/header-overlay-homepage-3/",
+    "title": {
+      "rendered": "Header Overlay Homepage 3"
+    },
+    "content": {
+      "rendered": "\t\t<div data-elementor-type=\"wp-post\" data-elementor-id=\"2805\" class=\"elementor elementor-2805\">\n\t\t\t\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-c6f7dae elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default\" data-id=\"c6f7dae\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-no\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6ca35d9\" data-id=\"6ca35d9\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-733f829 elementor-widget elementor-widget-wgl-header-logo\" data-id=\"733f829\" data-element_type=\"widget\" data-widget_type=\"wgl-header-logo.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t<div class=\"wgl-logotype-container default_logo\"><a href=\"https://derrickvalentine.com/\"><img decoding=\"async\" class=\"default_logo\" src=\"https://derrickvalentine.com/file/2022/07/logo-v1-on-white-half-size.png\" alt=\"logotype\" style=\"height: 35px;\"></a></div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-ed355af elementor-widget elementor-widget-wgl-menu\" data-id=\"ed355af\" data-element_type=\"widget\" data-widget_type=\"wgl-menu.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\n        <nav class=\"primary-nav\"><ul id=\"menu-main\" class=\"menu\"><li id=\"menu-item-3449\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3449 mega-menu mega-menu-links mega-columns-5col \"><a href=\"https://derrickvalentine.com/\"><span><span class=\"item_text\">HOME</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li><li id=\"menu-item-3494\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3494\"><a href=\"https://derrickvalentine.com/about-me/\"><span><span class=\"item_text\">ABOUT</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li><li id=\"menu-item-3497\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3497\"><a href=\"https://derrickvalentine.com/my-services/\"><span><span class=\"item_text\">SERVICES</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li id=\"menu-item-3674\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3674\"><a href=\"https://derrickvalentine.com/services/marketing/\"><span><span class=\"item_text\">Marketing</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li id=\"menu-item-3673\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3673\"><a href=\"https://derrickvalentine.com/services/web-development/\"><span><span class=\"item_text\">Web Development</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li id=\"menu-item-3675\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3675\"><a href=\"https://derrickvalentine.com/services/graphic-design/\"><span><span class=\"item_text\">Graphic Design</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li><li id=\"menu-item-3482\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3482\"><a href=\"https://derrickvalentine.com/portfolio/\"><span><span class=\"item_text\">PORTFOLIO</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li id=\"menu-item-3680\" class=\"menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-3680\"><a href=\"https://derrickvalentine.com/portfolio-category/web-development/\"><span><span class=\"item_text\">Web</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li id=\"menu-item-3679\" class=\"menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-3679\"><a href=\"https://derrickvalentine.com/portfolio-category/design/\"><span><span class=\"item_text\">Design</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li><li id=\"menu-item-3461\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3461\"><a href=\"https://derrickvalentine.com/contacts/\"><span><span class=\"item_text\">CONTACT</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li id=\"menu-item-3677\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3677\"><a href=\"https://derrickvalentine.com/contacts/\"><span><span class=\"item_text\">Contact Me</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li id=\"menu-item-3498\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3498\"><a href=\"https://derrickvalentine.com/faq/\"><span><span class=\"item_text\">FAQ&#8217;s</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li></ul>        </nav>\n        <div class=\"mobile-hamburger-toggle\">\n            <div class=\"hamburger-box\">\n\t            <div class=\"hamburger-inner\"></div>\n            </div>\n        </div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a26de91 full-height-yes elementor-widget elementor-widget-wgl-header-search\" data-id=\"a26de91\" data-element_type=\"widget\" data-widget_type=\"wgl-header-search.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\n        <div class=\"header_search search_standard\">\n\t        <div class=\"wgl-search elementor-search header_search-button-wrapper\" role=\"button\">\n\t            <div class=\"header_search-button flaticon-search \"></div>\n\t            <div class=\"header_search-close flaticon-close-button\"></div>\n\t        </div>\t            <div class=\"header_search-field\"><div class=\"header_search-close flaticon-close-button\"></div><form role=\"search\" method=\"get\" action=\"https://derrickvalentine.com/\" class=\"search-form\"><input required type=\"text\" id=\"search-form-6a1ef23bdcc21\" class=\"search-field\" placeholder=\"Search &hellip;\" value=\"\" name=\"s\"><input class=\"search-button\" type=\"submit\" value=\"Search\"><i class=\"search__icon flaticon-search\"></i></form>\t            </div>        </div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t\t\t</div>\n\t\t",
+      "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "class_list": [
+      "post-2805",
+      "header",
+      "type-header",
+      "status-publish",
+      "hentry"
+    ],
+    "aioseo_notices": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/2805",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/types/header"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/2805/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 3568,
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/2805/revisions/3568"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/media?parent=2805"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 2641,
+    "date": "2022-03-28T20:27:37",
+    "date_gmt": "2022-03-28T20:27:37",
+    "guid": {
+      "rendered": "https://wgl-demo.net/bili/?post_type=header&#038;p=2641"
+    },
+    "modified": "2022-07-13T21:41:25",
+    "modified_gmt": "2022-07-13T21:41:25",
+    "slug": "sticky-default",
+    "status": "publish",
+    "type": "header",
+    "link": "https://derrickvalentine.com/header/sticky-default/",
+    "title": {
+      "rendered": "Sticky Default"
+    },
+    "content": {
+      "rendered": "\t\t<div data-elementor-type=\"wp-post\" data-elementor-id=\"2641\" class=\"elementor elementor-2641\">\n\t\t\t\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-c6f7dae elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default\" data-id=\"c6f7dae\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-no\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-64504c6\" data-id=\"64504c6\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-733f829 elementor-widget elementor-widget-wgl-header-logo\" data-id=\"733f829\" data-element_type=\"widget\" data-widget_type=\"wgl-header-logo.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t<div class=\"wgl-logotype-container default_logo\"><a href=\"https://derrickvalentine.com/\"><img decoding=\"async\" class=\"default_logo\" src=\"https://derrickvalentine.com/file/2022/07/logo-v1-on-white-half-size.png\" alt=\"logotype\" style=\"height: 35px;\"></a></div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-6ca35d9\" data-id=\"6ca35d9\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-ed355af elementor-widget elementor-widget-wgl-menu\" data-id=\"ed355af\" data-element_type=\"widget\" data-widget_type=\"wgl-menu.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\n        <nav class=\"primary-nav\"><ul id=\"menu-main-1\" class=\"menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3449 mega-menu mega-menu-links mega-columns-5col \"><a href=\"https://derrickvalentine.com/\"><span><span class=\"item_text\">HOME</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3494\"><a href=\"https://derrickvalentine.com/about-me/\"><span><span class=\"item_text\">ABOUT</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3497\"><a href=\"https://derrickvalentine.com/my-services/\"><span><span class=\"item_text\">SERVICES</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3674\"><a href=\"https://derrickvalentine.com/services/marketing/\"><span><span class=\"item_text\">Marketing</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3673\"><a href=\"https://derrickvalentine.com/services/web-development/\"><span><span class=\"item_text\">Web Development</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3675\"><a href=\"https://derrickvalentine.com/services/graphic-design/\"><span><span class=\"item_text\">Graphic Design</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3482\"><a href=\"https://derrickvalentine.com/portfolio/\"><span><span class=\"item_text\">PORTFOLIO</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-3680\"><a href=\"https://derrickvalentine.com/portfolio-category/web-development/\"><span><span class=\"item_text\">Web</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-3679\"><a href=\"https://derrickvalentine.com/portfolio-category/design/\"><span><span class=\"item_text\">Design</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3461\"><a href=\"https://derrickvalentine.com/contacts/\"><span><span class=\"item_text\">CONTACT</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3677\"><a href=\"https://derrickvalentine.com/contacts/\"><span><span class=\"item_text\">Contact Me</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3498\"><a href=\"https://derrickvalentine.com/faq/\"><span><span class=\"item_text\">FAQ&#8217;s</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li></ul>        </nav>\n        <div class=\"mobile-hamburger-toggle\">\n            <div class=\"hamburger-box\">\n\t            <div class=\"hamburger-inner\"></div>\n            </div>\n        </div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-e390c7d\" data-id=\"e390c7d\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-a26de91 full-height-yes elementor-widget elementor-widget-wgl-header-search\" data-id=\"a26de91\" data-element_type=\"widget\" data-widget_type=\"wgl-header-search.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\n        <div class=\"header_search search_standard\">\n\t        <div class=\"wgl-search elementor-search header_search-button-wrapper\" role=\"button\">\n\t            <div class=\"header_search-button flaticon-search \"></div>\n\t            <div class=\"header_search-close flaticon-close-button\"></div>\n\t        </div>\t            <div class=\"header_search-field\"><div class=\"header_search-close flaticon-close-button\"></div><form role=\"search\" method=\"get\" action=\"https://derrickvalentine.com/\" class=\"search-form\"><input required type=\"text\" id=\"search-form-6a1ef23bf12a0\" class=\"search-field\" placeholder=\"Search &hellip;\" value=\"\" name=\"s\"><input class=\"search-button\" type=\"submit\" value=\"Search\"><i class=\"search__icon flaticon-search\"></i></form>\t            </div>        </div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t\t\t</div>\n\t\t",
+      "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "class_list": [
+      "post-2641",
+      "header",
+      "type-header",
+      "status-publish",
+      "hentry"
+    ],
+    "aioseo_notices": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/2641",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/types/header"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 9,
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/2641/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 3581,
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/2641/revisions/3581"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/media?parent=2641"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1230,
+    "date": "2022-03-21T08:35:35",
+    "date_gmt": "2022-03-21T08:35:35",
+    "guid": {
+      "rendered": "https://wgl-demo.net/bili/?post_type=header&#038;p=1230"
+    },
+    "modified": "2022-07-13T21:37:21",
+    "modified_gmt": "2022-07-13T21:37:21",
+    "slug": "header-overlay",
+    "status": "publish",
+    "type": "header",
+    "link": "https://derrickvalentine.com/header/header-overlay/",
+    "title": {
+      "rendered": "Header Overlay Homepage 2"
+    },
+    "content": {
+      "rendered": "\t\t<div data-elementor-type=\"wp-post\" data-elementor-id=\"1230\" class=\"elementor elementor-1230\">\n\t\t\t\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-c6f7dae elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default\" data-id=\"c6f7dae\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-no\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6ca35d9\" data-id=\"6ca35d9\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-733f829 elementor-widget elementor-widget-wgl-header-logo\" data-id=\"733f829\" data-element_type=\"widget\" data-widget_type=\"wgl-header-logo.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t<div class=\"wgl-logotype-container default_logo\"><a href=\"https://derrickvalentine.com/\"><img decoding=\"async\" class=\"default_logo\" src=\"https://derrickvalentine.com/file/2022/07/logo-v1-on-white-half-size.png\" alt=\"logotype\" style=\"height: 35px;\"></a></div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-ed355af elementor-widget elementor-widget-wgl-menu\" data-id=\"ed355af\" data-element_type=\"widget\" data-widget_type=\"wgl-menu.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\n        <nav class=\"primary-nav\"><ul id=\"menu-main-2\" class=\"menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3449 mega-menu mega-menu-links mega-columns-5col \"><a href=\"https://derrickvalentine.com/\"><span><span class=\"item_text\">HOME</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3494\"><a href=\"https://derrickvalentine.com/about-me/\"><span><span class=\"item_text\">ABOUT</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3497\"><a href=\"https://derrickvalentine.com/my-services/\"><span><span class=\"item_text\">SERVICES</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3674\"><a href=\"https://derrickvalentine.com/services/marketing/\"><span><span class=\"item_text\">Marketing</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3673\"><a href=\"https://derrickvalentine.com/services/web-development/\"><span><span class=\"item_text\">Web Development</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3675\"><a href=\"https://derrickvalentine.com/services/graphic-design/\"><span><span class=\"item_text\">Graphic Design</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3482\"><a href=\"https://derrickvalentine.com/portfolio/\"><span><span class=\"item_text\">PORTFOLIO</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-3680\"><a href=\"https://derrickvalentine.com/portfolio-category/web-development/\"><span><span class=\"item_text\">Web</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-3679\"><a href=\"https://derrickvalentine.com/portfolio-category/design/\"><span><span class=\"item_text\">Design</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3461\"><a href=\"https://derrickvalentine.com/contacts/\"><span><span class=\"item_text\">CONTACT</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3677\"><a href=\"https://derrickvalentine.com/contacts/\"><span><span class=\"item_text\">Contact Me</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3498\"><a href=\"https://derrickvalentine.com/faq/\"><span><span class=\"item_text\">FAQ&#8217;s</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li></ul>        </nav>\n        <div class=\"mobile-hamburger-toggle\">\n            <div class=\"hamburger-box\">\n\t            <div class=\"hamburger-inner\"></div>\n            </div>\n        </div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-a26de91 full-height-yes elementor-widget elementor-widget-wgl-header-search\" data-id=\"a26de91\" data-element_type=\"widget\" data-widget_type=\"wgl-header-search.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\n        <div class=\"header_search search_standard\">\n\t        <div class=\"wgl-search elementor-search header_search-button-wrapper\" role=\"button\">\n\t            <div class=\"header_search-button flaticon-search \"></div>\n\t            <div class=\"header_search-close flaticon-close-button\"></div>\n\t        </div>\t            <div class=\"header_search-field\"><div class=\"header_search-close flaticon-close-button\"></div><form role=\"search\" method=\"get\" action=\"https://derrickvalentine.com/\" class=\"search-form\"><input required type=\"text\" id=\"search-form-6a1ef23c0e6c6\" class=\"search-field\" placeholder=\"Search &hellip;\" value=\"\" name=\"s\"><input class=\"search-button\" type=\"submit\" value=\"Search\"><i class=\"search__icon flaticon-search\"></i></form>\t            </div>        </div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t\t\t</div>\n\t\t",
+      "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "class_list": [
+      "post-1230",
+      "header",
+      "type-header",
+      "status-publish",
+      "hentry"
+    ],
+    "aioseo_notices": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/1230",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/types/header"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/1230/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 3571,
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/1230/revisions/3571"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/media?parent=1230"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 3430,
+    "date": "2022-03-10T13:04:43",
+    "date_gmt": "2022-03-10T13:04:43",
+    "guid": {
+      "rendered": "https://wgl-demo.net/bili/?post_type=header&#038;p=316"
+    },
+    "modified": "2022-07-13T21:40:01",
+    "modified_gmt": "2022-07-13T21:40:01",
+    "slug": "default",
+    "status": "publish",
+    "type": "header",
+    "link": "https://derrickvalentine.com/header/default/",
+    "title": {
+      "rendered": "Default"
+    },
+    "content": {
+      "rendered": "\t\t<div data-elementor-type=\"wp-post\" data-elementor-id=\"3430\" class=\"elementor elementor-3430\">\n\t\t\t\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-c6f7dae elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default\" data-id=\"c6f7dae\" data-element_type=\"section\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-no\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-64504c6\" data-id=\"64504c6\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-733f829 elementor-widget elementor-widget-wgl-header-logo\" data-id=\"733f829\" data-element_type=\"widget\" data-widget_type=\"wgl-header-logo.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t<div class=\"wgl-logotype-container default_logo\"><a href=\"https://derrickvalentine.com/\"><img decoding=\"async\" class=\"default_logo\" src=\"https://derrickvalentine.com/file/2022/07/logo-v1-on-white-half-size.png\" alt=\"logotype\" style=\"height: 35px;\"></a></div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-6ca35d9\" data-id=\"6ca35d9\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-ed355af elementor-widget elementor-widget-wgl-menu\" data-id=\"ed355af\" data-element_type=\"widget\" data-widget_type=\"wgl-menu.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\n        <nav class=\"primary-nav\"><ul id=\"menu-main-3\" class=\"menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3449 mega-menu mega-menu-links mega-columns-5col \"><a href=\"https://derrickvalentine.com/\"><span><span class=\"item_text\">HOME</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3494\"><a href=\"https://derrickvalentine.com/about-me/\"><span><span class=\"item_text\">ABOUT</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3497\"><a href=\"https://derrickvalentine.com/my-services/\"><span><span class=\"item_text\">SERVICES</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3674\"><a href=\"https://derrickvalentine.com/services/marketing/\"><span><span class=\"item_text\">Marketing</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3673\"><a href=\"https://derrickvalentine.com/services/web-development/\"><span><span class=\"item_text\">Web Development</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3675\"><a href=\"https://derrickvalentine.com/services/graphic-design/\"><span><span class=\"item_text\">Graphic Design</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3482\"><a href=\"https://derrickvalentine.com/portfolio/\"><span><span class=\"item_text\">PORTFOLIO</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-3680\"><a href=\"https://derrickvalentine.com/portfolio-category/web-development/\"><span><span class=\"item_text\">Web</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-3679\"><a href=\"https://derrickvalentine.com/portfolio-category/design/\"><span><span class=\"item_text\">Design</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3461\"><a href=\"https://derrickvalentine.com/contacts/\"><span><span class=\"item_text\">CONTACT</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a><ul class='sub-menu wgl-submenu-position-default'>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3677\"><a href=\"https://derrickvalentine.com/contacts/\"><span><span class=\"item_text\">Contact Me</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li>\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-3498\"><a href=\"https://derrickvalentine.com/faq/\"><span><span class=\"item_text\">FAQ&#8217;s</span><span class=\"menu-item_dots\"></span></span><i class=\"menu-item__plus\"></i></a></li></ul>\n</li></ul>        </nav>\n        <div class=\"mobile-hamburger-toggle\">\n            <div class=\"hamburger-box\">\n\t            <div class=\"hamburger-inner\"></div>\n            </div>\n        </div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t<div class=\"elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-e390c7d\" data-id=\"e390c7d\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t\t\t<div class=\"elementor-element elementor-element-a26de91 full-height-yes elementor-widget elementor-widget-wgl-header-search\" data-id=\"a26de91\" data-element_type=\"widget\" data-widget_type=\"wgl-header-search.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\n        <div class=\"header_search search_standard\">\n\t        <div class=\"wgl-search elementor-search header_search-button-wrapper\" role=\"button\">\n\t            <div class=\"header_search-button flaticon-search \"></div>\n\t            <div class=\"header_search-close flaticon-close-button\"></div>\n\t        </div>\t            <div class=\"header_search-field\"><div class=\"header_search-close flaticon-close-button\"></div><form role=\"search\" method=\"get\" action=\"https://derrickvalentine.com/\" class=\"search-form\"><input required type=\"text\" id=\"search-form-6a1ef23c21a68\" class=\"search-field\" placeholder=\"Search &hellip;\" value=\"\" name=\"s\"><input class=\"search-button\" type=\"submit\" value=\"Search\"><i class=\"search__icon flaticon-search\"></i></form>\t            </div>        </div>\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t\t\t\t</div>\n\t\t",
+      "protected": false
+    },
+    "featured_media": 0,
+    "menu_order": 0,
+    "template": "",
+    "class_list": [
+      "post-3430",
+      "header",
+      "type-header",
+      "status-publish",
+      "hentry"
+    ],
+    "aioseo_notices": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/3430",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/types/header"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 9,
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/3430/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 3578,
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/header/3430/revisions/3578"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://derrickvalentine.com/wp-json/wp/v2/media?parent=3430"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
