@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#F1EFE8}
+  ::selection{background:#34402A;color:#F1EFE8}
+  .pdd{position:relative;padding-bottom:18px;margin-bottom:-18px}
+  .pdd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(2px);min-width:248px;background:#FBFAF7;border:1.5px solid #E2DFD4;border-radius:14px;padding:8px;box-shadow:0 20px 44px -22px rgba(40,38,32,.5);opacity:0;visibility:hidden;transition:opacity .16s ease,transform .16s ease;z-index:60}
+  .pdd:hover .pdd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(8px)}
+</style>
+</helmet>
+
+<div data-screen-label="Book a Call" style="background:#F1EFE8;font-family:'Archivo',sans-serif;color:#23271E;-webkit-font-smoothing:antialiased;min-height:100vh">
+
+  <!-- ============ NAV ============ -->
+  <header style="position:relative;z-index:20;max-width:1240px;margin:0 auto;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Homepage.dc.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#23271E">
+      <span style="width:34px;height:34px;border-radius:9px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span>
+      <span style="font-weight:700;font-size:16px;letter-spacing:-.01em">Derrick Valentine</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:30px">
+      <a href="Work.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Work</a>
+      <a href="Services.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Services</a>
+      <div class="pdd"><span style="display:flex;align-items:center;gap:5px;color:#3A3E33;font-size:14.5px;font-weight:500;cursor:pointer">Pricing <span style="font-size:9px;position:relative;top:1px">▼</span></span>
+        <div class="pdd-menu">
+          <a href="Shopify Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Shopify <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,200</span></a>
+          <a href="Webflow Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Webflow <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,800</span></a>
+          <a href="WordPress Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">WordPress <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $900</span></a>
+          <a href="Squarespace Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Squarespace <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $750</span></a>
+          <div style="border-top:1px solid #EAE7DC;margin:7px 4px"></div>
+          <a href="Services.dc.html" style="display:block;text-decoration:none;color:#5C6052;font-size:12.5px;font-weight:600;padding:9px 12px;border-radius:9px" style-hover="background:#EFEEE7">All services &amp; pricing →</a>
+        </div>
+      </div>
+      <a href="Process.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Process</a>
+      <a href="About.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">About</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a href="Client Portal.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14px;font-weight:500;border:1.5px solid #CFC9BB;border-radius:999px;padding:9px 16px" style-hover="border-color:#34402A">Client login</a>
+      <a href="Contact.dc.html" style="text-decoration:none;background:#34402A;color:#F1EFE8;font-size:14px;font-weight:600;border-radius:999px;padding:11px 20px;white-space:nowrap" style-hover="background:#23271E">Message me</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:30px 32px 8px;text-align:center">
+    <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;BOOK A CALL&nbsp; ]</span>
+    <h1 style="margin:16px 0 0;font-weight:800;font-size:clamp(36px,5vw,64px);line-height:.96;letter-spacing:-.03em;text-transform:uppercase">Let’s find <span style="color:#AAB293">a time.</span></h1>
+    <p style="margin:18px auto 0;max-width:520px;font-size:16.5px;line-height:1.6;color:#5C6052;font-weight:500">Pick a slot that works for you. 15 minutes, no pitch — just your goals and a straight answer on cost.</p>
+  </section>
+
+  <!-- ============ SCHEDULER ============ -->
+  <section style="max-width:1080px;margin:0 auto;padding:36px 32px 48px">
+
+    <sc-if value="{{ isPicking }}" hint-placeholder-val="{{ true }}">
+    <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:22px;overflow:hidden;box-shadow:0 24px 50px -34px rgba(40,38,32,.4)">
+      <div style="display:grid;grid-template-columns:288px minmax(0,1fr) 268px">
+
+        <!-- meeting info -->
+        <div style="padding:28px;border-right:1.5px solid #EFEEE7;display:flex;flex-direction:column">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:20px">
+            <span style="width:44px;height:44px;border-radius:999px;background:linear-gradient(150deg,#c3cbb0,#8d976f);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:#2b3324">DV</span>
+            <div style="min-width:0"><div style="font-size:12.5px;color:#9A9C8C;font-weight:600;white-space:nowrap">Derrick Valentine</div><div style="font-weight:700;font-size:14px;white-space:nowrap">Web developer</div></div>
+          </div>
+          <h2 style="margin:0 0 14px;font-weight:800;font-size:22px;letter-spacing:-.02em;line-height:1.1">15-min intro call</h2>
+          <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:22px">
+            <div style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:#5C6052"><span style="width:18px;height:18px;border:1.5px solid #6E7A60;border-radius:999px;flex:none;display:flex;align-items:center;justify-content:center;font-size:9px;color:#6E7A60">◷</span>15 minutes</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:#5C6052"><span style="width:18px;height:18px;border:1.5px solid #6E7A60;border-radius:5px;flex:none;display:flex;align-items:center;justify-content:center;font-size:9px;color:#6E7A60">▶</span>Google Meet (link sent after)</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:13.5px;color:#5C6052"><span style="width:18px;height:18px;border:1.5px solid #6E7A60;border-radius:999px;flex:none;display:flex;align-items:center;justify-content:center;font-size:10px;color:#6E7A60">$</span>Free · no obligation</div>
+          </div>
+          <div style="border-top:1.5px solid #EFEEE7;padding-top:18px;margin-top:auto">
+            <div style="font-size:11px;font-weight:700;letter-spacing:.14em;color:#9A9C8C;margin-bottom:10px">WHAT WE’LL COVER</div>
+            <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#5C6052;line-height:1.45">
+              <div style="display:flex;gap:8px"><span style="color:#6E7A60">→</span>Your platform &amp; what’s not working</div>
+              <div style="display:flex;gap:8px"><span style="color:#6E7A60">→</span>What you want the site to do</div>
+              <div style="display:flex;gap:8px"><span style="color:#6E7A60">→</span>A real number and a timeline</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- calendar -->
+        <div style="padding:28px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+            <div style="font-weight:700;font-size:16px;letter-spacing:-.01em">{{ monthLabel }}</div>
+            <div style="display:flex;gap:8px">
+              <button onClick="{{ prevMonth }}" style="width:34px;height:34px;border-radius:9px;border:1.5px solid #DAD6C9;background:#fff;cursor:pointer;font-size:14px;color:#3A3E33;display:flex;align-items:center;justify-content:center" style-hover="border-color:#34402A">‹</button>
+              <button onClick="{{ nextMonth }}" style="width:34px;height:34px;border-radius:9px;border:1.5px solid #DAD6C9;background:#fff;cursor:pointer;font-size:14px;color:#3A3E33;display:flex;align-items:center;justify-content:center" style-hover="border-color:#34402A">›</button>
+            </div>
+          </div>
+          <div style="min-height:286px">{{ calendar }}</div>
+          <div style="display:flex;align-items:center;gap:16px;margin-top:16px;font-size:11.5px;color:#9A9C8C">
+            <div style="display:flex;align-items:center;gap:6px"><span style="width:11px;height:11px;border-radius:4px;background:#F1EFE8;border:1px solid #DAD6C9"></span>Available</div>
+            <div style="display:flex;align-items:center;gap:6px"><span style="width:11px;height:11px;border-radius:4px;background:#34402A"></span>Selected</div>
+            <div style="margin-left:auto;color:#A7A59C">Times sync live from my calendar</div>
+          </div>
+        </div>
+
+        <!-- slots -->
+        <div style="padding:28px;border-left:1.5px solid #EFEEE7;background:#F7F5EE">
+          <sc-if value="{{ hasDate }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <div style="font-size:11px;font-weight:700;letter-spacing:.14em;color:#9A9C8C;margin-bottom:4px">SELECT A TIME</div>
+              <div style="font-weight:700;font-size:14.5px;margin-bottom:16px">{{ selectedLabel }}</div>
+              <div>{{ slots }}</div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ noDate }}" hint-placeholder-val="{{ true }}">
+            <div style="height:100%;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px">
+              <span style="width:48px;height:48px;border-radius:13px;background:#EAE7DC;display:flex;align-items:center;justify-content:center;font-size:20px;color:#9A9C8C">◷</span>
+              <div style="font-size:13.5px;color:#9A9C8C;line-height:1.5;max-width:160px">Pick a day on the left to see open times.</div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+
+      <!-- confirm bar -->
+      <div style="border-top:1.5px solid #EFEEE7;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;background:#FBFAF5">
+        <sc-if value="{{ canConfirm }}" hint-placeholder-val="{{ false }}">
+          <div style="font-size:14.5px;color:#3A3E33;font-weight:600">15-min call · <span style="color:#23271E;font-weight:700">{{ confirmSummary }}</span></div>
+        </sc-if>
+        <sc-if value="{{ notReady }}" hint-placeholder-val="{{ true }}">
+          <div style="font-size:14px;color:#9A9C8C;font-weight:500">Select a date and time to continue.</div>
+        </sc-if>
+        <sc-if value="{{ canConfirm }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ confirm }}" style="background:#34402A;color:#F1EFE8;border:none;border-radius:999px;padding:14px 28px;font-family:inherit;font-weight:600;font-size:15px;cursor:pointer;display:inline-flex;align-items:center;gap:9px;white-space:nowrap" style-hover="background:#23271E">Schedule call <span style="font-size:17px">→</span></button>
+        </sc-if>
+        <sc-if value="{{ notReady }}" hint-placeholder-val="{{ true }}">
+          <button style="background:#D7D2C4;color:#9A9C8C;border:none;border-radius:999px;padding:14px 28px;font-family:inherit;font-weight:600;font-size:15px;cursor:not-allowed;white-space:nowrap">Schedule call</button>
+        </sc-if>
+      </div>
+    </div>
+    <p style="text-align:center;margin:18px 0 0;font-size:12.5px;color:#9A9C8C">All times shown in your local timezone.</p>
+    </sc-if>
+
+    <!-- confirmed -->
+    <sc-if value="{{ isConfirmed }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width:560px;margin:0 auto;background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:22px;padding:40px 36px;text-align:center;box-shadow:0 24px 50px -34px rgba(40,38,32,.4)">
+      <div style="width:66px;height:66px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 22px">✓</div>
+      <h2 style="margin:0 0 10px;font-weight:800;font-size:30px;letter-spacing:-.025em;text-transform:uppercase">You’re booked!</h2>
+      <p style="margin:0 auto 24px;max-width:380px;font-size:15.5px;line-height:1.6;color:#5C6052">A calendar invite with the Google Meet link is on its way to your inbox. Talk soon.</p>
+      <div style="background:#fff;border:1.5px solid #E4E0D4;border-radius:14px;padding:20px;text-align:left;display:flex;flex-direction:column;gap:14px;margin-bottom:26px">
+        <div style="display:flex;align-items:center;gap:13px"><span style="width:40px;height:40px;border-radius:10px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;font-size:16px;color:#34402A">◷</span><div><div style="font-size:12px;color:#9A9C8C;font-weight:600">WHEN</div><div style="font-weight:700;font-size:15px">{{ confirmSummary }}</div></div></div>
+        <div style="height:1px;background:#EFEEE7"></div>
+        <div style="display:flex;align-items:center;gap:13px"><span style="width:40px;height:40px;border-radius:10px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;font-size:14px;color:#34402A">▶</span><div><div style="font-size:12px;color:#9A9C8C;font-weight:600">WHERE</div><div style="font-weight:700;font-size:15px">Google Meet · link in your invite</div></div></div>
+      </div>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="#" style="text-decoration:none;background:#34402A;color:#F1EFE8;font-weight:600;font-size:15px;border-radius:999px;padding:14px 26px;white-space:nowrap" style-hover="background:#23271E">Add to calendar</a>
+        <button onClick="{{ bookAnother }}" style="background:transparent;border:1.5px solid #34402A;color:#23271E;border-radius:999px;padding:14px 24px;font-family:inherit;font-weight:600;font-size:15px;cursor:pointer;white-space:nowrap" style-hover="background:#E7E6DA">Pick another time</button>
+      </div>
+    </div>
+    </sc-if>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#23271E;color:#C2C6B5">
+    <div style="max-width:1240px;margin:0 auto;padding:48px 32px 30px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:11px"><span style="width:34px;height:34px;border-radius:9px;background:#F1EFE8;color:#23271E;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span><span style="font-weight:700;font-size:16px;color:#F1EFE8">Derrick Valentine</span></div>
+      <div style="font-size:13.5px;color:#9DA28F">Prefer to write? <a href="Contact.dc.html" style="color:#F1EFE8;font-weight:600;text-decoration:none" style-hover="text-decoration:underline">Send a message →</a></div>
+      <div style="font-size:12.5px;color:#7E836F">© 2026 Derrick Valentine</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { monthOffset: 0, dateKey: null, time: null, confirmed: false };
+
+  renderVals() {
+    const h = React.createElement;
+    const s = this.state;
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const base = new Date(today.getFullYear(), today.getMonth() + s.monthOffset, 1);
+    const year = base.getFullYear(), month = base.getMonth();
+    const monthLabel = base.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+    const firstDow = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    const cells = [];
+    for (let i = 0; i < firstDow; i++) cells.push(null);
+    for (let d = 1; d <= daysInMonth; d++) {
+      const date = new Date(year, month, d);
+      const dow = date.getDay();
+      const available = date >= today && dow !== 0 && dow !== 6;
+      const key = year + '-' + month + '-' + d;
+      cells.push({ d, key, available, selected: s.dateKey === key });
+    }
+
+    const dowLabels = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+    const head = h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(7,1fr)', gap: '4px', marginBottom: '8px' } },
+      dowLabels.map((l, i) => h('div', { key: 'h' + i, style: { textAlign: 'center', fontSize: '11px', fontWeight: 700, color: '#9A9C8C' } }, l)));
+    const grid = h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(7,1fr)', gap: '4px' } },
+      cells.map((c, i) => {
+        if (!c) return h('div', { key: 'e' + i });
+        const b = { height: '42px', borderRadius: '10px', fontFamily: 'inherit', fontSize: '14px', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' };
+        if (!c.available) return h('div', { key: c.key, style: { ...b, color: '#CAC7BD' } }, c.d);
+        const style = c.selected
+          ? { ...b, background: '#34402A', color: '#F1EFE8', cursor: 'pointer', border: 'none' }
+          : { ...b, background: '#F1EFE8', color: '#23271E', cursor: 'pointer', border: '1.5px solid #E4E0D4' };
+        return h('button', { key: c.key, style, onClick: () => this.setState({ dateKey: c.key, time: null }) }, c.d);
+      }));
+    const calendar = h('div', null, head, grid);
+
+    const slotList = ['9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM', '11:00 AM', '11:30 AM', '1:00 PM', '1:30 PM', '2:00 PM', '2:30 PM', '3:00 PM', '3:30 PM', '4:00 PM', '4:30 PM'];
+    const dayNum = s.dateKey ? parseInt(s.dateKey.split('-')[2], 10) : 0;
+    let slots = null;
+    if (s.dateKey) {
+      slots = h('div', { style: { display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '300px', overflowY: 'auto', paddingRight: '4px' } },
+        slotList.map((t, i) => {
+          const taken = ((i * 3 + dayNum) % 5 === 0);
+          const sel = s.time === t;
+          const b = { padding: '12px', borderRadius: '10px', fontFamily: 'inherit', fontSize: '14px', fontWeight: 600, textAlign: 'center' };
+          if (taken) return h('div', { key: t, style: { ...b, border: '1.5px solid #EAE7DC', color: '#CAC7BD', background: 'transparent', textDecoration: 'line-through' } }, t);
+          const style = sel
+            ? { ...b, border: '1.5px solid #34402A', background: '#34402A', color: '#F1EFE8', cursor: 'pointer' }
+            : { ...b, border: '1.5px solid #CFC9BB', background: '#fff', color: '#23271E', cursor: 'pointer' };
+          return h('button', { key: t, style, onClick: () => this.setState({ time: t }) }, t);
+        }));
+    }
+
+    let selectedLabel = '';
+    if (s.dateKey) {
+      const p = s.dateKey.split('-').map(Number);
+      selectedLabel = new Date(p[0], p[1], p[2]).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    }
+    const canConfirm = !!(s.dateKey && s.time);
+    const confirmSummary = (selectedLabel && s.time) ? (selectedLabel + ' at ' + s.time) : '';
+
+    return {
+      monthLabel, calendar, slots,
+      prevMonth: () => this.setState(st => ({ monthOffset: Math.max(0, st.monthOffset - 1) })),
+      nextMonth: () => this.setState(st => ({ monthOffset: st.monthOffset + 1 })),
+      hasDate: !!s.dateKey, noDate: !s.dateKey,
+      selectedLabel,
+      canConfirm, notReady: !canConfirm,
+      confirmSummary,
+      confirm: () => this.setState({ confirmed: true }),
+      bookAnother: () => this.setState({ confirmed: false, dateKey: null, time: null }),
+      isPicking: !s.confirmed, isConfirmed: s.confirmed,
+    };
+  }
+}
+</script>
+</body>
+</html>

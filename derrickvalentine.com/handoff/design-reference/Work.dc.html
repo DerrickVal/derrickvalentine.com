@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#F1EFE8}
+  ::selection{background:#34402A;color:#F1EFE8}
+  .pdd{position:relative;padding-bottom:18px;margin-bottom:-18px}
+  .pdd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(2px);min-width:248px;background:#FBFAF7;border:1.5px solid #E2DFD4;border-radius:14px;padding:8px;box-shadow:0 20px 44px -22px rgba(40,38,32,.5);opacity:0;visibility:hidden;transition:opacity .16s ease,transform .16s ease;z-index:60}
+  .pdd:hover .pdd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(8px)}
+</style>
+</helmet>
+
+<div data-screen-label="Work" style="background:#F1EFE8;font-family:'Archivo',sans-serif;color:#23271E;-webkit-font-smoothing:antialiased;overflow-x:hidden">
+
+  <!-- ============ NAV ============ -->
+  <header style="position:relative;z-index:20;max-width:1240px;margin:0 auto;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Homepage.dc.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#23271E">
+      <span style="width:34px;height:34px;border-radius:9px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span>
+      <span style="font-weight:700;font-size:16px;letter-spacing:-.01em">Derrick Valentine</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:30px">
+      <a href="Work.dc.html" style="text-decoration:none;color:#23271E;font-size:14.5px;font-weight:700">Work</a>
+      <a href="Services.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Services</a>
+      <div class="pdd"><span style="display:flex;align-items:center;gap:5px;color:#3A3E33;font-size:14.5px;font-weight:500;cursor:pointer">Pricing <span style="font-size:9px;position:relative;top:1px">▼</span></span>
+        <div class="pdd-menu">
+          <a href="Shopify Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Shopify <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,200</span></a>
+          <a href="Webflow Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Webflow <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,800</span></a>
+          <a href="WordPress Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">WordPress <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $900</span></a>
+          <a href="Squarespace Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Squarespace <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $750</span></a>
+          <div style="border-top:1px solid #EAE7DC;margin:7px 4px"></div>
+          <a href="Services.dc.html" style="display:block;text-decoration:none;color:#5C6052;font-size:12.5px;font-weight:600;padding:9px 12px;border-radius:9px" style-hover="background:#EFEEE7">All services &amp; pricing →</a>
+        </div>
+      </div>
+      <a href="Process.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Process</a>
+      <a href="About.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">About</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a href="Client Portal.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14px;font-weight:500;border:1.5px solid #CFC9BB;border-radius:999px;padding:9px 16px" style-hover="border-color:#34402A">Client login</a>
+      <a href="Book a Call.dc.html" style="text-decoration:none;background:#34402A;color:#F1EFE8;font-size:14px;font-weight:600;border-radius:999px;padding:11px 20px;white-space:nowrap" style-hover="background:#23271E">Book a call</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:34px 32px 10px">
+    <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;WORK&nbsp; ]</span>
+    <div style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:end;margin-top:18px">
+      <h1 style="margin:0;font-weight:800;font-size:clamp(38px,5.6vw,76px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase">Recent work<br><span style="color:#AAB293">worth a look.</span></h1>
+      <p style="margin:0;font-size:16.5px;line-height:1.6;color:#5C6052;font-weight:500">Real sites for real businesses, across every platform I work on. Filter by industry or style to find something close to yours.</p>
+    </div>
+  </section>
+
+  <!-- ============ FILTERS ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:30px 32px 8px">
+    <div style="display:flex;flex-direction:column;gap:16px;border-top:1.5px solid #DAD6C9;border-bottom:1.5px solid #DAD6C9;padding:22px 0">
+      <!-- industry -->
+      <div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap">
+        <span style="flex:none;width:74px;font-size:11px;font-weight:700;letter-spacing:.16em;color:#9A9C8C;padding-top:11px">INDUSTRY</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-if value="{{ i_all_on }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setI_all }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">All</button></sc-if>
+          <sc-if value="{{ i_all_off }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setI_all }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">All</button></sc-if>
+
+          <sc-if value="{{ i_roofing_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setI_roofing }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Roofing</button></sc-if>
+          <sc-if value="{{ i_roofing_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setI_roofing }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Roofing</button></sc-if>
+
+          <sc-if value="{{ i_restaurant_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setI_restaurant }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Restaurant</button></sc-if>
+          <sc-if value="{{ i_restaurant_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setI_restaurant }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Restaurant</button></sc-if>
+
+          <sc-if value="{{ i_salon_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setI_salon }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Salon</button></sc-if>
+          <sc-if value="{{ i_salon_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setI_salon }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Salon</button></sc-if>
+
+          <sc-if value="{{ i_ecommerce_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setI_ecommerce }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">E-commerce</button></sc-if>
+          <sc-if value="{{ i_ecommerce_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setI_ecommerce }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">E-commerce</button></sc-if>
+
+          <sc-if value="{{ i_legal_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setI_legal }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Legal</button></sc-if>
+          <sc-if value="{{ i_legal_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setI_legal }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Legal</button></sc-if>
+
+          <sc-if value="{{ i_healthcare_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setI_healthcare }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Healthcare</button></sc-if>
+          <sc-if value="{{ i_healthcare_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setI_healthcare }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Healthcare</button></sc-if>
+        </div>
+      </div>
+      <!-- style -->
+      <div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap">
+        <span style="flex:none;width:74px;font-size:11px;font-weight:700;letter-spacing:.16em;color:#9A9C8C;padding-top:11px">STYLE</span>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-if value="{{ s_all_on }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setS_all }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">All</button></sc-if>
+          <sc-if value="{{ s_all_off }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setS_all }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">All</button></sc-if>
+
+          <sc-if value="{{ s_bold_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setS_bold }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Bold</button></sc-if>
+          <sc-if value="{{ s_bold_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setS_bold }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Bold</button></sc-if>
+
+          <sc-if value="{{ s_minimal_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setS_minimal }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Minimal</button></sc-if>
+          <sc-if value="{{ s_minimal_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setS_minimal }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Minimal</button></sc-if>
+
+          <sc-if value="{{ s_classic_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setS_classic }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Classic</button></sc-if>
+          <sc-if value="{{ s_classic_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setS_classic }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Classic</button></sc-if>
+
+          <sc-if value="{{ s_playful_on }}" hint-placeholder-val="{{ false }}"><button onClick="{{ setS_playful }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Playful</button></sc-if>
+          <sc-if value="{{ s_playful_off }}" hint-placeholder-val="{{ true }}"><button onClick="{{ setS_playful }}" style="border:1.5px solid #CFC9BB;background:transparent;color:#5C6052;border-radius:999px;padding:9px 16px;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap" style-hover="border-color:#34402A;color:#23271E">Playful</button></sc-if>
+        </div>
+      </div>
+    </div>
+    <!-- count + clear -->
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:16px">
+      <div style="font-size:13.5px;color:#6E7263;font-weight:500">Showing <span style="font-weight:700;color:#23271E">{{ countLabel }}</span></div>
+      <sc-if value="{{ anyFilter }}" hint-placeholder-val="{{ false }}"><button onClick="{{ clearAll }}" style="border:none;background:transparent;color:#34402A;font:600 13.5px 'Archivo',sans-serif;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Clear filters ✕</button></sc-if>
+    </div>
+  </section>
+
+  <!-- ============ GRID ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:14px 32px 40px;min-height:380px">
+    <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px">
+        <sc-for list="{{ filtered }}" as="p" hint-placeholder-count="9">
+          <a href="#case" style="text-decoration:none;color:#23271E;border:1.5px solid #E2DFD4;border-radius:18px;overflow:hidden;background:#FBFAF5;display:flex;flex-direction:column" style-hover="border-color:#34402A">
+            <div style="position:relative;height:172px;background:linear-gradient(150deg,#cdd3bd,#a3ac88);overflow:hidden">
+              <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.13) 0,rgba(255,255,255,.13) 2px,transparent 2px,transparent 18px)"></div>
+              <span style="position:absolute;top:12px;right:12px;background:rgba(241,239,232,.94);border-radius:999px;padding:5px 11px;font-size:11px;font-weight:700;color:#3F4A2C">{{ p.platform }}</span>
+              <span style="position:absolute;bottom:12px;left:12px;background:rgba(20,24,16,.5);backdrop-filter:blur(3px);border-radius:999px;padding:5px 11px;font-size:11px;font-weight:600;color:#EDEEE3;letter-spacing:.04em">{{ p.style }}</span>
+            </div>
+            <div style="padding:18px 18px 20px;display:flex;flex-direction:column;gap:4px;flex:1">
+              <div style="font-size:11px;font-weight:700;letter-spacing:.14em;color:#9A9C8C">{{ p.industry }}</div>
+              <div style="font-weight:700;font-size:18px;letter-spacing:-.01em">{{ p.name }}</div>
+              <div style="margin-top:auto;display:flex;align-items:center;gap:8px;padding-top:12px">
+                <span style="width:7px;height:7px;border-radius:999px;background:#6E7A60"></span>
+                <span style="font-size:13px;color:#5C6052;font-weight:600">{{ p.metric }}</span>
+              </div>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </sc-if>
+    <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}">
+      <div style="border:1.5px dashed #CFC9BB;border-radius:18px;padding:64px 24px;text-align:center;background:#FBFAF5">
+        <div style="font-weight:700;font-size:20px;letter-spacing:-.01em;margin-bottom:8px">No projects match that combination</div>
+        <p style="margin:0 0 20px;font-size:14.5px;color:#6E7263">Try a different industry or style — or clear the filters to see everything.</p>
+        <button onClick="{{ clearAll }}" style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:12px 22px;font:600 14px 'Archivo',sans-serif;cursor:pointer;white-space:nowrap">Clear filters</button>
+      </div>
+    </sc-if>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="book" style="max-width:1240px;margin:0 auto;padding:24px 32px 36px">
+    <div style="position:relative;border-radius:24px;overflow:hidden;padding:clamp(44px,6vw,84px) clamp(32px,5vw,68px);background:linear-gradient(150deg,#3c4a30,#222a1c)">
+      <div style="position:absolute;inset:0;background:repeating-linear-gradient(125deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.05) 2px,transparent 2px,transparent 24px)"></div>
+      <div style="position:absolute;inset:0;background:radial-gradient(90% 120% at 85% 20%,rgba(150,170,120,.3),transparent 60%)"></div>
+      <div style="position:relative;max-width:660px">
+        <h2 style="margin:0;font-weight:800;font-size:clamp(30px,4.6vw,58px);line-height:.98;letter-spacing:-.03em;text-transform:uppercase;color:#F3F2EA">Want one<br><span style="color:#AAB795">like these?</span></h2>
+        <p style="margin:20px 0 32px;max-width:460px;font-size:16.5px;line-height:1.55;color:#D9DBCD;font-weight:500">Tell me your business and your platform on a quick call — you’ll leave with a real number and a timeline.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+          <a href="Book a Call.dc.html" style="text-decoration:none;background:#F1EFE8;color:#23271E;font-weight:600;font-size:16px;border-radius:999px;padding:17px 32px;display:inline-flex;align-items:center;gap:9px;white-space:nowrap" style-hover="background:#fff">Book a call <span style="font-size:18px">→</span></a>
+          <a href="Services.dc.html" style="text-decoration:none;color:#E3E4D8;font-weight:600;font-size:15px;border-bottom:1.5px solid rgba(241,239,232,.4);padding-bottom:3px">or see services &amp; pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#23271E;color:#C2C6B5">
+    <div style="max-width:1240px;margin:0 auto;padding:60px 32px 30px">
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px 32px;padding-bottom:46px;border-bottom:1px solid rgba(241,239,232,.12)">
+        <div style="max-width:300px">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px"><span style="width:34px;height:34px;border-radius:9px;background:#F1EFE8;color:#23271E;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span><span style="font-weight:700;font-size:16px;color:#F1EFE8">Derrick Valentine</span></div>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#9DA28F">One developer who builds, fixes, and looks after websites — on the platform you already use.</p>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">SERVICES</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Shopify Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Shopify</a>
+            <a href="Webflow Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Webflow</a>
+            <a href="WordPress Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">WordPress</a>
+            <a href="Squarespace Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Squarespace</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">COMPANY</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Work.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Work</a>
+            <a href="Services.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Services</a>
+            <a href="About.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">About</a>
+            <a href="Contact.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">CLIENTS</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Client login</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Upload content</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Project status</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Invoices</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:12.5px;color:#7E836F">
+        <div>© 2026 Derrick Valentine. All rights reserved.</div>
+        <div style="display:flex;gap:22px">
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">Upwork</a>
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">LinkedIn</a>
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { industry: 'All', style: 'All' };
+
+  INDUSTRIES = ['All', 'Roofing', 'Restaurant', 'Salon', 'E-commerce', 'Legal', 'Healthcare'];
+  STYLES = ['All', 'Bold', 'Minimal', 'Classic', 'Playful'];
+
+  PROJECTS = [
+    { name: 'Northside Roofing', industry: 'Roofing', platform: 'WordPress', style: 'Bold', metric: '+38% estimate calls' },
+    { name: 'Maple & Vine', industry: 'Restaurant', platform: 'Squarespace', style: 'Classic', metric: '+30% reservations' },
+    { name: 'Studio Bloom', industry: 'Salon', platform: 'Webflow', style: 'Minimal', metric: '+44% time on site' },
+    { name: 'Harbor Goods', industry: 'E-commerce', platform: 'Shopify', style: 'Bold', metric: '+52% mobile conv.' },
+    { name: 'Reyes Law', industry: 'Legal', platform: 'Webflow', style: 'Classic', metric: '2× consultations' },
+    { name: 'Peak Dental', industry: 'Healthcare', platform: 'WordPress', style: 'Minimal', metric: '+27% bookings' },
+    { name: 'Cedar & Co', industry: 'Restaurant', platform: 'Webflow', style: 'Playful', metric: 'Booked-out weekends' },
+    { name: 'Summit Roofing', industry: 'Roofing', platform: 'Squarespace', style: 'Minimal', metric: 'Cleaner quote flow' },
+    { name: 'Glow Bar', industry: 'Salon', platform: 'Squarespace', style: 'Playful', metric: '+40% gift cards' },
+    { name: 'Ironclad Fitness', industry: 'E-commerce', platform: 'Shopify', style: 'Bold', metric: '+33% order value' },
+    { name: 'Hartwell Clinic', industry: 'Healthcare', platform: 'Squarespace', style: 'Classic', metric: 'Faster intake' },
+    { name: 'Vellum Studio', industry: 'E-commerce', platform: 'Webflow', style: 'Minimal', metric: '+48% conversion' },
+  ];
+
+  slug(s) { return s.toLowerCase().replace(/[^a-z0-9]/g, ''); }
+
+  renderVals() {
+    const { industry, style } = this.state;
+    const filtered = this.PROJECTS.filter(p =>
+      (industry === 'All' || p.industry === industry) &&
+      (style === 'All' || p.style === style)
+    );
+    const out = {
+      filtered,
+      countLabel: filtered.length + (filtered.length === 1 ? ' project' : ' projects'),
+      hasResults: filtered.length > 0,
+      empty: filtered.length === 0,
+      anyFilter: industry !== 'All' || style !== 'All',
+      clearAll: () => this.setState({ industry: 'All', style: 'All' }),
+    };
+    this.INDUSTRIES.forEach(i => {
+      const k = 'i_' + this.slug(i);
+      out[k + '_on'] = industry === i;
+      out[k + '_off'] = industry !== i;
+      out['setI_' + this.slug(i)] = () => this.setState({ industry: i });
+    });
+    this.STYLES.forEach(s => {
+      const k = 's_' + this.slug(s);
+      out[k + '_on'] = style === s;
+      out[k + '_off'] = style !== s;
+      out['setS_' + this.slug(s)] = () => this.setState({ style: s });
+    });
+    return out;
+  }
+}
+</script>
+</body>
+</html>

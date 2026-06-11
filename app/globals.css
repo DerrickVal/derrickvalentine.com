@@ -42,6 +42,8 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -74,6 +76,10 @@
 }
 
 :root {
+  --radius: 0.625rem;
+
+  /* Clean white/black base. Color comes from bold `.brand-band` sections that
+     gradient from the page background into --brand and back. Change --brand to reskin. */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -92,12 +98,13 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  --brand: oklch(0.58 0.15 252);
+  --brand-foreground: oklch(0.99 0 0);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -127,6 +134,8 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
+  --brand: oklch(0.62 0.15 252);
+  --brand-foreground: oklch(0.99 0 0);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -152,4 +161,38 @@
   html {
     @apply font-sans;
   }
+}
+
+/* Scrollix-style brand band: a bold color section that dissolves into the page
+   background at the top and bottom, so scrolling glides from white into color and
+   back to white. Put `brand-band` on a <section> and use light text
+   (text-brand-foreground) inside. Tune --brand (the color) and the stops below. */
+.brand-band {
+  background-image: linear-gradient(
+    180deg,
+    var(--background) 0%,
+    var(--brand) 12%,
+    var(--brand) 80%,
+    var(--background) 100%
+  );
+}
+
+a.link-animated {
+    position: relative;
+    text-decoration: none;
+}
+
+a.link-animated:before {
+    border-block-end: 1px solid;
+    content: '';
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+a.link-animated:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { SecondaryGrowButton } from "@/components/ui/grow-button";
@@ -6,12 +7,11 @@ import {
   HeroNavigation01SmallScreen,
   type Navigation,
 } from "@/components/shadcn-studio/blocks/hero-section-37/hero-navigation";
-import GrowLogo from "@/assets/svg/grow-logo";
 
 // Site navigation — the locked IA (see docs/IA.md). Flat links: the redesign offer
-// is a single Services page, so no dropdowns. Routes are stubbed until each page is built.
+// is a single Services page, so no dropdowns. Home is omitted (the logo links home).
+// Routes are stubbed until each page is built.
 const navigationData: Navigation[] = [
-  { title: "Home", href: "/" },
   { title: "Services", href: "/services" },
   { title: "Work", href: "/work" },
   { title: "Pricing", href: "/pricing" },
@@ -20,18 +20,22 @@ const navigationData: Navigation[] = [
   { title: "Contact", href: "/contact" },
 ];
 
-// TODO(branding): the GrowLogo mark + "Grow" wordmark are Hero 37 placeholders —
-// swap for Derrick's logo when branding/assets land.
+// Brand marks: /public/logo-white.png (knockout — for dark surfaces like the primary navbar)
+// and /public/logo-black.png (for light surfaces like the mobile menu sheet).
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 h-16 w-full transition-all duration-300">
       <div className="bg-primary mx-auto flex h-full max-w-6xl items-center justify-between gap-6 rounded-b-[12px] px-8">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <GrowLogo className="[&_path]:first:fill-primary [&_path]:last:fill-background size-8" />
-          <span className="text-primary-foreground text-[20px] font-semibold uppercase">
-            Grow
-          </span>
+        {/* Logo (white wordmark on the dark primary bar) */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo-white.png"
+            alt="Derrick Valentine"
+            width={196}
+            height={56}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         <HeroNavigation01 navigationData={navigationData} navigationClassName="grow" />
@@ -46,12 +50,13 @@ const Navbar = () => {
           <HeroNavigation01SmallScreen
             navigationData={navigationData}
             logo={
-              <span className="flex items-center gap-3">
-                <GrowLogo className="size-8" />
-                <span className="text-primary lg:text-primary-foreground text-[20px] font-semibold uppercase">
-                  Grow
-                </span>
-              </span>
+              <Image
+                src="/logo-black.png"
+                alt="Derrick Valentine"
+                width={392}
+                height={111}
+                className="h-7 w-auto"
+              />
             }
           />
         </div>

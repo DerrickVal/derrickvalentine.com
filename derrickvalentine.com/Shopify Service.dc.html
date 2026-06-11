@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#F1EFE8}
+  ::selection{background:#34402A;color:#F1EFE8}
+  .pdd{position:relative;padding-bottom:18px;margin-bottom:-18px}
+  .pdd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(2px);min-width:248px;background:#FBFAF7;border:1.5px solid #E2DFD4;border-radius:14px;padding:8px;box-shadow:0 20px 44px -22px rgba(40,38,32,.5);opacity:0;visibility:hidden;transition:opacity .16s ease,transform .16s ease;z-index:60}
+  .pdd:hover .pdd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(8px)}
+  @keyframes recpulse{0%,100%{opacity:.4;transform:scale(.85)}50%{opacity:1;transform:scale(1)}}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:999px;background:#D7D2C4;outline:none;cursor:pointer}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:999px;background:#34402A;border:3px solid #F7F5EE;cursor:pointer;box-shadow:0 2px 7px rgba(0,0,0,.25)}
+  input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:999px;background:#34402A;border:3px solid #F7F5EE;cursor:pointer}
+</style>
+</helmet>
+
+<div data-screen-label="Shopify Service" style="background:#F1EFE8;font-family:'Archivo',sans-serif;color:#23271E;-webkit-font-smoothing:antialiased;overflow-x:hidden">
+
+  <!-- ============ NAV ============ -->
+  <header style="position:relative;z-index:20;max-width:1240px;margin:0 auto;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Homepage.dc.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#23271E">
+      <span style="width:34px;height:34px;border-radius:9px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span>
+      <span style="font-weight:700;font-size:16px;letter-spacing:-.01em">Derrick Valentine</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:30px">
+      <a href="Work.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Work</a>
+      <a href="Services.dc.html" style="text-decoration:none;color:#23271E;font-size:14.5px;font-weight:700">Services</a>
+      <div class="pdd"><span style="display:flex;align-items:center;gap:5px;color:#3A3E33;font-size:14.5px;font-weight:500;cursor:pointer">Pricing <span style="font-size:9px;position:relative;top:1px">▼</span></span>
+        <div class="pdd-menu">
+          <a href="Shopify Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Shopify <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,200</span></a>
+          <a href="Webflow Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Webflow <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,800</span></a>
+          <a href="WordPress Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">WordPress <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $900</span></a>
+          <a href="Squarespace Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Squarespace <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $750</span></a>
+          <div style="border-top:1px solid #EAE7DC;margin:7px 4px"></div>
+          <a href="Services.dc.html" style="display:block;text-decoration:none;color:#5C6052;font-size:12.5px;font-weight:600;padding:9px 12px;border-radius:9px" style-hover="background:#EFEEE7">All services &amp; pricing →</a>
+        </div>
+      </div>
+      <a href="Process.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Process</a>
+      <a href="About.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">About</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a href="Client Portal.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14px;font-weight:500;border:1.5px solid #CFC9BB;border-radius:999px;padding:9px 16px" style-hover="border-color:#34402A">Client login</a>
+      <a href="Book a Call.dc.html" style="text-decoration:none;background:#34402A;color:#F1EFE8;font-size:14px;font-weight:600;border-radius:999px;padding:11px 20px;white-space:nowrap" style-hover="background:#23271E">Book a call</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:18px 32px 30px">
+    <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:#7C8071;margin-bottom:26px">
+      <a href="Homepage.dc.html" style="text-decoration:none;color:#7C8071">Services</a>
+      <span>/</span>
+      <span style="color:#34402A;font-weight:600">Shopify</span>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:center">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:9px;background:#E5E8DA;border:1px solid #CBD2B8;border-radius:999px;padding:8px 15px;margin-bottom:24px">
+          <span style="width:8px;height:8px;border-radius:999px;background:#5E7245"></span>
+          <span style="font-size:13px;font-weight:600;color:#3F4A2C">Expert Shopify development</span>
+        </div>
+        <h1 style="margin:0;font-weight:800;font-size:clamp(38px,5.4vw,72px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase">Shopify stores that<br><span style="color:#AAB293">load fast and sell.</span></h1>
+        <p style="margin:22px 0 0;max-width:480px;font-size:17px;line-height:1.55;color:#5C6052;font-weight:500">New builds, redesigns, migrations, and speed work — done by one developer who knows the platform inside out. Clear price up front, in writing.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:13px;margin-top:30px">
+          <a href="#calculator" style="text-decoration:none;background:#34402A;color:#F1EFE8;font-weight:600;font-size:15.5px;border-radius:999px;padding:16px 30px;display:inline-flex;align-items:center;gap:9px;white-space:nowrap" style-hover="background:#23271E">Get my estimate <span style="font-size:17px">↓</span></a>
+          <a href="Book a Call.dc.html" style="text-decoration:none;background:transparent;color:#23271E;font-weight:600;font-size:15.5px;border:1.5px solid #34402A;border-radius:999px;padding:16px 28px;display:inline-flex;align-items:center;white-space:nowrap" style-hover="background:#E7E6DA">Book a call</a>
+        </div>
+        <div style="display:flex;gap:34px;margin-top:36px">
+          <div><div style="font-weight:800;font-size:24px;letter-spacing:-.02em">40+</div><div style="font-size:12.5px;color:#6E7263;margin-top:3px">Shopify stores</div></div>
+          <div style="width:1px;background:#D7D2C4"></div>
+          <div><div style="font-weight:800;font-size:24px;letter-spacing:-.02em">&lt;1.5s</div><div style="font-size:12.5px;color:#6E7263;margin-top:3px">avg. load time</div></div>
+          <div style="width:1px;background:#D7D2C4"></div>
+          <div><div style="font-weight:800;font-size:24px;letter-spacing:-.02em">5–18d</div><div style="font-size:12.5px;color:#6E7263;margin-top:3px">typical turnaround</div></div>
+        </div>
+      </div>
+      <!-- store mockup placeholder -->
+      <div style="position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;min-height:380px;background:linear-gradient(160deg,#46532f,#222a1c)">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0,rgba(255,255,255,.06) 2px,transparent 2px,transparent 18px)"></div>
+        <div style="position:absolute;top:18px;left:18px;display:flex;align-items:center;gap:9px;background:rgba(20,24,16,.42);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:7px 13px"><span style="width:7px;height:7px;border-radius:999px;background:#E4684A;animation:recpulse 1.8s ease-in-out infinite"></span><span style="color:#E9EAE0;font-size:11px;font-weight:600;letter-spacing:.12em">IMAGE — store mockup</span></div>
+        <div style="position:absolute;left:18px;right:18px;bottom:18px;background:rgba(241,239,232,.95);border-radius:14px;padding:15px 18px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:9px"><span style="font-size:10px;font-weight:700;letter-spacing:.16em;color:#9A9C8C">FEATURED STORE</span><span style="width:24px;height:24px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:12px">↗</span></div>
+          <div style="font-weight:700;font-size:15px">Harbor Goods</div>
+          <div style="font-size:12.5px;color:#6E7263;margin-top:2px">Shopify migration · +52% mobile conversion</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I DO ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:64px 32px 20px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:34px">
+      <h2 style="margin:0;font-weight:800;font-size:clamp(26px,3.4vw,44px);line-height:1.0;letter-spacing:-.025em;text-transform:uppercase">What I do on Shopify</h2>
+      <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;CAPABILITIES&nbsp; ]</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+      <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:16px;padding:24px">
+        <div style="width:40px;height:40px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><span style="width:16px;height:16px;border:2px solid #34402A;border-radius:4px"></span></div>
+        <h3 style="margin:0 0 8px;font-weight:700;font-size:18px;letter-spacing:-.01em">New stores</h3>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Built from scratch on a theme tuned to your brand, products, and how you actually sell.</p>
+      </div>
+      <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:16px;padding:24px">
+        <div style="width:40px;height:40px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><span style="width:16px;height:16px;border:2px solid #34402A;border-radius:999px"></span></div>
+        <h3 style="margin:0 0 8px;font-weight:700;font-size:18px;letter-spacing:-.01em">Redesigns &amp; refreshes</h3>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Modernize an existing store without losing your data, reviews, or hard-won SEO.</p>
+      </div>
+      <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:16px;padding:24px">
+        <div style="width:40px;height:40px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><span style="width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:15px solid #34402A"></span></div>
+        <h3 style="margin:0 0 8px;font-weight:700;font-size:18px;letter-spacing:-.01em">Custom sections</h3>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Bespoke homepage, collection, and product blocks — clean code, not clunky apps.</p>
+      </div>
+      <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:16px;padding:24px">
+        <div style="width:40px;height:40px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><span style="width:15px;height:15px;background:#34402A;border-radius:3px;transform:rotate(45deg)"></span></div>
+        <h3 style="margin:0 0 8px;font-weight:700;font-size:18px;letter-spacing:-.01em">Migrations</h3>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Move from WooCommerce, Squarespace, Wix, or BigCommerce — cleanly, with redirects done right.</p>
+      </div>
+      <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:16px;padding:24px">
+        <div style="width:40px;height:40px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><span style="display:block;width:18px;height:3px;background:#34402A;border-radius:2px;position:relative"></span></div>
+        <h3 style="margin:0 0 8px;font-weight:700;font-size:18px;letter-spacing:-.01em">Speed &amp; Core Web Vitals</h3>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Faster loads, better rankings, and more completed checkouts — measured, not guessed.</p>
+      </div>
+      <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:16px;padding:24px">
+        <div style="width:40px;height:40px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><span style="width:16px;height:16px;border:2px solid #34402A;border-radius:50% 50% 50% 0;transform:rotate(45deg)"></span></div>
+        <h3 style="margin:0 0 8px;font-weight:700;font-size:18px;letter-spacing:-.01em">Ongoing care</h3>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Updates, fixes, and small improvements on a simple monthly plan. Cancel anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALCULATOR ============ -->
+  <section id="calculator" style="background:#34402A;color:#E9EAE0;margin-top:54px">
+    <div style="max-width:1240px;margin:0 auto;padding:74px 32px 84px">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:14px">
+        <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#9AA683">[ &nbsp;PRICING&nbsp; ]</span>
+        <span style="font-size:13px;color:#AEB79C">Live estimate · no email required</span>
+      </div>
+      <h2 style="margin:0 0 8px;font-weight:800;font-size:clamp(28px,4vw,52px);line-height:1.0;letter-spacing:-.025em;text-transform:uppercase">Build your estimate</h2>
+      <p style="margin:0 0 40px;max-width:520px;font-size:16px;line-height:1.55;color:#C2C6B5">Move the controls and watch the number update. This gets you within range in seconds — we confirm the exact figure on a quick call.</p>
+
+      <div style="display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:26px;align-items:start">
+
+        <!-- CONTROLS -->
+        <div style="background:#F1EFE8;color:#23271E;border-radius:22px;padding:28px">
+          <!-- project type -->
+          <div style="font-size:11px;font-weight:700;letter-spacing:.18em;color:#8A8E7C;margin-bottom:14px">01 &nbsp; PROJECT TYPE</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:30px">
+            <sc-if value="{{ refreshActive }}" hint-placeholder-val="{{ false }}"><button onClick="{{ selRefresh }}" style="text-align:left;cursor:pointer;border-radius:14px;padding:15px;border:1.5px solid #34402A;background:#34402A;display:flex;flex-direction:column;gap:3px;font-family:'Archivo',sans-serif"><span style="font-weight:800;font-size:16px;letter-spacing:-.02em;text-transform:uppercase;color:#F1EFE8">Refresh</span><span style="font-size:11.5px;line-height:1.3;color:#C7D2AC">Polish your current store</span><span style="font-size:12px;font-weight:700;margin-top:5px;color:#AAB795">from $1,200</span></button></sc-if>
+            <sc-if value="{{ refreshInactive }}" hint-placeholder-val="{{ true }}"><button onClick="{{ selRefresh }}" style="text-align:left;cursor:pointer;border-radius:14px;padding:15px;border:1.5px solid #DAD6C9;background:#FBFAF5;display:flex;flex-direction:column;gap:3px;font-family:'Archivo',sans-serif" style-hover="border-color:#B6BBA4"><span style="font-weight:800;font-size:16px;letter-spacing:-.02em;text-transform:uppercase;color:#23271E">Refresh</span><span style="font-size:11.5px;line-height:1.3;color:#6E7263">Polish your current store</span><span style="font-size:12px;font-weight:700;margin-top:5px;color:#3F4A2C">from $1,200</span></button></sc-if>
+
+            <sc-if value="{{ redesignActive }}" hint-placeholder-val="{{ true }}"><button onClick="{{ selRedesign }}" style="text-align:left;cursor:pointer;border-radius:14px;padding:15px;border:1.5px solid #34402A;background:#34402A;display:flex;flex-direction:column;gap:3px;font-family:'Archivo',sans-serif"><span style="font-weight:800;font-size:16px;letter-spacing:-.02em;text-transform:uppercase;color:#F1EFE8">Redesign</span><span style="font-size:11.5px;line-height:1.3;color:#C7D2AC">New look, same store</span><span style="font-size:12px;font-weight:700;margin-top:5px;color:#AAB795">from $2,400</span></button></sc-if>
+            <sc-if value="{{ redesignInactive }}" hint-placeholder-val="{{ false }}"><button onClick="{{ selRedesign }}" style="text-align:left;cursor:pointer;border-radius:14px;padding:15px;border:1.5px solid #DAD6C9;background:#FBFAF5;display:flex;flex-direction:column;gap:3px;font-family:'Archivo',sans-serif" style-hover="border-color:#B6BBA4"><span style="font-weight:800;font-size:16px;letter-spacing:-.02em;text-transform:uppercase;color:#23271E">Redesign</span><span style="font-size:11.5px;line-height:1.3;color:#6E7263">New look, same store</span><span style="font-size:12px;font-weight:700;margin-top:5px;color:#3F4A2C">from $2,400</span></button></sc-if>
+
+            <sc-if value="{{ newbuildActive }}" hint-placeholder-val="{{ false }}"><button onClick="{{ selNewbuild }}" style="text-align:left;cursor:pointer;border-radius:14px;padding:15px;border:1.5px solid #34402A;background:#34402A;display:flex;flex-direction:column;gap:3px;font-family:'Archivo',sans-serif"><span style="font-weight:800;font-size:16px;letter-spacing:-.02em;text-transform:uppercase;color:#F1EFE8">New build</span><span style="font-size:11.5px;line-height:1.3;color:#C7D2AC">Build from scratch</span><span style="font-size:12px;font-weight:700;margin-top:5px;color:#AAB795">from $3,800</span></button></sc-if>
+            <sc-if value="{{ newbuildInactive }}" hint-placeholder-val="{{ true }}"><button onClick="{{ selNewbuild }}" style="text-align:left;cursor:pointer;border-radius:14px;padding:15px;border:1.5px solid #DAD6C9;background:#FBFAF5;display:flex;flex-direction:column;gap:3px;font-family:'Archivo',sans-serif" style-hover="border-color:#B6BBA4"><span style="font-weight:800;font-size:16px;letter-spacing:-.02em;text-transform:uppercase;color:#23271E">New build</span><span style="font-size:11.5px;line-height:1.3;color:#6E7263">Build from scratch</span><span style="font-size:12px;font-weight:700;margin-top:5px;color:#3F4A2C">from $3,800</span></button></sc-if>
+          </div>
+
+          <!-- pages -->
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px">
+            <div style="font-size:11px;font-weight:700;letter-spacing:.18em;color:#8A8E7C">02 &nbsp; PAGES / TEMPLATES</div>
+            <div style="font-weight:800;font-size:22px;letter-spacing:-.02em;color:#34402A">{{ pagesLabel }}</div>
+          </div>
+          <input type="range" min="1" max="20" step="1" value="{{ pages }}" onChange="{{ onPages }}" />
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#9A9C8C;margin-top:7px">
+            <span>1</span><span>{{ includedNote }}</span><span>20+</span>
+          </div>
+
+          <div style="height:1px;background:#E0DBCD;margin:26px 0"></div>
+
+          <!-- add-ons -->
+          <div style="font-size:11px;font-weight:700;letter-spacing:.18em;color:#8A8E7C;margin-bottom:14px">03 &nbsp; ADD-ONS</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <!-- migration -->
+            <div onClick="{{ tglMigration }}" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;border-radius:12px;cursor:pointer;border:1.5px solid #E4E0D4;background:#FBFAF5">
+              <div><div style="font-weight:600;font-size:14.5px;color:#23271E">Migrate from another platform</div><div style="font-size:12.5px;color:#7C8071;margin-top:2px">WooCommerce, Squarespace, Wix…</div></div>
+              <div style="display:flex;align-items:center;gap:14px;flex:none"><span style="font-weight:700;font-size:13px;color:#3F4A2C">+ $900</span>
+                <sc-if value="{{ migrationOn }}" hint-placeholder-val="{{ false }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#34402A"><span style="position:absolute;top:3px;left:23px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+                <sc-if value="{{ migrationOff }}" hint-placeholder-val="{{ true }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#CFC9BB"><span style="position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+              </div>
+            </div>
+            <!-- sections -->
+            <div onClick="{{ tglSections }}" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;border-radius:12px;cursor:pointer;border:1.5px solid #E4E0D4;background:#FBFAF5">
+              <div><div style="font-weight:600;font-size:14.5px;color:#23271E">Custom interactive sections</div><div style="font-size:12.5px;color:#7C8071;margin-top:2px">Bespoke homepage / product blocks</div></div>
+              <div style="display:flex;align-items:center;gap:14px;flex:none"><span style="font-weight:700;font-size:13px;color:#3F4A2C">+ $650</span>
+                <sc-if value="{{ sectionsOn }}" hint-placeholder-val="{{ true }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#34402A"><span style="position:absolute;top:3px;left:23px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+                <sc-if value="{{ sectionsOff }}" hint-placeholder-val="{{ false }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#CFC9BB"><span style="position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+              </div>
+            </div>
+            <!-- speed -->
+            <div onClick="{{ tglSpeed }}" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;border-radius:12px;cursor:pointer;border:1.5px solid #E4E0D4;background:#FBFAF5">
+              <div><div style="font-weight:600;font-size:14.5px;color:#23271E">Speed &amp; Core Web Vitals</div><div style="font-size:12.5px;color:#7C8071;margin-top:2px">Tuning for fast load + SEO</div></div>
+              <div style="display:flex;align-items:center;gap:14px;flex:none"><span style="font-weight:700;font-size:13px;color:#3F4A2C">+ $450</span>
+                <sc-if value="{{ speedOn }}" hint-placeholder-val="{{ true }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#34402A"><span style="position:absolute;top:3px;left:23px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+                <sc-if value="{{ speedOff }}" hint-placeholder-val="{{ false }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#CFC9BB"><span style="position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+              </div>
+            </div>
+            <!-- blog -->
+            <div onClick="{{ tglBlog }}" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;border-radius:12px;cursor:pointer;border:1.5px solid #E4E0D4;background:#FBFAF5">
+              <div><div style="font-weight:600;font-size:14.5px;color:#23271E">Blog / content setup</div><div style="font-size:12.5px;color:#7C8071;margin-top:2px">Templates + first posts styled</div></div>
+              <div style="display:flex;align-items:center;gap:14px;flex:none"><span style="font-weight:700;font-size:13px;color:#3F4A2C">+ $350</span>
+                <sc-if value="{{ blogOn }}" hint-placeholder-val="{{ false }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#34402A"><span style="position:absolute;top:3px;left:23px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+                <sc-if value="{{ blogOff }}" hint-placeholder-val="{{ true }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#CFC9BB"><span style="position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+              </div>
+            </div>
+            <!-- products -->
+            <div onClick="{{ tglProducts }}" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;border-radius:12px;cursor:pointer;border:1.5px solid #E4E0D4;background:#FBFAF5">
+              <div><div style="font-weight:600;font-size:14.5px;color:#23271E">Bulk product import</div><div style="font-size:12.5px;color:#7C8071;margin-top:2px">Up to 200 products, organized</div></div>
+              <div style="display:flex;align-items:center;gap:14px;flex:none"><span style="font-weight:700;font-size:13px;color:#3F4A2C">+ $400</span>
+                <sc-if value="{{ productsOn }}" hint-placeholder-val="{{ false }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#34402A"><span style="position:absolute;top:3px;left:23px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+                <sc-if value="{{ productsOff }}" hint-placeholder-val="{{ true }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#CFC9BB"><span style="position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+              </div>
+            </div>
+            <!-- care plan -->
+            <div onClick="{{ careToggle }}" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;border-radius:12px;cursor:pointer;border:1.5px solid #E4E0D4;background:#FBFAF5">
+              <div><div style="font-weight:600;font-size:14.5px;color:#23271E">Ongoing care plan</div><div style="font-size:12.5px;color:#7C8071;margin-top:2px">Updates, backups &amp; small fixes — monthly</div></div>
+              <div style="display:flex;align-items:center;gap:14px;flex:none"><span style="font-weight:700;font-size:13px;color:#3F4A2C">+ $95 / mo</span>
+                <sc-if value="{{ careOn }}" hint-placeholder-val="{{ false }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#34402A"><span style="position:absolute;top:3px;left:23px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+                <sc-if value="{{ careOff }}" hint-placeholder-val="{{ true }}"><div style="position:relative;width:46px;height:26px;border-radius:999px;flex:none;background:#CFC9BB"><span style="position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)"></span></div></sc-if>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ESTIMATE -->
+        <div style="position:sticky;top:20px;background:#2C3522;border:1px solid rgba(241,239,232,.14);border-radius:22px;padding:28px">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.18em;color:#9AA683;margin-bottom:14px">YOUR ESTIMATE</div>
+          <div style="font-weight:800;font-size:clamp(40px,6vw,58px);line-height:1;letter-spacing:-.03em;color:#F3F2EA">{{ total }}</div>
+          <div style="font-size:13px;color:#AEB79C;margin-top:8px">Typical range <span style="color:#E9EAE0;font-weight:600">{{ range }}</span></div>
+
+          <div style="display:flex;align-items:center;gap:9px;margin-top:18px;padding:11px 14px;background:rgba(199,210,172,.12);border-radius:11px">
+            <span style="width:8px;height:8px;border-radius:999px;background:#C7D2AC"></span>
+            <span style="font-size:13.5px;color:#DDE1D1">Estimated timeline · <span style="font-weight:700;color:#F1EFE8">{{ days }}</span></span>
+          </div>
+
+          <div style="height:1px;background:rgba(241,239,232,.14);margin:22px 0"></div>
+
+          <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:8px">
+            <sc-for list="{{ items }}" as="it" hint-placeholder-count="3">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:13.5px">
+                <span style="color:#BFC4B2">{{ it.label }}</span>
+                <span style="color:#E9EAE0;font-weight:600">{{ it.val }}</span>
+              </div>
+            </sc-for>
+          </div>
+
+          <sc-if value="{{ hasMonthly }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:13.5px;padding-top:11px;margin-top:3px;border-top:1px dashed rgba(241,239,232,.18)">
+              <span style="color:#BFC4B2">Care plan</span>
+              <span style="color:#E9EAE0;font-weight:600">$95 / mo</span>
+            </div>
+          </sc-if>
+
+          <a href="Book a Call.dc.html" style="text-decoration:none;display:flex;align-items:center;justify-content:center;gap:9px;background:#F1EFE8;color:#23271E;font-weight:700;font-size:15.5px;border-radius:999px;padding:16px;margin-top:24px;white-space:nowrap" style-hover="background:#fff">Book this estimate <span style="font-size:17px">→</span></a>
+          <div style="font-size:12px;color:#8E9379;text-align:center;margin-top:12px;line-height:1.5">Final quote confirmed on a 15-min call.<br>Fixed price, in writing — no surprises.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT'S INCLUDED ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:74px 32px 20px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:48px;align-items:start">
+      <div>
+        <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;EVERY PROJECT&nbsp; ]</span>
+        <h2 style="margin:16px 0 14px;font-weight:800;font-size:clamp(26px,3.4vw,44px);line-height:1.02;letter-spacing:-.025em;text-transform:uppercase">What’s always included</h2>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#5C6052;max-width:340px">No upsells on the basics. Every Shopify project ships with the things a good store needs — baked into the price above.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div style="display:flex;gap:13px;background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:14px;padding:18px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span><div><div style="font-weight:700;font-size:14.5px">Mobile-first &amp; responsive</div><div style="font-size:13px;color:#6E7263;margin-top:3px">Looks right on every device.</div></div></div>
+        <div style="display:flex;gap:13px;background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:14px;padding:18px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span><div><div style="font-weight:700;font-size:14.5px">On-page SEO basics</div><div style="font-size:13px;color:#6E7263;margin-top:3px">Titles, meta, structure, sitemap.</div></div></div>
+        <div style="display:flex;gap:13px;background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:14px;padding:18px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span><div><div style="font-weight:700;font-size:14.5px">Speed-optimized build</div><div style="font-size:13px;color:#6E7263;margin-top:3px">Lean theme &amp; compressed images.</div></div></div>
+        <div style="display:flex;gap:13px;background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:14px;padding:18px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span><div><div style="font-weight:700;font-size:14.5px">Training + walkthrough</div><div style="font-size:13px;color:#6E7263;margin-top:3px">A live session &amp; a recorded Loom.</div></div></div>
+        <div style="display:flex;gap:13px;background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:14px;padding:18px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span><div><div style="font-weight:700;font-size:14.5px">Clean handoff</div><div style="font-size:13px;color:#6E7263;margin-top:3px">You own everything, fully.</div></div></div>
+        <div style="display:flex;gap:13px;background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:14px;padding:18px"><span style="flex:none;width:24px;height:24px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:13px">✓</span><div><div style="font-weight:700;font-size:14.5px">14 days post-launch support</div><div style="font-size:13px;color:#6E7263;margin-top:3px">I fix anything that comes up.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:64px 32px 20px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:30px">
+      <h2 style="margin:0;font-weight:800;font-size:clamp(26px,3.4vw,44px);line-height:1.0;letter-spacing:-.025em;text-transform:uppercase">Questions, answered</h2>
+      <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;FAQ&nbsp; ]</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px 40px">
+      <div style="border-top:1.5px solid #DAD6C9;padding-top:18px"><h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">Will you work with my existing theme?</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#6E7263">Usually, yes. If it’s a solid base I’ll build on it; if it’s holding you back, I’ll tell you straight and price the alternative.</p></div>
+      <div style="border-top:1.5px solid #DAD6C9;padding-top:18px"><h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">Can you migrate my products?</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#6E7263">Yes — from WooCommerce, Squarespace, Wix, BigCommerce and more, with redirects so you don’t lose rankings. Add it in the calculator.</p></div>
+      <div style="border-top:1.5px solid #DAD6C9;padding-top:18px"><h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">Do you handle apps and checkout?</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#6E7263">I set up and configure the apps you need, and customize checkout where your plan allows. I’ll steer you away from apps you don’t.</p></div>
+      <div style="border-top:1.5px solid #DAD6C9;padding-top:18px"><h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">How long does it take?</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#6E7263">A refresh is often days; a full build runs two to three weeks. The calculator gives you a realistic timeline as you go.</p></div>
+      <div style="border-top:1.5px solid #DAD6C9;padding-top:18px"><h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">Do you offer ongoing maintenance?</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#6E7263">Yes, on a simple monthly plan — updates, backups, and small changes. No long contracts; cancel anytime.</p></div>
+      <div style="border-top:1.5px solid #DAD6C9;padding-top:18px"><h3 style="margin:0 0 8px;font-weight:700;font-size:16.5px">What if I’m not on Shopify yet?</h3><p style="margin:0;font-size:14px;line-height:1.6;color:#6E7263">No problem — I’ll help you decide if it’s the right fit, set up the store, and migrate your content. That’s the migration add-on.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <section style="background:#DCE3D7;margin-top:64px">
+    <div style="max-width:980px;margin:0 auto;padding:66px 32px;text-align:center">
+      <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#7D8A6E">[ &nbsp;SHOPIFY CLIENT&nbsp; ]</span>
+      <p style="margin:24px 0 28px;font-weight:600;font-size:clamp(21px,2.7vw,32px);line-height:1.34;letter-spacing:-.015em;color:#2B3324">“Our old store was <span style="color:#8C977A">slow and clunky</span>. Derrick migrated us to Shopify, sped everything up, and our mobile sales <span style="color:#8C977A">jumped within the first month.</span>”</p>
+      <div style="font-weight:700;font-size:14px;color:#2B3324">Priya Anand</div>
+      <div style="font-size:12.5px;color:#69735C;margin-top:2px">Founder, Harbor Goods</div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="book" style="max-width:1240px;margin:0 auto;padding:64px 32px 36px">
+    <div style="position:relative;border-radius:24px;overflow:hidden;padding:clamp(44px,6vw,84px) clamp(32px,5vw,68px);background:linear-gradient(150deg,#3c4a30,#222a1c)">
+      <div style="position:absolute;inset:0;background:repeating-linear-gradient(125deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.05) 2px,transparent 2px,transparent 24px)"></div>
+      <div style="position:absolute;inset:0;background:radial-gradient(90% 120% at 85% 20%,rgba(150,170,120,.3),transparent 60%)"></div>
+      <div style="position:relative;max-width:660px">
+        <h2 style="margin:0;font-weight:800;font-size:clamp(30px,4.6vw,58px);line-height:.98;letter-spacing:-.03em;text-transform:uppercase;color:#F3F2EA">Got your number?<br><span style="color:#AAB795">Let’s make it real.</span></h2>
+        <p style="margin:20px 0 32px;max-width:440px;font-size:16.5px;line-height:1.55;color:#D9DBCD;font-weight:500">Book a 15-minute call. I’ll confirm the scope, lock the price in writing, and give you a start date.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+          <a href="Book a Call.dc.html" style="text-decoration:none;background:#F1EFE8;color:#23271E;font-weight:600;font-size:16px;border-radius:999px;padding:17px 32px;display:inline-flex;align-items:center;gap:9px;white-space:nowrap" style-hover="background:#fff">Book a call <span style="font-size:18px">→</span></a>
+          <a href="Contact.dc.html" style="text-decoration:none;color:#E3E4D8;font-weight:600;font-size:15px;border-bottom:1.5px solid rgba(241,239,232,.4);padding-bottom:3px">or send a message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#23271E;color:#C2C6B5">
+    <div style="max-width:1240px;margin:0 auto;padding:60px 32px 30px">
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px 32px;padding-bottom:46px;border-bottom:1px solid rgba(241,239,232,.12)">
+        <div style="max-width:300px">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px"><span style="width:34px;height:34px;border-radius:9px;background:#F1EFE8;color:#23271E;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span><span style="font-weight:700;font-size:16px;color:#F1EFE8">Derrick Valentine</span></div>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#9DA28F">One developer who builds, fixes, and looks after websites — on the platform you already use.</p>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">SERVICES</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="#" style="text-decoration:none;color:#F1EFE8;font-size:14px;font-weight:600">Shopify</a>
+            <a href="Webflow Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Webflow</a>
+            <a href="WordPress Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">WordPress</a>
+            <a href="Squarespace Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Squarespace</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">COMPANY</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Work.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Work</a>
+            <a href="Process.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Process</a>
+            <a href="About.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">About</a>
+            <a href="Contact.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">CLIENTS</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Client login</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Upload content</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Project status</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Invoices</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:12.5px;color:#7E836F">
+        <div>© 2026 Derrick Valentine. All rights reserved.</div>
+        <div style="display:flex;gap:22px">
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">Upwork</a>
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">LinkedIn</a>
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    type: 'redesign',
+    pages: 6,
+    addons: { migration: false, sections: true, speed: true, blog: false, products: false },
+    care: false,
+  };
+
+  TYPES = {
+    refresh:  { label: 'Refresh',  from: 1200, base: 1200, perPage: 120, included: 3, days: 5,  blurb: 'Polish your current store' },
+    redesign: { label: 'Redesign', from: 2400, base: 2400, perPage: 180, included: 5, days: 10, blurb: 'New look, same store' },
+    newbuild: { label: 'New build',from: 3800, base: 3800, perPage: 240, included: 6, days: 18, blurb: 'Build from scratch' },
+  };
+
+  ADDONS = [
+    { key: 'migration', label: 'Migrate from another platform', sub: 'WooCommerce, Squarespace, Wix…', price: 900, days: 4 },
+    { key: 'sections',  label: 'Custom interactive sections',   sub: 'Bespoke homepage / product blocks', price: 650, days: 3 },
+    { key: 'speed',     label: 'Speed & Core Web Vitals',       sub: 'Tuning for fast load + SEO', price: 450, days: 2 },
+    { key: 'blog',      label: 'Blog / content setup',          sub: 'Templates + first posts styled', price: 350, days: 1 },
+    { key: 'products',  label: 'Bulk product import',           sub: 'Up to 200 products, organized', price: 400, days: 2 },
+  ];
+
+  fmt(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+
+  trackStyle(on) {
+    return { position: 'relative', width: '46px', height: '26px', borderRadius: '999px', flex: 'none', background: on ? '#34402A' : '#CFC9BB', transition: '.15s' };
+  }
+  knobStyle(on) {
+    return { position: 'absolute', top: '3px', left: on ? '23px' : '3px', width: '20px', height: '20px', borderRadius: '999px', background: '#fff', transition: '.15s', boxShadow: '0 1px 3px rgba(0,0,0,.25)' };
+  }
+  rowStyle(on) {
+    return { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', padding: '14px 16px', borderRadius: '12px', cursor: 'pointer', transition: '.15s', border: on ? '1.5px solid #B7C29C' : '1.5px solid #E4E0D4', background: on ? '#EEF1E6' : '#FBFAF5' };
+  }
+
+  renderVals() {
+    const s = this.state;
+    const t = this.TYPES[s.type];
+    const extraPages = Math.max(0, s.pages - t.included);
+    let total = t.base + extraPages * t.perPage;
+    let days = t.days + extraPages * 0.6;
+    this.ADDONS.forEach(a => { if (s.addons[a.key]) { total += a.price; days += a.days; } });
+    days = Math.round(days);
+
+    const low = Math.round(total * 0.9 / 50) * 50;
+    const high = Math.round(total * 1.15 / 50) * 50;
+
+    const sel = (k) => () => this.setState({ type: k });
+    const tgl = (k) => () => this.setState(st => ({ addons: { ...st.addons, [k]: !st.addons[k] } }));
+
+    const items = [{ label: t.label + ' base', val: this.fmt(t.base) }];
+    if (extraPages > 0) items.push({ label: '+ ' + extraPages + ' extra page' + (extraPages > 1 ? 's' : ''), val: this.fmt(extraPages * t.perPage) });
+    this.ADDONS.forEach(a => { if (s.addons[a.key]) items.push({ label: a.label, val: this.fmt(a.price) }); });
+
+    return {
+      items,
+      // project type
+      refreshActive: s.type === 'refresh', refreshInactive: s.type !== 'refresh', selRefresh: sel('refresh'),
+      redesignActive: s.type === 'redesign', redesignInactive: s.type !== 'redesign', selRedesign: sel('redesign'),
+      newbuildActive: s.type === 'newbuild', newbuildInactive: s.type !== 'newbuild', selNewbuild: sel('newbuild'),
+      // pages
+      pages: s.pages,
+      pagesLabel: s.pages + (s.pages === 20 ? '+' : ''),
+      onPages: (e) => this.setState({ pages: parseInt(e.target.value, 10) }),
+      includedNote: t.included + ' incl. · then ' + this.fmt(t.perPage) + ' ea.',
+      // add-ons
+      migrationOn: !!s.addons.migration, migrationOff: !s.addons.migration, tglMigration: tgl('migration'),
+      sectionsOn: !!s.addons.sections, sectionsOff: !s.addons.sections, tglSections: tgl('sections'),
+      speedOn: !!s.addons.speed, speedOff: !s.addons.speed, tglSpeed: tgl('speed'),
+      blogOn: !!s.addons.blog, blogOff: !s.addons.blog, tglBlog: tgl('blog'),
+      productsOn: !!s.addons.products, productsOff: !s.addons.products, tglProducts: tgl('products'),
+      careOn: s.care, careOff: !s.care, careToggle: () => this.setState(st => ({ care: !st.care })),
+      // estimate
+      total: this.fmt(total),
+      range: this.fmt(low) + ' – ' + this.fmt(high),
+      days: '~' + days + ' business days',
+      hasMonthly: s.care,
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#F1EFE8}
+  ::selection{background:#34402A;color:#F1EFE8}
+  .pdd{position:relative;padding-bottom:18px;margin-bottom:-18px}
+  .pdd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(2px);min-width:248px;background:#FBFAF7;border:1.5px solid #E2DFD4;border-radius:14px;padding:8px;box-shadow:0 20px 44px -22px rgba(40,38,32,.5);opacity:0;visibility:hidden;transition:opacity .16s ease,transform .16s ease;z-index:60}
+  .pdd:hover .pdd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(8px)}
+  input::placeholder,textarea::placeholder{color:#A9A89F}
+</style>
+</helmet>
+
+<div data-screen-label="Contact" style="background:#F1EFE8;font-family:'Archivo',sans-serif;color:#23271E;-webkit-font-smoothing:antialiased;overflow-x:hidden">
+
+  <!-- ============ NAV ============ -->
+  <header style="position:relative;z-index:20;max-width:1240px;margin:0 auto;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Homepage.dc.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#23271E">
+      <span style="width:34px;height:34px;border-radius:9px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span>
+      <span style="font-weight:700;font-size:16px;letter-spacing:-.01em">Derrick Valentine</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:30px">
+      <a href="Work.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Work</a>
+      <a href="Services.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Services</a>
+      <div class="pdd"><span style="display:flex;align-items:center;gap:5px;color:#3A3E33;font-size:14.5px;font-weight:500;cursor:pointer">Pricing <span style="font-size:9px;position:relative;top:1px">▼</span></span>
+        <div class="pdd-menu">
+          <a href="Shopify Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Shopify <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,200</span></a>
+          <a href="Webflow Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Webflow <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,800</span></a>
+          <a href="WordPress Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">WordPress <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $900</span></a>
+          <a href="Squarespace Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Squarespace <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $750</span></a>
+          <div style="border-top:1px solid #EAE7DC;margin:7px 4px"></div>
+          <a href="Services.dc.html" style="display:block;text-decoration:none;color:#5C6052;font-size:12.5px;font-weight:600;padding:9px 12px;border-radius:9px" style-hover="background:#EFEEE7">All services &amp; pricing →</a>
+        </div>
+      </div>
+      <a href="Process.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Process</a>
+      <a href="About.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">About</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a href="Client Portal.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14px;font-weight:500;border:1.5px solid #CFC9BB;border-radius:999px;padding:9px 16px" style-hover="border-color:#34402A">Client login</a>
+      <a href="Book a Call.dc.html" style="text-decoration:none;background:#34402A;color:#F1EFE8;font-size:14px;font-weight:600;border-radius:999px;padding:11px 20px;white-space:nowrap" style-hover="background:#23271E">Book a call</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:30px 32px 10px">
+    <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;CONTACT&nbsp; ]</span>
+    <div style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:end;margin-top:18px">
+      <h1 style="margin:0;font-weight:800;font-size:clamp(40px,5.8vw,78px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase">Let’s<br><span style="color:#AAB293">talk.</span></h1>
+      <p style="margin:0;font-size:16.5px;line-height:1.6;color:#5C6052;font-weight:500">Tell me what you need and I’ll get back to you — usually within a few hours. No bots, no sales team. Just me.</p>
+    </div>
+  </section>
+
+  <!-- ============ BODY ============ -->
+  <section style="max-width:1240px;margin:0 auto;padding:44px 32px 30px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:28px;align-items:start">
+
+      <!-- LEFT: direct contact -->
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <a href="Book a Call.dc.html" style="text-decoration:none;color:#F1EFE8;border-radius:18px;padding:24px;background:linear-gradient(150deg,#3c4a30,#222a1c);display:block;position:relative;overflow:hidden" style-hover="filter:brightness(1.08)">
+          <div style="position:absolute;inset:0;background:repeating-linear-gradient(125deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.05) 2px,transparent 2px,transparent 22px)"></div>
+          <div style="position:relative">
+            <div style="font-size:11px;font-weight:700;letter-spacing:.18em;color:#AAB795;margin-bottom:10px">FASTEST WAY</div>
+            <div style="font-weight:800;font-size:22px;letter-spacing:-.02em;margin-bottom:7px">Book a 15-min call</div>
+            <p style="margin:0 0 16px;font-size:14px;line-height:1.55;color:#D9DBCD">Pick a time that works. We’ll talk platform, goals, and a real number.</p>
+            <span style="display:inline-flex;align-items:center;gap:8px;background:#F1EFE8;color:#23271E;font-weight:600;font-size:14px;border-radius:999px;padding:11px 20px">Choose a time →</span>
+          </div>
+        </a>
+
+        <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:18px">
+          <div style="display:flex;align-items:flex-start;gap:14px">
+            <div style="flex:none;width:42px;height:42px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center"><span style="width:16px;height:12px;border:2px solid #34402A;border-radius:3px"></span></div>
+            <div><div style="font-size:12px;font-weight:700;letter-spacing:.12em;color:#9A9C8C;margin-bottom:4px">EMAIL</div><a href="mailto:hello@digitaldog.io" style="text-decoration:none;color:#23271E;font-weight:600;font-size:15px" style-hover="color:#34402A">hello@digitaldog.io</a></div>
+          </div>
+          <div style="height:1px;background:#EAE7DC"></div>
+          <div style="display:flex;align-items:flex-start;gap:14px">
+            <div style="flex:none;width:42px;height:42px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center"><span style="width:14px;height:14px;border:2px solid #34402A;border-radius:999px"></span></div>
+            <div><div style="font-size:12px;font-weight:700;letter-spacing:.12em;color:#9A9C8C;margin-bottom:4px">RESPONSE TIME</div><div style="font-weight:600;font-size:15px;color:#23271E">A few hours, most days</div></div>
+          </div>
+          <div style="height:1px;background:#EAE7DC"></div>
+          <div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:.12em;color:#9A9C8C;margin-bottom:11px">ALSO FIND ME</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <a href="#" style="text-decoration:none;border:1.5px solid #DAD6C9;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;color:#3A3E33" style-hover="border-color:#34402A">Upwork</a>
+              <a href="#" style="text-decoration:none;border:1.5px solid #DAD6C9;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;color:#3A3E33" style-hover="border-color:#34402A">LinkedIn</a>
+              <a href="#" style="text-decoration:none;border:1.5px solid #DAD6C9;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;color:#3A3E33" style-hover="border-color:#34402A">Digital Dog</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#DCE3D7;border-radius:18px;padding:20px 22px">
+          <div style="font-weight:700;font-size:15px;color:#2B3324;margin-bottom:5px">Already a client?</div>
+          <p style="margin:0 0 12px;font-size:13.5px;line-height:1.5;color:#4A5340">Log in to upload content or check on your project.</p>
+          <a href="Client Portal.dc.html" style="text-decoration:none;color:#2B3324;font-weight:700;font-size:13.5px;border-bottom:1.5px solid #34402A;padding-bottom:3px">Go to client login →</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: form -->
+      <div style="background:#FBFAF5;border:1.5px solid #E4E0D4;border-radius:22px;padding:clamp(24px,3vw,36px)">
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <h2 style="margin:0 0 6px;font-weight:800;font-size:24px;letter-spacing:-.02em;text-transform:uppercase">Send a message</h2>
+            <p style="margin:0 0 24px;font-size:14.5px;color:#6E7263;line-height:1.55">A few details is all I need to give you a useful first reply.</p>
+            <form onSubmit="{{ submit }}">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+                <div>
+                  <label style="display:block;font-size:11px;font-weight:700;letter-spacing:.1em;color:#7C8071;margin-bottom:8px">YOUR NAME</label>
+                  <input type="text" value="{{ name }}" onChange="{{ onName }}" placeholder="Jane Smith" style="width:100%;background:#fff;border:1.5px solid #DAD6C9;border-radius:11px;padding:13px 15px;font-family:inherit;font-size:14.5px;color:#23271E;outline:none" style-focus="border-color:#34402A" />
+                </div>
+                <div>
+                  <label style="display:block;font-size:11px;font-weight:700;letter-spacing:.1em;color:#7C8071;margin-bottom:8px">EMAIL</label>
+                  <input type="email" value="{{ email }}" onChange="{{ onEmail }}" placeholder="jane@business.com" style="width:100%;background:#fff;border:1.5px solid #DAD6C9;border-radius:11px;padding:13px 15px;font-family:inherit;font-size:14.5px;color:#23271E;outline:none" style-focus="border-color:#34402A" />
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+                <div>
+                  <label style="display:block;font-size:11px;font-weight:700;letter-spacing:.1em;color:#7C8071;margin-bottom:8px">BUSINESS / WEBSITE <span style="color:#B4B2A9;font-weight:500">· optional</span></label>
+                  <input type="text" value="{{ business }}" onChange="{{ onBusiness }}" placeholder="yoursite.com" style="width:100%;background:#fff;border:1.5px solid #DAD6C9;border-radius:11px;padding:13px 15px;font-family:inherit;font-size:14.5px;color:#23271E;outline:none" style-focus="border-color:#34402A" />
+                </div>
+                <div>
+                  <label style="display:block;font-size:11px;font-weight:700;letter-spacing:.1em;color:#7C8071;margin-bottom:8px">PLATFORM</label>
+                  <select value="{{ platform }}" onChange="{{ onPlatform }}" style="width:100%;background:#fff;border:1.5px solid #DAD6C9;border-radius:11px;padding:13px 15px;font-family:inherit;font-size:14.5px;color:#23271E;outline:none;cursor:pointer;appearance:none;background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22><path d=%22M2 4l4 4 4-4%22 stroke=%22%2334402A%22 stroke-width=%221.5%22 fill=%22none%22/></svg>');background-repeat:no-repeat;background-position:right 15px center" style-focus="border-color:#34402A">
+                    <option value="">Not sure yet</option>
+                    <option value="Shopify">Shopify</option>
+                    <option value="Webflow">Webflow</option>
+                    <option value="WordPress">WordPress</option>
+                    <option value="Squarespace">Squarespace</option>
+                    <option value="Other">Something else</option>
+                  </select>
+                </div>
+              </div>
+              <div style="margin-bottom:22px">
+                <label style="display:block;font-size:11px;font-weight:700;letter-spacing:.1em;color:#7C8071;margin-bottom:8px">WHAT DO YOU NEED?</label>
+                <textarea value="{{ message }}" onChange="{{ onMessage }}" rows="5" placeholder="A new site, a refresh, a rescue, a quick question — whatever it is, tell me here." style="width:100%;background:#fff;border:1.5px solid #DAD6C9;border-radius:11px;padding:13px 15px;font-family:inherit;font-size:14.5px;color:#23271E;outline:none;resize:vertical;line-height:1.5" style-focus="border-color:#34402A"></textarea>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+                <button type="submit" style="background:#34402A;color:#F1EFE8;border:none;border-radius:999px;padding:15px 30px;font-family:inherit;font-weight:600;font-size:15.5px;cursor:pointer;display:inline-flex;align-items:center;gap:9px;white-space:nowrap" style-hover="background:#23271E">Send message <span style="font-size:17px">→</span></button>
+                <span style="font-size:12.5px;color:#9A9C8C;max-width:240px;line-height:1.5">Prefer to talk? <a href="Book a Call.dc.html" style="color:#34402A;font-weight:600;text-decoration:underline;text-underline-offset:2px">Book a call</a> instead.</span>
+              </div>
+            </form>
+          </div>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="text-align:center;padding:32px 12px">
+            <div style="width:64px;height:64px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 22px">✓</div>
+            <h2 style="margin:0 0 10px;font-weight:800;font-size:28px;letter-spacing:-.02em;text-transform:uppercase">{{ greeting }}</h2>
+            <p style="margin:0 auto 26px;max-width:420px;font-size:15.5px;line-height:1.6;color:#5C6052">Your message is on its way. I’ll get back to you within a few hours — usually faster. If it’s urgent, just book a call.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+              <a href="Book a Call.dc.html" style="text-decoration:none;background:#34402A;color:#F1EFE8;font-weight:600;font-size:15px;border-radius:999px;padding:14px 26px;white-space:nowrap" style-hover="background:#23271E">Book a call</a>
+              <button onClick="{{ reset }}" style="background:transparent;border:1.5px solid #34402A;color:#23271E;border-radius:999px;padding:14px 24px;font-family:inherit;font-weight:600;font-size:15px;cursor:pointer;white-space:nowrap" style-hover="background:#E7E6DA">Send another</button>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#23271E;color:#C2C6B5;margin-top:40px">
+    <div style="max-width:1240px;margin:0 auto;padding:60px 32px 30px">
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px 32px;padding-bottom:46px;border-bottom:1px solid rgba(241,239,232,.12)">
+        <div style="max-width:300px">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px"><span style="width:34px;height:34px;border-radius:9px;background:#F1EFE8;color:#23271E;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span><span style="font-weight:700;font-size:16px;color:#F1EFE8">Derrick Valentine</span></div>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#9DA28F">One developer who builds, fixes, and looks after websites — on the platform you already use.</p>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">SERVICES</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Shopify Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Shopify</a>
+            <a href="Webflow Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Webflow</a>
+            <a href="WordPress Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">WordPress</a>
+            <a href="Squarespace Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Squarespace</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">COMPANY</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Work.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Work</a>
+            <a href="Process.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Process</a>
+            <a href="About.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">About</a>
+            <a href="Contact.dc.html" style="text-decoration:none;color:#F1EFE8;font-size:14px;font-weight:600" style-hover="color:#F1EFE8">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">CLIENTS</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Client login</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Upload content</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Project status</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Invoices</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:12.5px;color:#7E836F">
+        <div>© 2026 Derrick Valentine. All rights reserved.</div>
+        <div style="display:flex;gap:22px">
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">Upwork</a>
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">LinkedIn</a>
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { name: '', email: '', business: '', platform: '', message: '', submitted: false };
+  renderVals() {
+    const s = this.state;
+    return {
+      name: s.name, email: s.email, business: s.business, platform: s.platform, message: s.message,
+      onName: (e) => this.setState({ name: e.target.value }),
+      onEmail: (e) => this.setState({ email: e.target.value }),
+      onBusiness: (e) => this.setState({ business: e.target.value }),
+      onPlatform: (e) => this.setState({ platform: e.target.value }),
+      onMessage: (e) => this.setState({ message: e.target.value }),
+      submit: (e) => { e.preventDefault(); this.setState({ submitted: true }); },
+      reset: () => this.setState({ name: '', email: '', business: '', platform: '', message: '', submitted: false }),
+      submitted: s.submitted,
+      notSubmitted: !s.submitted,
+      greeting: s.name ? ('Thanks, ' + s.name.trim().split(' ')[0] + '!') : 'Thanks!',
+    };
+  }
+}
+</script>
+</body>
+</html>

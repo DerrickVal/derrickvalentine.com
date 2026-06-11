@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Mono:wght@400;500&family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  @keyframes wfpulse{0%,100%{opacity:.5}50%{opacity:.9}}
+</style>
+</helmet>
+
+<div style="background:#E7E5E0;min-height:100vh;font-family:'DM Mono',monospace;color:#2B2B28;padding:38px 26px 90px">
+  <div style="max-width:1360px;margin:0 auto">
+
+    <!-- MASTHEAD -->
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap;margin-bottom:22px">
+      <div style="max-width:640px">
+        <div style="font:500 12px/1 'DM Mono',monospace;letter-spacing:.24em;color:#8C8A82">DERRICKVALENTINE.COM</div>
+        <h1 style="font-family:'Caveat',cursive;font-weight:700;font-size:48px;line-height:1;margin:10px 0 0">Homepage — lo-fi skeletons</h1>
+        <p style="margin:12px 0 0;font-size:13px;line-height:1.65;color:#6E6C64">Three overall layout <em>directions</em> for the same content. Same building blocks — different order, emphasis, and path to action. These are structure sketches, not visuals. Pick one and I'll take it to hi-fi in the LeafLife look.</p>
+      </div>
+      <!-- LEGEND -->
+      <div style="border:1.5px dashed #BEBDB5;border-radius:10px;padding:14px 16px;background:#EEEDE8">
+        <div style="font:500 10px/1 'DM Mono',monospace;letter-spacing:.2em;color:#A7A59C;margin-bottom:11px">LEGEND</div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;align-items:center;gap:9px;font-size:11px;color:#6E6C64"><span style="width:30px;height:16px;border-radius:3px;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#eceae4,#eceae4 5px,#e0ddd5 5px,#e0ddd5 10px)"></span>Video / image</div>
+          <div style="display:flex;align-items:center;gap:9px;font-size:11px;color:#6E6C64"><span style="display:inline-flex;align-items:center;justify-content:center;height:16px;padding:0 9px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;font-size:9px">CTA</span>Primary action</div>
+          <div style="display:flex;align-items:center;gap:9px;font-size:11px;color:#6E6C64"><span style="height:14px;padding:0 9px;border-radius:999px;border:1.5px solid #c4c3bd;display:inline-flex;align-items:center;font-size:9px;color:#8C8A82">chip</span>Framework / filter</div>
+          <div style="display:flex;align-items:center;gap:9px;font-size:11px;color:#6E6C64"><span style="display:inline-flex;flex-direction:column;gap:3px;width:30px"><span style="height:5px;border-radius:3px;background:#cfceC7"></span><span style="height:5px;width:70%;border-radius:3px;background:#dcdbd4"></span></span>Copy</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:26px">
+      <button onClick="{{ pickA }}" style="text-align:left;cursor:pointer;font-family:'DM Mono',monospace;border:1.5px solid #C7C6BF;border-radius:11px;padding:14px 16px;background:#FBFAF7" style-hover="border-color:#2C2C2A">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <span style="font:500 11px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C">DIRECTION A</span>
+          <sc-if value="{{ showA }}" hint-placeholder-val="{{ true }}"><span style="width:9px;height:9px;border-radius:999px;background:#6E7A60"></span></sc-if>
+        </div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:19px;letter-spacing:-.01em;margin-top:9px">Fast Lane</div>
+        <div style="font-size:11px;color:#8C8A82;margin-top:4px">Speed to price · conversion-first</div>
+      </button>
+      <button onClick="{{ pickB }}" style="text-align:left;cursor:pointer;font-family:'DM Mono',monospace;border:1.5px solid #C7C6BF;border-radius:11px;padding:14px 16px;background:#FBFAF7" style-hover="border-color:#2C2C2A">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <span style="font:500 11px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C">DIRECTION B</span>
+          <sc-if value="{{ showB }}" hint-placeholder-val="{{ false }}"><span style="width:9px;height:9px;border-radius:999px;background:#6E7A60"></span></sc-if>
+        </div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:19px;letter-spacing:-.01em;margin-top:9px">Editorial Story</div>
+        <div style="font-size:11px;color:#8C8A82;margin-top:4px">LeafLife-faithful · brand-forward</div>
+      </button>
+      <button onClick="{{ pickC }}" style="text-align:left;cursor:pointer;font-family:'DM Mono',monospace;border:1.5px solid #C7C6BF;border-radius:11px;padding:14px 16px;background:#FBFAF7" style-hover="border-color:#2C2C2A">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <span style="font:500 11px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C">DIRECTION C</span>
+          <sc-if value="{{ showC }}" hint-placeholder-val="{{ false }}"><span style="width:9px;height:9px;border-radius:999px;background:#6E7A60"></span></sc-if>
+        </div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:19px;letter-spacing:-.01em;margin-top:9px">Filter-First</div>
+        <div style="font-size:11px;color:#8C8A82;margin-top:4px">Portfolio-led · split hero</div>
+      </button>
+    </div>
+
+    <!-- ============ DIRECTION A ============ -->
+    <sc-if value="{{ showA }}" hint-placeholder-val="{{ true }}">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start">
+
+      <!-- BROWSER FRAME -->
+      <div style="border:1.5px solid #C7C6BF;border-radius:13px;overflow:hidden;background:#FBFAF7;box-shadow:0 22px 48px -28px rgba(40,38,32,.4)">
+        <div style="display:flex;align-items:center;gap:8px;padding:11px 14px;border-bottom:1.5px solid #E2E0DA;background:#F2F1EC">
+          <span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span>
+          <span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span>
+          <span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span>
+          <div style="flex:1;margin-left:8px;height:22px;border-radius:999px;background:#E7E5DF;display:flex;align-items:center;padding:0 12px;font-size:11px;color:#A7A59C">derrickvalentine.com</div>
+        </div>
+
+        <!-- 1 HERO -->
+        <section style="padding:18px 18px 22px">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:13px">① HERO · FULL-BLEED VIDEO</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:13px">
+            <div style="display:flex;align-items:center;gap:8px"><span style="width:26px;height:26px;border-radius:7px;background:#2C2C2A;color:#f2f1ec;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500">DV</span></div>
+            <div style="display:flex;gap:16px">
+              <span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span>
+              <span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span>
+              <span style="height:7px;width:42px;border-radius:4px;background:#6E7A60"></span>
+              <span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span>
+            </div>
+            <div style="height:26px;padding:0 12px;border:1.5px solid #c4c3bd;border-radius:999px;display:flex;align-items:center;font-size:10px;color:#8C8A82">Client login</div>
+          </div>
+          <div style="position:relative;border-radius:11px;overflow:hidden;min-height:288px;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 11px,#e0ded6 11px,#e0ded6 22px);display:flex;flex-direction:column;justify-content:flex-end;padding:22px">
+            <div style="position:absolute;top:14px;left:14px;font:500 10px/1 'DM Mono';letter-spacing:.14em;color:#8a887f;background:#f2f1ec;border-radius:5px;padding:5px 8px;animation:wfpulse 2.4s ease-in-out infinite">▶ VIDEO BG · autoplay muted loop</div>
+            <div style="position:absolute;top:14px;right:14px;display:flex;align-items:center;gap:7px;background:#f2f1ec;border-radius:8px;padding:7px 11px;font-size:10px;color:#6E6C64">500+ sites · 4.9★</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px 10px;margin-bottom:11px;max-width:430px">
+              <div style="height:26px;width:150px;border-radius:6px;background:#A9A89F"></div>
+              <div style="height:26px;width:120px;border-radius:6px;background:#cdccc4"></div>
+              <div style="height:26px;width:190px;border-radius:6px;background:#A9A89F"></div>
+              <div style="height:26px;width:96px;border-radius:6px;background:#cdccc4"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;max-width:360px;margin-bottom:16px">
+              <span style="height:7px;border-radius:4px;background:#cbcac2"></span>
+              <span style="height:7px;width:78%;border-radius:4px;background:#cbcac2"></span>
+            </div>
+            <div style="display:flex;gap:10px;margin-bottom:15px">
+              <div style="height:38px;padding:0 18px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;display:flex;align-items:center;font-size:12px;letter-spacing:.04em">Book a call &rarr;</div>
+              <div style="height:38px;padding:0 18px;border-radius:999px;border:1.5px solid #9a988f;color:#3a3a36;display:flex;align-items:center;font-size:12px;background:#f2f1ec">See pricing</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+              <span style="font-size:10px;color:#6E6C64;letter-spacing:.08em">WORKS ON:</span>
+              <sc-for list="{{ frameworks }}" as="fw" hint-placeholder-count="6">
+                <span style="height:24px;padding:0 11px;border-radius:999px;background:#f2f1ec;border:1px solid #cfcdc4;display:flex;align-items:center;font-size:10px;color:#4a4a45">{{ fw }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 PRICING TEASER -->
+        <section style="padding:22px 18px;border-top:1.5px solid #ECEAE4;background:#F4F3EE">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px">
+            <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9">② PRICING TEASER · answers "how much?" in seconds</div>
+            <span style="font-size:10px;color:#8C8A82">each card &rarr; calculator</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+            <sc-for list="{{ priceCards }}" as="pc" hint-placeholder-count="4">
+              <div style="border:1.5px solid #C7C6BF;border-radius:9px;padding:14px;background:#fff">
+                <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;color:#2C2C2A">{{ pc.t }}</div>
+                <div style="font-size:11px;color:#9A988F;margin:5px 0 12px;min-height:26px">{{ pc.d }}</div>
+                <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;color:#6E7A60;white-space:nowrap">{{ pc.p }}</div>
+                <div style="margin-top:11px;height:28px;border-radius:7px;background:#EFEEE8;border:1px dashed #c9c8c0;display:flex;align-items:center;justify-content:center;font-size:10px;color:#9A988F">Calculate &rarr;</div>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+
+        <!-- 3 BIO -->
+        <section style="padding:24px 18px;border-top:1.5px solid #ECEAE4">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:14px">③ WHO'S DERRICK · short personal proof</div>
+          <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;align-items:center">
+            <div style="aspect-ratio:1;border-radius:10px;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 9px,#e0ded6 9px,#e0ded6 18px);display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.12em;color:#9A988F">PHOTO</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <span style="height:14px;width:55%;border-radius:5px;background:#bdbcb4"></span>
+              <span style="height:7px;border-radius:4px;background:#d8d7d1"></span>
+              <span style="height:7px;width:92%;border-radius:4px;background:#d8d7d1"></span>
+              <span style="height:7px;width:70%;border-radius:4px;background:#d8d7d1"></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4 PORTFOLIO -->
+        <section style="padding:24px 18px;border-top:1.5px solid #ECEAE4;background:#F4F3EE">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:13px">
+            <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9">④ SELECTED WORK · light filter</div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px">
+            <sc-for list="{{ industries }}" as="ind" hint-placeholder-count="5">
+              <span style="height:26px;padding:0 12px;border-radius:999px;border:1.5px solid #c4c3bd;background:#fff;display:flex;align-items:center;font-size:10px;color:#6E6C64">{{ ind }}</span>
+            </sc-for>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+            <sc-for list="{{ portfolio }}" as="pj" hint-placeholder-count="6">
+              <div style="border:1.5px solid #C7C6BF;border-radius:9px;overflow:hidden;background:#fff">
+                <div style="height:96px;border-bottom:1.5px solid #e2e0da;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 9px,#e0ded6 9px,#e0ded6 18px);display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.12em;color:#A7A59C">IMG</div>
+                <div style="padding:9px 11px">
+                  <div style="font-size:11px;font-weight:500;color:#3a3a36">{{ pj.name }}</div>
+                  <div style="font-size:10px;color:#A7A59C;margin-top:3px">{{ pj.cat }}</div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+
+        <!-- 5 PROCESS -->
+        <section style="padding:24px 18px;border-top:1.5px solid #ECEAE4;background:#33402A;color:#E8E9E0">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#9aa68d;margin-bottom:16px">⑤ PROCESS · horizontal 4-step (dark band)</div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
+            <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+              <div>
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:9px"><span style="width:10px;height:10px;border-radius:999px;background:#9aa68d"></span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13px">{{ st.n }} · {{ st.t }}</span></div>
+                <div style="display:flex;flex-direction:column;gap:6px"><span style="height:6px;border-radius:4px;background:#56603f"></span><span style="height:6px;width:80%;border-radius:4px;background:#56603f"></span></div>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+
+        <!-- 6 TESTIMONIAL -->
+        <section style="padding:30px 18px;border-top:1.5px solid #ECEAE4;background:#DCE3D7;text-align:center">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#8a9a7e;margin-bottom:14px">⑥ TESTIMONIAL</div>
+          <div style="display:flex;flex-direction:column;gap:8px;align-items:center;max-width:520px;margin:0 auto">
+            <span style="height:10px;width:90%;border-radius:5px;background:#b6bfa9"></span>
+            <span style="height:10px;width:80%;border-radius:5px;background:#b6bfa9"></span>
+            <span style="height:10px;width:50%;border-radius:5px;background:#b6bfa9"></span>
+            <span style="height:8px;width:120px;border-radius:4px;background:#90a07f;margin-top:8px"></span>
+          </div>
+        </section>
+
+        <!-- 7 CTA -->
+        <section style="padding:34px 18px;border-top:1.5px solid #ECEAE4;text-align:center">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:14px">⑦ CLOSING CTA</div>
+          <div style="display:flex;flex-direction:column;gap:9px;align-items:center;margin-bottom:16px">
+            <span style="height:22px;width:300px;border-radius:6px;background:#bdbcb4"></span>
+            <span style="height:22px;width:220px;border-radius:6px;background:#dcdbd4"></span>
+          </div>
+          <div style="height:40px;padding:0 22px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;display:inline-flex;align-items:center;font-size:12px">Book a call &rarr;</div>
+        </section>
+        <div style="height:42px;background:#2C2C2A;display:flex;align-items:center;padding:0 18px;color:#8C8A82;font-size:10px;letter-spacing:.1em">FOOTER · nav · social · © 2026</div>
+      </div>
+
+      <!-- NOTES A -->
+      <div style="position:sticky;top:20px;border:1.5px solid #C7C6BF;border-radius:13px;background:#FBFAF7;padding:18px">
+        <div style="font-family:'Caveat',cursive;font-weight:700;font-size:26px;line-height:1;margin-bottom:4px">Fast Lane</div>
+        <p style="font-size:12px;line-height:1.6;color:#6E6C64;margin:0 0 16px">Everything that decides a sale is above the fold or one scroll down: <b>platform → price → proof</b>. Built for the 30-second visitor.</p>
+        <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C;margin-bottom:10px">WHY THIS FLOW</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:11.5px;line-height:1.5;color:#4a4a45">
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Framework badges sit <b>inside the hero</b>, under the CTAs — "do you do my platform?" answered instantly.</div>
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Pricing teaser is section #2, before bio — the price question is answered before they scroll far.</div>
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Single column, no hunting. Two CTAs everywhere: Book a call / See pricing.</div>
+        </div>
+        <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C;margin:18px 0 9px">BEST FOR</div>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:11px"><span style="width:18px;height:18px;border-radius:999px;background:#6E7A60;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px">1</span>50+ short-attention buyers</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#9A988F"><span style="width:18px;height:18px;border-radius:999px;background:#cfcec7;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px">3</span>Local pros (secondary)</div>
+        </div>
+        <div style="margin-top:16px;padding-top:14px;border-top:1.5px dashed #d8d7d1;font-size:11px;color:#9A988F;line-height:1.5">Trade-off: least brand storytelling, lighter portfolio browsing.</div>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ DIRECTION B ============ -->
+    <sc-if value="{{ showB }}" hint-placeholder-val="{{ false }}">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start">
+      <div style="border:1.5px solid #C7C6BF;border-radius:13px;overflow:hidden;background:#FBFAF7;box-shadow:0 22px 48px -28px rgba(40,38,32,.4)">
+        <div style="display:flex;align-items:center;gap:8px;padding:11px 14px;border-bottom:1.5px solid #E2E0DA;background:#F2F1EC">
+          <span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span><span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span><span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span>
+          <div style="flex:1;margin-left:8px;height:22px;border-radius:999px;background:#E7E5DF;display:flex;align-items:center;padding:0 12px;font-size:11px;color:#A7A59C">derrickvalentine.com</div>
+        </div>
+
+        <!-- 1 HERO editorial -->
+        <section style="padding:18px 18px 22px">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:13px">① HERO · big two-tone headline over video</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:13px">
+            <span style="width:26px;height:26px;border-radius:7px;background:#2C2C2A;color:#f2f1ec;display:flex;align-items:center;justify-content:center;font-size:11px">DV</span>
+            <div style="display:flex;gap:16px"><span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span><span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span><span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span><span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span></div>
+            <div style="height:26px;padding:0 12px;border:1.5px solid #c4c3bd;border-radius:999px;display:flex;align-items:center;font-size:10px;color:#8C8A82">Client login</div>
+          </div>
+          <div style="position:relative;border-radius:11px;overflow:hidden;min-height:320px;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e6e4dc,#e6e4dc 11px,#dcdad2 11px,#dcdad2 22px);display:flex;flex-direction:column;justify-content:flex-end;padding:24px">
+            <div style="position:absolute;top:14px;left:14px;font:500 10px/1 'DM Mono';letter-spacing:.14em;color:#8a887f;background:#f2f1ec;border-radius:5px;padding:5px 8px;animation:wfpulse 2.4s ease-in-out infinite">▶ VIDEO BG · cinematic loop</div>
+            <!-- floating featured project card -->
+            <div style="position:absolute;top:64px;right:16px;width:180px;border-radius:10px;background:#f2f1ec;border:1.5px solid #d8d7d1;padding:12px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px"><span style="font-size:9px;letter-spacing:.1em;color:#9A988F">FEATURED</span><span style="width:20px;height:20px;border-radius:999px;border:1.5px solid #c4c3bd;display:flex;align-items:center;justify-content:center;font-size:10px">↗</span></div>
+              <div style="height:60px;border-radius:6px;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 8px,#e0ded6 8px,#e0ded6 16px);margin-bottom:9px"></div>
+              <span style="height:7px;width:80%;border-radius:4px;background:#cbcac2;display:block;margin-bottom:5px"></span>
+              <span style="height:6px;width:55%;border-radius:4px;background:#d8d7d1;display:block"></span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:16px;max-width:400px">
+              <div style="height:34px;width:280px;border-radius:6px;background:#9b9a91"></div>
+              <div style="height:34px;width:340px;border-radius:6px;background:#c7c6be"></div>
+              <div style="height:34px;width:200px;border-radius:6px;background:#9b9a91"></div>
+            </div>
+            <div style="display:flex;gap:10px;align-items:center">
+              <div style="height:38px;padding:0 18px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;display:flex;align-items:center;font-size:12px">Get started</div>
+              <div style="height:38px;padding:0 18px;border-radius:999px;border:1.5px solid #9a988f;color:#3a3a36;display:flex;align-items:center;font-size:12px;background:#f2f1ec">Explore work</div>
+              <div style="margin-left:auto;display:flex;align-items:center;gap:8px;font-size:11px;color:#6E6C64">01 —— 03</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 VALUES / WE ARE DIFFERENT -->
+        <section style="padding:26px 18px;border-top:1.5px solid #ECEAE4">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px">
+            <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9">② [ VALUES ] · "WE'RE DIFFERENT" + index list</div>
+            <div style="display:flex;flex-direction:column;gap:6px;width:160px">
+              <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e2e0da;padding-bottom:5px"><span style="height:6px;width:70px;border-radius:4px;background:#cfceC7"></span><span style="font-size:10px;color:#9A988F">01</span></div>
+              <div style="display:flex;justify-content:space-between;border-bottom:1px solid #e2e0da;padding-bottom:5px"><span style="height:6px;width:60px;border-radius:4px;background:#cfceC7"></span><span style="font-size:10px;color:#9A988F">02</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:200px minmax(0,1fr);gap:22px;align-items:center">
+            <div style="aspect-ratio:3/4;border-radius:10px;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 9px,#e0ded6 9px,#e0ded6 18px);display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.12em;color:#9A988F">PHOTO</div>
+            <div>
+              <div style="display:flex;flex-direction:column;gap:7px;max-width:330px;margin-bottom:20px"><span style="height:18px;width:90%;border-radius:5px;background:#bdbcb4"></span><span style="height:18px;width:60%;border-radius:5px;background:#dcdbd4"></span></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px 22px">
+                <sc-for list="{{ values }}" as="vl" hint-placeholder-count="4">
+                  <div>
+                    <div style="width:22px;height:22px;border-radius:6px;border:1.5px solid #c4c3bd;margin-bottom:9px"></div>
+                    <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;color:#2C2C2A;margin-bottom:6px">{{ vl.t }}</div>
+                    <div style="display:flex;flex-direction:column;gap:5px"><span style="height:6px;border-radius:4px;background:#d8d7d1"></span><span style="height:6px;width:75%;border-radius:4px;background:#d8d7d1"></span></div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 PROCESS dark -->
+        <section style="padding:28px 18px;border-top:1.5px solid #ECEAE4;background:#33402A;color:#E8E9E0">
+          <div style="display:flex;justify-content:space-between;margin-bottom:20px"><div style="display:flex;flex-direction:column;gap:7px"><span style="height:18px;width:200px;border-radius:5px;background:#586341"></span><span style="height:18px;width:140px;border-radius:5px;background:#728056"></span></div><span style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#9aa68d">③ [ HOW IT WORKS ]</span></div>
+          <div style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
+            <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+              <div>
+                <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;margin-bottom:9px">{{ st.n }} | {{ st.t }}</div>
+                <div style="display:flex;flex-direction:column;gap:6px"><span style="height:6px;border-radius:4px;background:#56603f"></span><span style="height:6px;width:85%;border-radius:4px;background:#56603f"></span><span style="height:6px;width:65%;border-radius:4px;background:#56603f"></span></div>
+                <div style="width:13px;height:13px;border-radius:999px;background:#9aa68d;margin-top:14px"></div>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+
+        <!-- 4 SERVICES tall cards -->
+        <section style="padding:24px 18px;border-top:1.5px solid #ECEAE4;background:#F4F3EE">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px"><div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9">④ [ SERVICES ] · tall image cards w/ filter on first</div><span style="font-size:10px;color:#8C8A82">See more →</span></div>
+          <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:12px">
+            <div style="position:relative;height:240px;border-radius:10px;overflow:hidden;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 10px,#dedcd4 10px,#dedcd4 20px);padding:14px;display:flex;flex-direction:column;justify-content:space-between">
+              <div style="display:flex;gap:6px;flex-wrap:wrap">
+                <span style="height:22px;padding:0 10px;border-radius:999px;background:#f2f1ec;border:1px solid #cfcdc4;display:flex;align-items:center;font-size:9px;color:#6E6C64">Shopify</span>
+                <span style="height:22px;padding:0 10px;border-radius:999px;background:#f2f1ec;border:1px solid #cfcdc4;display:flex;align-items:center;font-size:9px;color:#6E6C64">Webflow</span>
+                <span style="height:22px;padding:0 10px;border-radius:999px;background:#f2f1ec;border:1px solid #cfcdc4;display:flex;align-items:center;font-size:9px;color:#6E6C64">+ more</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:7px"><span style="height:18px;width:80%;border-radius:5px;background:#A9A89F"></span><span style="height:8px;width:90%;border-radius:4px;background:#cbcac2"></span></div>
+            </div>
+            <div style="position:relative;height:240px;border-radius:10px;overflow:hidden;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e6e4dc,#e6e4dc 10px,#dcdad2 10px,#dcdad2 20px);padding:14px;display:flex;align-items:flex-end"><span style="height:14px;width:70%;border-radius:5px;background:#f2f1ec"></span><span style="position:absolute;top:12px;right:12px;width:22px;height:22px;border-radius:999px;background:#f2f1ec;display:flex;align-items:center;justify-content:center;font-size:11px">↗</span></div>
+            <div style="position:relative;height:240px;border-radius:10px;overflow:hidden;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 10px,#dedcd4 10px,#dedcd4 20px);padding:14px;display:flex;align-items:flex-end"><span style="height:14px;width:70%;border-radius:5px;background:#f2f1ec"></span><span style="position:absolute;top:12px;right:12px;width:22px;height:22px;border-radius:999px;background:#f2f1ec;display:flex;align-items:center;justify-content:center;font-size:11px">↗</span></div>
+            <div style="position:relative;height:240px;border-radius:10px;overflow:hidden;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e6e4dc,#e6e4dc 10px,#dcdad2 10px,#dcdad2 20px);padding:14px;display:flex;align-items:flex-end"><span style="height:14px;width:70%;border-radius:5px;background:#f2f1ec"></span><span style="position:absolute;top:12px;right:12px;width:22px;height:22px;border-radius:999px;background:#f2f1ec;display:flex;align-items:center;justify-content:center;font-size:11px">↗</span></div>
+          </div>
+        </section>
+
+        <!-- 5 testimonial -->
+        <section style="padding:30px 18px;border-top:1.5px solid #ECEAE4;background:#DCE3D7;text-align:center">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#8a9a7e;margin-bottom:14px">⑤ [ TESTIMONIAL ]</div>
+          <div style="display:flex;flex-direction:column;gap:8px;align-items:center;max-width:560px;margin:0 auto"><span style="height:11px;width:92%;border-radius:5px;background:#b6bfa9"></span><span style="height:11px;width:84%;border-radius:5px;background:#b6bfa9"></span><span style="height:11px;width:55%;border-radius:5px;background:#b6bfa9"></span><span style="height:8px;width:130px;border-radius:4px;background:#90a07f;margin-top:8px"></span></div>
+        </section>
+
+        <!-- 6 latest work showcase -->
+        <section style="padding:26px 18px;border-top:1.5px solid #ECEAE4">
+          <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px"><span style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9">⑥ [ WORK ] · big showcase + NEXT nav</span><div style="display:flex;gap:9px;margin-top:5px"><span style="height:18px;width:160px;border-radius:5px;background:#bdbcb4"></span><span style="height:18px;width:110px;border-radius:5px;background:#dcdbd4"></span></div></div>
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) 130px;gap:14px;align-items:stretch">
+            <div style="height:230px;border-radius:11px;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 11px,#e0ded6 11px,#e0ded6 22px);display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.12em;color:#A7A59C">PROJECT IMAGE</div>
+            <div style="border-radius:11px;border:1.5px solid #c4c3bd;background:#F4F3EE;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px"><span style="width:48px;height:48px;border-radius:999px;border:1.5px solid #9a988f;display:flex;align-items:center;justify-content:center;font-size:11px;color:#6E6C64">NEXT</span></div>
+          </div>
+          <div style="display:flex;gap:40px;margin-top:14px"><div><div style="font-size:9px;color:#A7A59C;margin-bottom:4px">NAME</div><span style="height:8px;width:90px;border-radius:4px;background:#cbcac2;display:block"></span></div><div><div style="font-size:9px;color:#A7A59C;margin-bottom:4px">FRAMEWORK</div><span style="height:8px;width:90px;border-radius:4px;background:#cbcac2;display:block"></span></div></div>
+        </section>
+
+        <!-- 7 CTA full bleed -->
+        <section style="position:relative;min-height:170px;border-top:1.5px solid #ECEAE4;background:repeating-linear-gradient(135deg,#e6e4dc,#e6e4dc 11px,#dcdad2 11px,#dcdad2 22px);padding:26px 18px;display:flex;flex-direction:column;justify-content:center">
+          <div style="position:absolute;top:12px;left:14px;font:500 10px/1 'DM Mono';letter-spacing:.14em;color:#8a887f;background:#f2f1ec;border-radius:5px;padding:5px 8px">⑦ CLOSING CTA · full-bleed image</div>
+          <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:15px"><span style="height:24px;width:300px;border-radius:6px;background:#9b9a91"></span><span style="height:24px;width:200px;border-radius:6px;background:#c7c6be"></span></div>
+          <div style="height:40px;padding:0 22px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;display:inline-flex;align-items:center;font-size:12px;width:fit-content">Book a call →</div>
+        </section>
+        <div style="height:60px;background:#2C2C2A;display:flex;align-items:center;padding:0 18px;color:#8C8A82;font-size:10px;letter-spacing:.1em;gap:24px">FOOTER · newsletter · support · links · services · © 2026</div>
+      </div>
+
+      <!-- NOTES B -->
+      <div style="position:sticky;top:20px;border:1.5px solid #C7C6BF;border-radius:13px;background:#FBFAF7;padding:18px">
+        <div style="font-family:'Caveat',cursive;font-weight:700;font-size:26px;line-height:1;margin-bottom:4px">Editorial Story</div>
+        <p style="font-size:12px;line-height:1.6;color:#6E6C64;margin:0 0 16px">The LeafLife structure, beat for beat. Story → values → process → work showcase. Carries the brand and builds trust through craft.</p>
+        <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C;margin-bottom:10px">WHY THIS FLOW</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:11.5px;line-height:1.5;color:#4a4a45">
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Two-tone uppercase headlines, dark process band, tall image cards — the reference's exact rhythm.</div>
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Process + timeline are a hero section, not a footnote — the partner's main question.</div>
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Big "latest work" showcase signals craft quality at a glance.</div>
+        </div>
+        <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C;margin:18px 0 9px">BEST FOR</div>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:11px"><span style="width:18px;height:18px;border-radius:999px;background:#6E7A60;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px">2</span>Marketers / white-label partners</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#9A988F"><span style="width:18px;height:18px;border-radius:999px;background:#cfcec7;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px">3</span>Local pros (secondary)</div>
+        </div>
+        <div style="margin-top:16px;padding-top:14px;border-top:1.5px dashed #d8d7d1;font-size:11px;color:#9A988F;line-height:1.5">Trade-off: price/framework answers come later — slower for the 30-second buyer.</div>
+      </div>
+    </div>
+    </sc-if>
+
+    <!-- ============ DIRECTION C ============ -->
+    <sc-if value="{{ showC }}" hint-placeholder-val="{{ false }}">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start">
+      <div style="border:1.5px solid #C7C6BF;border-radius:13px;overflow:hidden;background:#FBFAF7;box-shadow:0 22px 48px -28px rgba(40,38,32,.4)">
+        <div style="display:flex;align-items:center;gap:8px;padding:11px 14px;border-bottom:1.5px solid #E2E0DA;background:#F2F1EC">
+          <span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span><span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span><span style="width:10px;height:10px;border-radius:999px;background:#D4D2CB"></span>
+          <div style="flex:1;margin-left:8px;height:22px;border-radius:999px;background:#E7E5DF;display:flex;align-items:center;padding:0 12px;font-size:11px;color:#A7A59C">derrickvalentine.com</div>
+        </div>
+
+        <!-- 1 split hero -->
+        <section style="padding:18px">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:13px">① SPLIT HERO · text + platform picker | video</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <span style="width:26px;height:26px;border-radius:7px;background:#2C2C2A;color:#f2f1ec;display:flex;align-items:center;justify-content:center;font-size:11px">DV</span>
+            <div style="display:flex;gap:16px"><span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span><span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span><span style="height:7px;width:42px;border-radius:4px;background:#cfceC7"></span></div>
+            <div style="height:26px;padding:0 12px;border:1.5px solid #c4c3bd;border-radius:999px;display:flex;align-items:center;font-size:10px;color:#8C8A82">Client login</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch">
+            <div style="padding:6px 4px;display:flex;flex-direction:column;justify-content:center">
+              <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:16px"><span style="height:30px;width:90%;border-radius:6px;background:#9b9a91"></span><span style="height:30px;width:70%;border-radius:6px;background:#c7c6be"></span></div>
+              <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px;max-width:280px"><span style="height:7px;border-radius:4px;background:#d8d7d1"></span><span style="height:7px;width:80%;border-radius:4px;background:#d8d7d1"></span></div>
+              <div style="font-size:10px;color:#8C8A82;letter-spacing:.06em;margin-bottom:9px">PICK YOUR PLATFORM ↓</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px">
+                <sc-for list="{{ frameworks }}" as="fw" hint-placeholder-count="6">
+                  <div style="height:44px;border:1.5px solid #c4c3bd;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;color:#4a4a45">{{ fw }}</div>
+                </sc-for>
+              </div>
+              <div style="height:40px;padding:0 20px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;display:inline-flex;align-items:center;font-size:12px;width:fit-content">Book a call →</div>
+            </div>
+            <div style="position:relative;min-height:300px;border-radius:11px;overflow:hidden;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e6e4dc,#e6e4dc 11px,#dcdad2 11px,#dcdad2 22px)">
+              <div style="position:absolute;top:14px;left:14px;font:500 10px/1 'DM Mono';letter-spacing:.14em;color:#8a887f;background:#f2f1ec;border-radius:5px;padding:5px 8px;animation:wfpulse 2.4s ease-in-out infinite">▶ VIDEO · portrait loop</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 portfolio FILTER-LED -->
+        <section style="padding:24px 18px;border-top:1.5px solid #ECEAE4;background:#F4F3EE">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:14px">② SELECTED WORK · filter-led (the centerpiece)</div>
+          <div style="display:grid;grid-template-columns:172px minmax(0,1fr);gap:16px;align-items:start">
+            <div style="border:1.5px solid #C7C6BF;border-radius:10px;background:#fff;padding:14px">
+              <div style="font-size:10px;color:#9A988F;letter-spacing:.1em;margin-bottom:10px">INDUSTRY</div>
+              <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px">
+                <sc-for list="{{ industries }}" as="ind" hint-placeholder-count="7">
+                  <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#4a4a45"><span style="width:13px;height:13px;border:1.5px solid #c4c3bd;border-radius:4px"></span>{{ ind }}</div>
+                </sc-for>
+              </div>
+              <div style="font-size:10px;color:#9A988F;letter-spacing:.1em;margin-bottom:10px">STYLE</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap">
+                <sc-for list="{{ styles }}" as="sty" hint-placeholder-count="4">
+                  <span style="height:24px;padding:0 10px;border-radius:999px;border:1.5px solid #c4c3bd;display:flex;align-items:center;font-size:10px;color:#6E6C64">{{ sty }}</span>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+              <sc-for list="{{ portfolio }}" as="pj" hint-placeholder-count="6">
+                <div style="border:1.5px solid #C7C6BF;border-radius:9px;overflow:hidden;background:#fff">
+                  <div style="height:108px;border-bottom:1.5px solid #e2e0da;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 9px,#e0ded6 9px,#e0ded6 18px);display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.12em;color:#A7A59C">IMG</div>
+                  <div style="padding:9px 11px"><div style="font-size:11px;font-weight:500;color:#3a3a36">{{ pj.name }}</div><div style="font-size:10px;color:#A7A59C;margin-top:3px">{{ pj.cat }}</div></div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 calculator -->
+        <section style="padding:24px 18px;border-top:1.5px solid #ECEAE4">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:14px">③ PRICE CALCULATOR · embedded teaser</div>
+          <div style="border:1.5px solid #C7C6BF;border-radius:11px;background:#F4F3EE;padding:18px;display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:20px;align-items:center">
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div><div style="font-size:10px;color:#9A988F;margin-bottom:7px">SCOPE</div><div style="display:flex;gap:8px"><span style="height:30px;padding:0 14px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;display:flex;align-items:center;font-size:11px">Refresh</span><span style="height:30px;padding:0 14px;border-radius:999px;border:1.5px solid #c4c3bd;display:flex;align-items:center;font-size:11px;color:#6E6C64">Redesign</span><span style="height:30px;padding:0 14px;border-radius:999px;border:1.5px solid #c4c3bd;display:flex;align-items:center;font-size:11px;color:#6E6C64">New build</span></div></div>
+              <div><div style="font-size:10px;color:#9A988F;margin-bottom:7px">PAGES — 6</div><div style="height:8px;border-radius:999px;background:#dcdbd4;position:relative"><span style="position:absolute;left:40%;top:50%;transform:translate(-50%,-50%);width:20px;height:20px;border-radius:999px;background:#6E7A60;border:2px solid #fff"></span></div></div>
+            </div>
+            <div style="border-left:1.5px dashed #d8d7d1;padding-left:20px;text-align:center"><div style="font-size:10px;color:#9A988F;margin-bottom:6px">ESTIMATE</div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:26px;color:#6E7A60">$2,400</div><div style="margin-top:12px;height:34px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;display:flex;align-items:center;justify-content:center;font-size:11px">Book a call →</div></div>
+          </div>
+        </section>
+
+        <!-- 4 process vertical -->
+        <section style="padding:24px 18px;border-top:1.5px solid #ECEAE4;background:#33402A;color:#E8E9E0">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#9aa68d;margin-bottom:18px">④ PROCESS · compact vertical timeline</div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+              <div style="display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;align-items:start">
+                <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;color:#9aa68d">{{ st.n }}</div>
+                <div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;margin-bottom:6px">{{ st.t }}</div><span style="height:6px;width:70%;border-radius:4px;background:#56603f;display:block"></span></div>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+
+        <!-- 5 bio + testimonial -->
+        <section style="padding:24px 18px;border-top:1.5px solid #ECEAE4;background:#F4F3EE">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:14px">⑤ ABOUT + TESTIMONIAL</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center">
+            <div style="display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center"><div style="aspect-ratio:1;border-radius:10px;border:1.5px solid #c4c3bd;background:repeating-linear-gradient(135deg,#e9e7e0,#e9e7e0 9px,#e0ded6 9px,#e0ded6 18px);display:flex;align-items:center;justify-content:center;font-size:9px;color:#9A988F">PHOTO</div><div style="display:flex;flex-direction:column;gap:7px"><span style="height:12px;width:60%;border-radius:5px;background:#bdbcb4"></span><span style="height:6px;border-radius:4px;background:#d8d7d1"></span><span style="height:6px;width:80%;border-radius:4px;background:#d8d7d1"></span></div></div>
+            <div style="border-left:1.5px solid #e2e0da;padding-left:18px;display:flex;flex-direction:column;gap:7px"><span style="height:9px;width:95%;border-radius:5px;background:#cbcac2"></span><span style="height:9px;width:85%;border-radius:5px;background:#cbcac2"></span><span style="height:8px;width:100px;border-radius:4px;background:#bdbcb4;margin-top:6px"></span></div>
+          </div>
+        </section>
+
+        <!-- 6 CTA -->
+        <section style="padding:32px 18px;border-top:1.5px solid #ECEAE4;text-align:center">
+          <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#B4B2A9;margin-bottom:14px">⑥ CLOSING CTA</div>
+          <div style="display:flex;flex-direction:column;gap:9px;align-items:center;margin-bottom:15px"><span style="height:22px;width:280px;border-radius:6px;background:#bdbcb4"></span><span style="height:22px;width:200px;border-radius:6px;background:#dcdbd4"></span></div>
+          <div style="height:40px;padding:0 22px;border-radius:999px;background:#2C2C2A;color:#f2f1ec;display:inline-flex;align-items:center;font-size:12px">Book a call →</div>
+        </section>
+        <div style="height:42px;background:#2C2C2A;display:flex;align-items:center;padding:0 18px;color:#8C8A82;font-size:10px;letter-spacing:.1em">FOOTER · nav · social · © 2026</div>
+      </div>
+
+      <!-- NOTES C -->
+      <div style="position:sticky;top:20px;border:1.5px solid #C7C6BF;border-radius:13px;background:#FBFAF7;padding:18px">
+        <div style="font-family:'Caveat',cursive;font-weight:700;font-size:26px;line-height:1;margin-bottom:4px">Filter-First</div>
+        <p style="font-size:12px;line-height:1.6;color:#6E6C64;margin:0 0 16px">A utility front door. Platform picker in the hero, a filterable portfolio as the centerpiece, and a live price calculator — let visitors self-serve to their answer.</p>
+        <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C;margin-bottom:10px">WHY THIS FLOW</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:11.5px;line-height:1.5;color:#4a4a45">
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Platform tiles in the hero double as filters — pick yours, the page narrows to you.</div>
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Portfolio is section #2 with industry + style filters — the "find a business like mine" path.</div>
+          <div style="display:flex;gap:9px"><span style="color:#6E7A60">→</span>Live calculator gives a real number on the homepage, no service-page detour.</div>
+        </div>
+        <div style="font:500 10px/1 'DM Mono';letter-spacing:.18em;color:#A7A59C;margin:18px 0 9px">BEST FOR</div>
+        <div style="display:flex;flex-direction:column;gap:7px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:11px"><span style="width:18px;height:18px;border-radius:999px;background:#6E7A60;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px">3</span>Local pros who browse by relevance</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#9A988F"><span style="width:18px;height:18px;border-radius:999px;background:#cfcec7;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px">1</span>50+ buyers (picker + calc)</div>
+        </div>
+        <div style="margin-top:16px;padding-top:14px;border-top:1.5px dashed #d8d7d1;font-size:11px;color:#9A988F;line-height:1.5">Trade-off: most interactive to build; least "story", more app-like than editorial.</div>
+      </div>
+    </div>
+    </sc-if>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { dir: 'A' };
+  renderVals() {
+    const dir = this.state.dir;
+    const pick = (d) => () => this.setState({ dir: d });
+    return {
+      dir,
+      showA: dir === 'A',
+      showB: dir === 'B',
+      showC: dir === 'C',
+      pickA: pick('A'),
+      pickB: pick('B'),
+      pickC: pick('C'),
+      frameworks: ['Shopify', 'Squarespace', 'Webflow', 'WordPress', 'Wix', 'Next.js'],
+      priceCards: [
+        { t: 'Refresh', p: 'from $900', d: 'Polish what you already have' },
+        { t: 'Redesign', p: 'from $2,400', d: 'New look, same platform' },
+        { t: 'New build', p: 'from $3,800', d: 'Start from scratch' },
+        { t: 'Care plan', p: '$95 / mo', d: 'Ongoing updates & fixes' },
+      ],
+      values: [
+        { t: 'Works on your platform' },
+        { t: 'Clear pricing, up front' },
+        { t: 'Fast turnarounds' },
+        { t: 'One person, accountable' },
+      ],
+      steps: [
+        { n: '01', t: 'Quick call' },
+        { n: '02', t: 'Plan & price' },
+        { n: '03', t: 'Build' },
+        { n: '04', t: 'Launch & care' },
+      ],
+      portfolio: [
+        { name: 'Northside Roofing', cat: 'Roofing · WordPress' },
+        { name: 'Maple & Vine', cat: 'Restaurant · Squarespace' },
+        { name: 'Studio Bloom', cat: 'Salon · Webflow' },
+        { name: 'Harbor Goods', cat: 'E-commerce · Shopify' },
+        { name: 'Reyes Law', cat: 'Legal · Webflow' },
+        { name: 'Peak Dental', cat: 'Healthcare · WordPress' },
+      ],
+      industries: ['All', 'Roofing', 'Restaurant', 'Salon', 'E-commerce', 'Legal', 'Healthcare'],
+      styles: ['Bold', 'Minimal', 'Classic', 'Playful'],
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -31,3 +31,39 @@ blocks:
   - id: hero-section-37
     registry: "@ss-blocks"
     note: "Hero 37 (marketing-ui) — Home hero: animated headline, dual CTAs, partner logos + logo marquee. Navbar split out to components/layout/navbar.tsx; rendered on app/page.tsx."
+  - id: logo-cloud-01
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: features-section-01
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: timeline-component-01
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: compare-01
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: social-proof-01
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: testimonials-component-01
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: cta-section-01
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: footer-component-02
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: pricing-component-01
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: pricing-component-02
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: faq-component-02
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"
+  - id: pricing-component-08
+    registry: "@ss-blocks"
+    note: "auto-added 2026-06-02 — TODO: describe + map to a SectionType"

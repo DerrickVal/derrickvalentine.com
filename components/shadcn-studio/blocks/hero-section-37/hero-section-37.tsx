@@ -81,23 +81,23 @@ const HeroSection = () => {
           <div className='flex flex-col text-2xl font-semibold *:text-center *:uppercase sm:gap-2 sm:text-5xl lg:text-7xl'>
             <div className='lg:overflow-hidden'>
               <MotionPreset fade slide={{ direction: 'down', offset: 60 }} delay={0.2} transition={{ duration: 0.5 }}>
-                The most <span className='text-muted-foreground'>accurate</span>
+                Your whole website.
               </MotionPreset>
             </div>
             <div className='lg:overflow-hidden'>
               <MotionPreset fade slide={{ direction: 'down', offset: 60 }} delay={0.4} transition={{ duration: 0.5 }}>
-                <span className='text-muted-foreground'>reliable</span> platform for
+                Off your plate.
               </MotionPreset>
             </div>
             <div className='lg:overflow-hidden'>
               <MotionPreset fade slide={{ direction: 'down', offset: 60 }} delay={0.6} transition={{ duration: 0.5 }}>
-                marketing analytics
+                One text away.
               </MotionPreset>
             </div>
           </div>
           <MotionPreset fade zoom transition={{ duration: 0.5 }} delay={0.7} className='mx-auto max-w-2xl'>
             <p className='text-muted-foreground text-center text-lg'>
-              Track your performance with precision. Turn complex data into clear insights that drive smarter decisions.
+              I&apos;m Derrick Valentine. For ten years I&apos;ve redesigned, hosted, and maintained websites for small businesses, nonprofits, and creatives, so they can stop fighting with the web and get back to what they&apos;re great at. No agency. No bids. Just me, a text away.
             </p>
           </MotionPreset>
 
@@ -109,48 +109,17 @@ const HeroSection = () => {
             className='flex flex-wrap items-center justify-center gap-4'
           >
             <PrimaryGrowButton asChild size='lg'>
-              <a href='#'>Get Started - Free</a>
+              <a href='/contact'>Request a Website Review</a>
             </PrimaryGrowButton>
             <SecondaryGrowButton asChild className='group' size='lg'>
-              <a href='#'>
-                View Pricing
+              <a href='/work'>
+                See the work
                 <ArrowRightIcon className='size-4 transition-transform duration-500 group-hover:translate-x-1' />
               </a>
             </SecondaryGrowButton>
           </MotionPreset>
         </div>
-        <MotionPreset
-          fade
-          zoom
-          transition={{ duration: 0.5 }}
-          delay={0.7}
-          className='mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-11 px-4 sm:px-6 lg:px-8'
-        >
-          <div className='flex flex-col items-center gap-2'>
-            <img
-              src='https://cdn.shadcnstudio.com/ss-assets/brand-logo/google-icon.png'
-              alt='google'
-              className='size-7.5'
-            />
-            <p className='text-sm'>Google Partner</p>
-          </div>
-          <div className='flex flex-col items-center gap-2'>
-            <img
-              src='https://cdn.shadcnstudio.com/ss-assets/brand-logo/meta-icon.png'
-              alt='Meta Marketing Partner'
-              className='size-7.5'
-            />
-            <p className='text-sm'>Meta Marketing Partner</p>
-          </div>
-          <div className='flex flex-col items-center gap-2'>
-            <img
-              src='https://cdn.shadcnstudio.com/ss-assets/brand-logo/hubspot-icon-logo.png'
-              alt='HubSpot Certified'
-              className='size-7.5'
-            />
-            <p className='text-sm'>HubSpot Certified</p>
-          </div>
-        </MotionPreset>
+        {/* removed demo partner badges (Google/Meta/HubSpot) — not real affiliations */}
         <MotionPreset
           fade
           slide={{ direction: 'down', offset: 50 }}

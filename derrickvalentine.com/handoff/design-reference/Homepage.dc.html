@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#F1EFE8}
+  ::selection{background:#34402A;color:#F1EFE8}
+  .pdd{position:relative;padding-bottom:18px;margin-bottom:-18px}
+  .pdd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(2px);min-width:248px;background:#FBFAF7;border:1.5px solid #E2DFD4;border-radius:14px;padding:8px;box-shadow:0 20px 44px -22px rgba(40,38,32,.5);opacity:0;visibility:hidden;transition:opacity .16s ease,transform .16s ease;z-index:60}
+  .pdd:hover .pdd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(8px)}
+  @keyframes recpulse{0%,100%{opacity:.4;transform:scale(.85)}50%{opacity:1;transform:scale(1)}}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+</style>
+</helmet>
+
+<div data-screen-label="Homepage" style="background:#F1EFE8;font-family:'Archivo',sans-serif;color:#23271E;-webkit-font-smoothing:antialiased;overflow-x:hidden">
+
+  <!-- ================= NAV ================= -->
+  <header style="position:relative;z-index:20;max-width:1240px;margin:0 auto;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#23271E">
+      <span style="width:34px;height:34px;border-radius:9px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span>
+      <span style="font-weight:700;font-size:16px;letter-spacing:-.01em">Derrick Valentine</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:30px">
+      <a href="Work.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Work</a>
+      <a href="Services.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Services</a>
+      <div class="pdd"><span style="display:flex;align-items:center;gap:5px;color:#3A3E33;font-size:14.5px;font-weight:500;cursor:pointer">Pricing <span style="font-size:9px;position:relative;top:1px">▼</span></span>
+        <div class="pdd-menu">
+          <a href="Shopify Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Shopify <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,200</span></a>
+          <a href="Webflow Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Webflow <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $1,800</span></a>
+          <a href="WordPress Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">WordPress <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $900</span></a>
+          <a href="Squarespace Service.dc.html#calculator" style="display:flex;align-items:center;justify-content:space-between;gap:18px;text-decoration:none;color:#23271E;font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:9px" style-hover="background:#EFEEE7">Squarespace <span style="color:#8A8E7C;font-weight:700;font-size:12px">from $750</span></a>
+          <div style="border-top:1px solid #EAE7DC;margin:7px 4px"></div>
+          <a href="Services.dc.html" style="display:block;text-decoration:none;color:#5C6052;font-size:12.5px;font-weight:600;padding:9px 12px;border-radius:9px" style-hover="background:#EFEEE7">All services &amp; pricing →</a>
+        </div>
+      </div>
+      <a href="Process.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">Process</a>
+      <a href="About.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14.5px;font-weight:500">About</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a href="Client Portal.dc.html" style="text-decoration:none;color:#3A3E33;font-size:14px;font-weight:500;border:1.5px solid #CFC9BB;border-radius:999px;padding:9px 16px" style-hover="border-color:#34402A">Client login</a>
+      <a href="Book a Call.dc.html" style="text-decoration:none;background:#34402A;color:#F1EFE8;font-size:14px;font-weight:600;border-radius:999px;padding:11px 20px;white-space:nowrap" style-hover="background:#23271E">Book a call</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section style="max-width:1240px;margin:0 auto;padding:8px 32px 32px">
+    <div style="position:relative;border-radius:24px;overflow:hidden;min-height:640px;display:flex;flex-direction:column;justify-content:flex-end;padding:48px;background:linear-gradient(160deg,#3c4a30 0%,#2c3623 55%,#222a1c 100%)">
+      <!-- video placeholder texture -->
+      <div style="position:absolute;inset:0;opacity:.5;background:repeating-linear-gradient(125deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.05) 2px,transparent 2px,transparent 26px)"></div>
+      <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 70% 10%,rgba(150,170,120,.28),transparent 60%)"></div>
+
+      <!-- video caption -->
+      <div style="position:absolute;top:22px;left:22px;display:flex;align-items:center;gap:9px;background:rgba(20,24,16,.42);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 14px">
+        <span style="width:8px;height:8px;border-radius:999px;background:#E4684A;animation:recpulse 1.8s ease-in-out infinite"></span>
+        <span style="color:#E9EAE0;font-size:11px;font-weight:600;letter-spacing:.14em;font-feature-settings:'tnum'">VIDEO — hero loop</span>
+      </div>
+
+      <!-- trust badge -->
+      <div style="position:absolute;top:22px;right:22px;display:flex;align-items:center;gap:14px;background:rgba(241,239,232,.94);border-radius:14px;padding:13px 18px">
+        <div>
+          <div style="font-weight:800;font-size:19px;line-height:1;letter-spacing:-.02em">120+</div>
+          <div style="font-size:11px;color:#5C6052;margin-top:3px">sites shipped</div>
+        </div>
+        <div style="width:1px;height:30px;background:#D2CDBF"></div>
+        <div>
+          <div style="font-weight:800;font-size:19px;line-height:1;letter-spacing:-.02em">4.9★</div>
+          <div style="font-size:11px;color:#5C6052;margin-top:3px">avg. rating</div>
+        </div>
+      </div>
+
+      <!-- featured project card -->
+      <a href="Work.dc.html" style="position:absolute;top:96px;right:36px;width:236px;text-decoration:none;color:#23271E;background:rgba(241,239,232,.96);border-radius:18px;padding:14px;animation:floaty 6s ease-in-out infinite;box-shadow:0 24px 50px -22px rgba(0,0,0,.5)">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:11px">
+          <span style="font-size:10px;font-weight:700;letter-spacing:.18em;color:#6E7263">FEATURED</span>
+          <span style="width:26px;height:26px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:13px">↗</span>
+        </div>
+        <div style="height:104px;border-radius:11px;background:linear-gradient(150deg,#c3cbb0,#9aa384);position:relative;overflow:hidden;margin-bottom:11px">
+          <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.12) 0,rgba(255,255,255,.12) 2px,transparent 2px,transparent 14px)"></div>
+        </div>
+        <div style="font-weight:700;font-size:14px">Northside Roofing</div>
+        <div style="font-size:12px;color:#6E7263;margin-top:2px">WordPress rebuild · +38% leads</div>
+      </a>
+
+      <!-- hero content -->
+      <div style="position:relative;max-width:780px">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(241,239,232,.16);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 14px;margin-bottom:26px">
+          <span style="width:7px;height:7px;border-radius:999px;background:#9DB07E"></span>
+          <span style="color:#E4E5DA;font-size:12.5px;font-weight:500;letter-spacing:.02em">Solo developer · available this month</span>
+        </div>
+        <h1 style="margin:0;font-weight:800;font-size:clamp(40px,6.4vw,82px);line-height:.96;letter-spacing:-.03em;text-transform:uppercase;color:#F3F2EA">
+          One developer.<br><span style="color:#AAB795">Every platform.</span><br>No runaround.
+        </h1>
+        <p style="margin:24px 0 0;max-width:520px;font-size:clamp(15px,1.5vw,18px);line-height:1.55;color:#D9DBCD;font-weight:500">
+          Shopify, Webflow, WordPress, Squarespace — I design, build, and look after sites for businesses that want it done right the first time.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:13px;margin-top:32px">
+          <a href="Book a Call.dc.html" style="text-decoration:none;background:#F1EFE8;color:#23271E;font-weight:600;font-size:15.5px;border-radius:999px;padding:16px 30px;display:inline-flex;align-items:center;gap:9px;white-space:nowrap" style-hover="background:#fff">Book a call <span style="font-size:17px">→</span></a>
+          <a href="Work.dc.html" style="text-decoration:none;background:transparent;color:#F1EFE8;font-weight:600;font-size:15.5px;border:1.5px solid rgba(241,239,232,.55);border-radius:999px;padding:16px 28px;display:inline-flex;align-items:center" style-hover="border-color:#F1EFE8">Explore work</a>
+          <div style="margin-left:6px;display:flex;align-items:center;gap:12px;color:#C7CABA;font-size:13px;font-weight:600;letter-spacing:.08em">
+            <span style="color:#F1EFE8">01</span><span style="width:54px;height:1.5px;background:rgba(241,239,232,.4)"></span><span>03</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VALUES ================= -->
+  <section id="about" style="max-width:1240px;margin:0 auto;padding:72px 32px 80px">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:40px">
+      <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;WHY ME&nbsp; ]</span>
+      <div style="display:flex;gap:32px">
+        <a href="#services" style="text-decoration:none;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid #DAD6C9;padding-bottom:7px;color:#3A3E33"><span style="font-weight:600;font-size:14px">What I do</span><span style="font-size:11px;color:#9A9C8C;font-weight:600">01</span></a>
+        <a href="Work.dc.html" style="text-decoration:none;display:flex;align-items:center;gap:10px;border-bottom:1.5px solid #DAD6C9;padding-bottom:7px;color:#3A3E33"><span style="font-weight:600;font-size:14px">Recent work</span><span style="font-size:11px;color:#9A9C8C;font-weight:600">02</span></a>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:52px;align-items:center">
+      <!-- portrait -->
+      <div style="position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:linear-gradient(155deg,#c9cfb8,#9da683);min-height:380px">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0,rgba(255,255,255,.14) 2px,transparent 2px,transparent 18px)"></div>
+        <div style="position:absolute;bottom:16px;left:16px;background:rgba(20,24,16,.5);backdrop-filter:blur(3px);border-radius:10px;padding:8px 13px;color:#EDEEE3;font-size:11px;font-weight:600;letter-spacing:.1em">PHOTO — Derrick at work</div>
+      </div>
+
+      <div>
+        <h2 style="margin:0 0 18px;font-weight:800;font-size:clamp(30px,4vw,52px);line-height:1.0;letter-spacing:-.025em;text-transform:uppercase">Not an agency.<br><span style="color:#AAB293">Better than one.</span></h2>
+        <p style="margin:0 0 36px;max-width:440px;font-size:16px;line-height:1.6;color:#5C6052;font-weight:500">No account managers, no markups, no mystery timeline. Just one developer who picks up the phone and ships good work — on whatever platform you're already on.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px 36px">
+          <div>
+            <div style="width:38px;height:38px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:14px"><span style="width:15px;height:15px;border:2px solid #34402A;border-radius:4px"></span></div>
+            <h3 style="margin:0 0 7px;font-weight:700;font-size:17px;letter-spacing:-.01em">Works on your platform</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Shopify, Webflow, WordPress, Squarespace — I meet you where your site already lives.</p>
+          </div>
+          <div>
+            <div style="width:38px;height:38px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:14px"><span style="width:15px;height:15px;border:2px solid #34402A;border-radius:999px"></span></div>
+            <h3 style="margin:0 0 7px;font-weight:700;font-size:17px;letter-spacing:-.01em">Pricing up front</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Real numbers before we start. No vague “let’s discuss budget” quotes.</p>
+          </div>
+          <div>
+            <div style="width:38px;height:38px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:14px"><span style="width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:14px solid #34402A"></span></div>
+            <h3 style="margin:0 0 7px;font-weight:700;font-size:17px;letter-spacing:-.01em">Fast, and on time</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">Most refreshes ship in days. You’ll always know the timeline.</p>
+          </div>
+          <div>
+            <div style="width:38px;height:38px;border-radius:11px;background:#E7E6DA;display:flex;align-items:center;justify-content:center;margin-bottom:14px"><span style="width:15px;height:15px;background:#34402A;border-radius:3px;transform:rotate(45deg)"></span></div>
+            <h3 style="margin:0 0 7px;font-weight:700;font-size:17px;letter-spacing:-.01em">One person, accountable</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:#6E7263">You talk to me, not a project manager. Every step of the way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section id="process" style="background:#34402A;color:#E9EAE0">
+    <div style="max-width:1240px;margin:0 auto;padding:78px 32px 88px">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:54px">
+        <h2 style="margin:0;font-weight:800;font-size:clamp(30px,4.3vw,56px);line-height:1.0;letter-spacing:-.025em;text-transform:uppercase">Simple steps from<br><span style="color:#92A075">call to launch</span></h2>
+        <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#9AA683">[ &nbsp;HOW IT WORKS&nbsp; ]</span>
+      </div>
+
+      <!-- staggered timeline -->
+      <div style="position:relative">
+        <div style="position:absolute;left:0;right:0;top:50%;height:1.5px;background:rgba(233,234,224,.22)"></div>
+        <div style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+          <!-- 01 below -->
+          <div style="position:relative;height:248px;display:flex;flex-direction:column">
+            <div style="position:absolute;top:calc(50% - 8px);left:0;width:16px;height:16px;border-radius:999px;background:#C7D2AC;border:3px solid #34402A"></div>
+            <div style="margin-top:auto;padding-right:18px">
+              <div style="font-weight:800;font-size:15px;letter-spacing:.02em;color:#C7D2AC;margin-bottom:9px">01 &nbsp;|&nbsp; Quick call</div>
+              <p style="margin:0;font-size:14px;line-height:1.55;color:#C2C6B5">15 minutes. Your platform, your goals, and a real number — no pressure, no pitch.</p>
+            </div>
+          </div>
+          <!-- 02 above -->
+          <div style="position:relative;height:248px;display:flex;flex-direction:column">
+            <div style="position:absolute;top:calc(50% - 8px);left:0;width:16px;height:16px;border-radius:999px;background:#C7D2AC;border:3px solid #34402A"></div>
+            <div style="margin-bottom:auto;padding-right:18px">
+              <div style="font-weight:800;font-size:15px;letter-spacing:.02em;color:#C7D2AC;margin-bottom:9px">02 &nbsp;|&nbsp; Plan &amp; price</div>
+              <p style="margin:0;font-size:14px;line-height:1.55;color:#C2C6B5">I scope it, price it, and set a timeline — fixed, in writing, before any work starts.</p>
+            </div>
+          </div>
+          <!-- 03 below -->
+          <div style="position:relative;height:248px;display:flex;flex-direction:column">
+            <div style="position:absolute;top:calc(50% - 8px);left:0;width:16px;height:16px;border-radius:999px;background:#C7D2AC;border:3px solid #34402A"></div>
+            <div style="margin-top:auto;padding-right:18px">
+              <div style="font-weight:800;font-size:15px;letter-spacing:.02em;color:#C7D2AC;margin-bottom:9px">03 &nbsp;|&nbsp; Build</div>
+              <p style="margin:0;font-size:14px;line-height:1.55;color:#C2C6B5">You watch it come together — and upload your content — right inside your client portal.</p>
+            </div>
+          </div>
+          <!-- 04 above -->
+          <div style="position:relative;height:248px;display:flex;flex-direction:column">
+            <div style="position:absolute;top:calc(50% - 8px);left:0;width:16px;height:16px;border-radius:999px;background:#C7D2AC;border:3px solid #34402A"></div>
+            <div style="margin-bottom:auto;padding-right:18px">
+              <div style="font-weight:800;font-size:15px;letter-spacing:.02em;color:#C7D2AC;margin-bottom:9px">04 &nbsp;|&nbsp; Launch &amp; care</div>
+              <p style="margin:0;font-size:14px;line-height:1.55;color:#C2C6B5">We go live, then I keep it fast, secure, and up to date. You focus on the business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES (frameworks) ================= -->
+  <section id="services" style="max-width:1240px;margin:0 auto;padding:78px 32px 84px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:14px">
+      <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;SERVICES&nbsp; ]</span>
+      <a href="Services.dc.html" style="text-decoration:none;color:#3A3E33;font-weight:600;font-size:14px;border-bottom:1.5px solid #34402A;padding-bottom:4px">See all services →</a>
+    </div>
+    <h2 style="margin:0 0 34px;font-weight:800;font-size:clamp(28px,3.8vw,50px);line-height:1.0;letter-spacing:-.025em;text-transform:uppercase;max-width:760px">Pick your platform.<br><span style="color:#AAB293">I’ll take it from there.</span></h2>
+
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:16px">
+      <!-- SHOPIFY (featured) -->
+      <a href="Shopify Service.dc.html" style="position:relative;text-decoration:none;color:#F1EFE8;border-radius:20px;overflow:hidden;min-height:430px;display:flex;flex-direction:column;justify-content:space-between;padding:22px;background:linear-gradient(165deg,#46532f,#2c3520)">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0,rgba(255,255,255,.06) 2px,transparent 2px,transparent 16px)"></div>
+        <div style="position:relative;display:flex;flex-wrap:wrap;gap:7px">
+          <span style="background:rgba(241,239,232,.16);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 12px;font-size:11.5px;font-weight:600">Stores</span>
+          <span style="background:rgba(241,239,232,.16);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 12px;font-size:11.5px;font-weight:600">Migrations</span>
+          <span style="background:rgba(241,239,232,.16);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 12px;font-size:11.5px;font-weight:600">Speed</span>
+        </div>
+        <div style="position:relative">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+            <h3 style="margin:0;font-weight:800;font-size:40px;letter-spacing:-.03em;text-transform:uppercase;line-height:.9">Shopify</h3>
+            <span style="width:40px;height:40px;border-radius:999px;background:#F1EFE8;color:#23271E;display:flex;align-items:center;justify-content:center;font-size:18px;flex:none">↗</span>
+          </div>
+          <p style="margin:0 0 14px;font-size:14px;line-height:1.5;color:#D7DAC9;max-width:330px">Stores that load fast and actually sell — theme work, custom sections, and clean migrations.</p>
+          <div style="font-size:13px;font-weight:600;color:#C7D2AC;letter-spacing:.04em">from $1,200</div>
+        </div>
+      </a>
+
+      <!-- WEBFLOW -->
+      <a href="Webflow Service.dc.html" style="position:relative;text-decoration:none;color:#23271E;border-radius:20px;overflow:hidden;min-height:430px;display:flex;flex-direction:column;justify-content:space-between;padding:20px;background:linear-gradient(165deg,#dfe1d2,#c4c9b1)">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.18) 0,rgba(255,255,255,.18) 2px,transparent 2px,transparent 15px)"></div>
+        <span style="position:relative;align-self:flex-end;width:36px;height:36px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:16px">↗</span>
+        <div style="position:relative">
+          <h3 style="margin:0 0 8px;font-weight:800;font-size:25px;letter-spacing:-.03em;text-transform:uppercase;line-height:.92">Webflow</h3>
+          <p style="margin:0 0 12px;font-size:13.5px;line-height:1.5;color:#54584A">Custom, animated sites with a CMS your team can actually run.</p>
+          <div style="font-size:13px;font-weight:700;color:#3F4A2C;letter-spacing:.04em">from $1,800</div>
+        </div>
+      </a>
+
+      <!-- WORDPRESS -->
+      <a href="WordPress Service.dc.html" style="position:relative;text-decoration:none;color:#23271E;border-radius:20px;overflow:hidden;min-height:430px;display:flex;flex-direction:column;justify-content:space-between;padding:20px;background:linear-gradient(165deg,#e4e3d6,#cdcab6)">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.18) 0,rgba(255,255,255,.18) 2px,transparent 2px,transparent 15px)"></div>
+        <span style="position:relative;align-self:flex-end;width:36px;height:36px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:16px">↗</span>
+        <div style="position:relative">
+          <h3 style="margin:0 0 8px;font-weight:800;font-size:22px;letter-spacing:-.03em;text-transform:uppercase;line-height:.92">WordPress</h3>
+          <p style="margin:0 0 12px;font-size:13.5px;line-height:1.5;color:#54584A">Reliable, easy-to-edit sites — rebuilds, rescues, and ongoing care.</p>
+          <div style="font-size:13px;font-weight:700;color:#3F4A2C;letter-spacing:.04em">from $900</div>
+        </div>
+      </a>
+
+      <!-- SQUARESPACE -->
+      <a href="Squarespace Service.dc.html" style="position:relative;text-decoration:none;color:#23271E;border-radius:20px;overflow:hidden;min-height:430px;display:flex;flex-direction:column;justify-content:space-between;padding:20px;background:linear-gradient(165deg,#dfe1d2,#c4c9b1)">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.18) 0,rgba(255,255,255,.18) 2px,transparent 2px,transparent 15px)"></div>
+        <span style="position:relative;align-self:flex-end;width:36px;height:36px;border-radius:999px;background:#34402A;color:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:16px">↗</span>
+        <div style="position:relative">
+          <h3 style="margin:0 0 8px;font-weight:800;font-size:23px;letter-spacing:-.03em;text-transform:uppercase;line-height:.92">Square&shy;space</h3>
+          <p style="margin:0 0 12px;font-size:13.5px;line-height:1.5;color:#54584A">Clean, polished sites done quickly — perfect for a sharp first impression.</p>
+          <div style="font-size:13px;font-weight:700;color:#3F4A2C;letter-spacing:.04em">from $750</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIAL ================= -->
+  <section style="background:#DCE3D7">
+    <div style="max-width:980px;margin:0 auto;padding:72px 32px;text-align:center">
+      <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#7D8A6E">[ &nbsp;TESTIMONIAL&nbsp; ]</span>
+      <p style="margin:26px 0 30px;font-weight:600;font-size:clamp(22px,2.9vw,34px);line-height:1.32;letter-spacing:-.015em;color:#2B3324">
+        “Derrick rebuilt our site in a <span style="color:#8C977A">week</span> and it finally looks like the company we actually are. And when something comes up, <span style="color:#8C977A">he picks up the phone.</span>”
+      </p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:18px">
+        <button style="width:42px;height:42px;border-radius:999px;border:1.5px solid #B4BFA6;background:transparent;color:#4A5340;cursor:pointer;font-size:16px" style-hover="background:#cdd6c1">←</button>
+        <div>
+          <div style="font-weight:700;font-size:14px;color:#2B3324">Marcus Reyes</div>
+          <div style="font-size:12.5px;color:#69735C;margin-top:2px">Owner, Reyes Law</div>
+        </div>
+        <button style="width:42px;height:42px;border-radius:999px;border:1.5px solid #B4BFA6;background:transparent;color:#4A5340;cursor:pointer;font-size:16px" style-hover="background:#cdd6c1">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LATEST WORK ================= -->
+  <section id="work" style="max-width:1240px;margin:0 auto;padding:80px 32px 84px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:30px">
+      <div>
+        <span style="font-size:11px;font-weight:700;letter-spacing:.24em;color:#8A8E7C">[ &nbsp;WORK&nbsp; ]</span>
+        <h2 style="margin:16px 0 0;font-weight:800;font-size:clamp(28px,3.8vw,50px);line-height:1.0;letter-spacing:-.025em;text-transform:uppercase">Recent work<br><span style="color:#AAB293">worth a look.</span></h2>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;max-width:430px;justify-content:flex-end">
+        <span style="border:1.5px solid #34402A;background:#34402A;color:#F1EFE8;border-radius:999px;padding:8px 15px;font-size:13px;font-weight:600">All</span>
+        <span style="border:1.5px solid #CFC9BB;border-radius:999px;padding:8px 15px;font-size:13px;font-weight:500;color:#5C6052">Roofing</span>
+        <span style="border:1.5px solid #CFC9BB;border-radius:999px;padding:8px 15px;font-size:13px;font-weight:500;color:#5C6052">Restaurant</span>
+        <span style="border:1.5px solid #CFC9BB;border-radius:999px;padding:8px 15px;font-size:13px;font-weight:500;color:#5C6052">Salon</span>
+        <span style="border:1.5px solid #CFC9BB;border-radius:999px;padding:8px 15px;font-size:13px;font-weight:500;color:#5C6052">E-commerce</span>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:18px;align-items:stretch">
+      <div style="position:relative;border-radius:20px;overflow:hidden;min-height:440px;background:linear-gradient(150deg,#cdd3bd,#a3ac88)">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.13) 0,rgba(255,255,255,.13) 2px,transparent 2px,transparent 20px)"></div>
+        <div style="position:absolute;top:18px;left:18px;background:rgba(20,24,16,.5);backdrop-filter:blur(3px);border-radius:10px;padding:8px 13px;color:#EDEEE3;font-size:11px;font-weight:600;letter-spacing:.1em">PROJECT IMAGE — Serene Retreat</div>
+        <div style="position:absolute;left:18px;bottom:18px;right:18px;display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap">
+          <div style="display:flex;gap:46px;background:rgba(241,239,232,.94);border-radius:14px;padding:16px 22px">
+            <div><div style="font-size:10px;font-weight:700;letter-spacing:.16em;color:#9A9C8C;margin-bottom:5px">NAME</div><div style="font-weight:700;font-size:15px">Northside Roofing</div></div>
+            <div><div style="font-size:10px;font-weight:700;letter-spacing:.16em;color:#9A9C8C;margin-bottom:5px">PLATFORM</div><div style="font-weight:700;font-size:15px">WordPress</div></div>
+            <div style="max-width:230px"><div style="font-size:10px;font-weight:700;letter-spacing:.16em;color:#9A9C8C;margin-bottom:5px">RESULT</div><div style="font-size:13px;color:#4A4E40;line-height:1.4">A faster, clearer site that booked 38% more estimate calls.</div></div>
+          </div>
+        </div>
+      </div>
+      <a href="Work.dc.html" style="text-decoration:none;border-radius:20px;border:1.5px solid #DAD6C9;background:#F7F5EE;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#3A3E33" style-hover="border-color:#34402A">
+        <span style="width:60px;height:60px;border-radius:999px;border:1.5px solid #34402A;display:flex;align-items:center;justify-content:center;font-size:18px">→</span>
+        <span style="font-weight:700;font-size:13px;letter-spacing:.14em">NEXT</span>
+      </a>
+    </div>
+    <div style="margin-top:26px;display:flex;justify-content:center">
+      <a href="Work.dc.html" style="text-decoration:none;background:transparent;color:#23271E;font-weight:600;font-size:15px;border:1.5px solid #34402A;border-radius:999px;padding:14px 28px" style-hover="background:#34402A;color:#F1EFE8">View all work</a>
+    </div>
+  </section>
+
+  <!-- ================= CLOSING CTA ================= -->
+  <section id="book" style="max-width:1240px;margin:0 auto;padding:0 32px 36px">
+    <div style="position:relative;border-radius:24px;overflow:hidden;padding:clamp(48px,7vw,92px) clamp(32px,5vw,72px);background:linear-gradient(150deg,#3c4a30,#222a1c)">
+      <div style="position:absolute;inset:0;background:repeating-linear-gradient(125deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.05) 2px,transparent 2px,transparent 24px)"></div>
+      <div style="position:absolute;inset:0;background:radial-gradient(90% 120% at 85% 20%,rgba(150,170,120,.3),transparent 60%)"></div>
+      <div style="position:relative;max-width:680px">
+        <h2 style="margin:0;font-weight:800;font-size:clamp(34px,5.2vw,66px);line-height:.98;letter-spacing:-.03em;text-transform:uppercase;color:#F3F2EA">Ready to fix<br><span style="color:#AAB795">your website?</span></h2>
+        <p style="margin:22px 0 34px;max-width:460px;font-size:17px;line-height:1.55;color:#D9DBCD;font-weight:500">Book a 15-minute call. Tell me your platform and your goal — you’ll leave with a real number and a timeline.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+          <a href="Book a Call.dc.html" style="text-decoration:none;background:#F1EFE8;color:#23271E;font-weight:600;font-size:16px;border-radius:999px;padding:17px 32px;display:inline-flex;align-items:center;gap:9px;white-space:nowrap" style-hover="background:#fff">Book a call <span style="font-size:18px">→</span></a>
+          <a href="Contact.dc.html" style="text-decoration:none;color:#E3E4D8;font-weight:600;font-size:15px;border-bottom:1.5px solid rgba(241,239,232,.4);padding-bottom:3px">or send a message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="background:#23271E;color:#C2C6B5">
+    <div style="max-width:1240px;margin:0 auto;padding:64px 32px 30px">
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px 32px;padding-bottom:48px;border-bottom:1px solid rgba(241,239,232,.12)">
+        <div style="max-width:300px">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px">
+            <span style="width:34px;height:34px;border-radius:9px;background:#F1EFE8;color:#23271E;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:-.02em">DV</span>
+            <span style="font-weight:700;font-size:16px;color:#F1EFE8">Derrick Valentine</span>
+          </div>
+          <p style="margin:0 0 18px;font-size:14px;line-height:1.6;color:#9DA28F">One developer who builds, fixes, and looks after websites — on the platform you already use.</p>
+          <form onSubmit="{{ noop }}" style="display:flex;gap:8px;max-width:300px">
+            <input type="email" placeholder="Your email" style="flex:1;min-width:0;background:#2E3327;border:1px solid rgba(241,239,232,.18);border-radius:999px;padding:11px 16px;color:#F1EFE8;font-family:inherit;font-size:13.5px;outline:none"/>
+            <button type="submit" style="flex:none;background:#F1EFE8;color:#23271E;border:none;border-radius:999px;padding:0 18px;font-weight:600;font-size:13.5px;cursor:pointer;font-family:inherit">Subscribe</button>
+          </form>
+          <div style="font-size:12px;color:#7E836F;margin-top:9px">One short tip a week. No spam, ever.</div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">SERVICES</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Shopify Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Shopify</a>
+            <a href="Webflow Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Webflow</a>
+            <a href="WordPress Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">WordPress</a>
+            <a href="Squarespace Service.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Squarespace</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">COMPANY</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Work.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Work</a>
+            <a href="Process.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Process</a>
+            <a href="About.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">About</a>
+            <a href="Contact.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;color:#7E836F;margin-bottom:16px">CLIENTS</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Client login</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Upload content</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Project status</a>
+            <a href="Client Portal.dc.html" style="text-decoration:none;color:#C2C6B5;font-size:14px" style-hover="color:#F1EFE8">Invoices</a>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:12.5px;color:#7E836F">
+        <div>© 2026 Derrick Valentine. All rights reserved.</div>
+        <div style="display:flex;gap:22px">
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">Upwork</a>
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">LinkedIn</a>
+          <a href="#" style="text-decoration:none;color:#7E836F" style-hover="color:#F1EFE8">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      noop: (e) => { e.preventDefault(); },
+    };
+  }
+}
+</script>
+</body>
+</html>
