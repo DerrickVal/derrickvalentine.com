@@ -32,7 +32,15 @@ export function CtaBanner({
   return (
     <section className={cn("mx-auto max-w-[1240px] px-8 pb-9", className)}>
       <div className="relative overflow-hidden rounded-[24px] bg-forest-grad px-[clamp(32px,5vw,72px)] py-[clamp(48px,7vw,92px)]">
-        <div className="absolute inset-0 bg-hatch" />
+        {/* CTA hatch is its own angle/spacing in the design (125deg / .05 / 24px),
+            not the generic .bg-hatch (135deg / .06 / 16px). */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(125deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.05) 2px,transparent 2px,transparent 24px)",
+          }}
+        />
         <div
           className="absolute inset-0"
           style={{

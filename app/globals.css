@@ -167,10 +167,11 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-7px); }
 }
-/* soft pulse on the "video" REC dot */
+/* heartbeat pulse on the "video" REC dot — matches the design's recpulse:
+   rests dim + small, peaks bright + full size */
 @keyframes rec-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .35; }
+  0%, 100% { opacity: .4; transform: scale(.85); }
+  50% { opacity: 1; transform: scale(1); }
 }
 
 /* price-calculator range slider (forest thumb on a sand track) */

@@ -82,7 +82,7 @@ tiered. **None are blocking; nothing is broken; all builds stay green.** Tier 1 
 fidelity bugs worth fixing before we move on; Tier 2 = shared-component approximations; Tier 3 =
 sub-2px / imperceptible drift; Tier 4 = intentional adaptations (logged for awareness, not bugs).
 
-### Tier 1 — real, recurring fidelity bugs
+### Tier 1 — real, recurring fidelity bugs  ✅ ALL FIXED 2026-06-11
 1. **`rec-pulse` keyframe is wrong** (`app/globals.css`). Built = opacity `1 → .35 → 1`, no scale.
    The `.dc.html` `@keyframes recpulse` = `opacity .4→1→.4` **and** `transform scale(.85→1→.85)`
    (a heartbeat that grows+brightens then shrinks+dims; rests dim, not full). Affects the REC dot

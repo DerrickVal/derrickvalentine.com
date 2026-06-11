@@ -20,14 +20,16 @@ export function MediaPlaceholder({
   className?: string;
   children?: React.ReactNode;
 }) {
+  // forest = the dc store/site-mockup surface (160deg, #46532f top, lighter+more
+  // olive than the CTA's bg-forest-grad); sage = the portrait/work surface.
   const surface =
     tone === "forest"
-      ? "bg-forest-grad"
+      ? "bg-[linear-gradient(160deg,#46532f,#222a1c)]"
       : "bg-[linear-gradient(150deg,#c9cfb8,#9da683)]";
 
   const hatch =
     tone === "forest"
-      ? "repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0,rgba(255,255,255,.06) 2px,transparent 2px,transparent 16px)"
+      ? "repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0,rgba(255,255,255,.06) 2px,transparent 2px,transparent 18px)"
       : "repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0,rgba(255,255,255,.14) 2px,transparent 2px,transparent 18px)";
 
   return (
