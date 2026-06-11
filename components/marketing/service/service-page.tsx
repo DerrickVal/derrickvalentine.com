@@ -6,6 +6,7 @@ import { CtaBanner } from "@/components/site/cta-banner";
 import { MediaPlaceholder } from "@/components/site/media-placeholder";
 import { SectionLabel } from "@/components/site/section-label";
 import { TwoToneHeading } from "@/components/site/two-tone-heading";
+import { cn } from "@/lib/utils";
 import type { ServiceData } from "@/lib/service-data";
 import { ServiceCalculator } from "./service-calculator";
 
@@ -33,11 +34,16 @@ export function ServicePage({ service }: { service: ServiceData }) {
             </div>
             <TwoToneHeading
               as="h1"
-              size="text-[clamp(38px,5.4vw,72px)]"
+              size={service.hero.h1Size ?? "text-[clamp(38px,5.4vw,72px)]"}
               lines={[service.hero.h1a, service.hero.h1b]}
-              className="leading-[.95] tracking-[-0.03em]"
+              className={cn(service.hero.h1Leading ?? "leading-[.95]", "tracking-[-0.03em]")}
             />
-            <p className="mt-[22px] max-w-[480px] text-[17px] font-medium leading-[1.55] text-[#5C6052]">
+            <p
+              className={cn(
+                service.hero.leadGap ?? "mt-[22px]",
+                "max-w-[480px] text-[17px] font-medium leading-[1.55] text-[#5C6052]",
+              )}
+            >
               {service.hero.lead}
             </p>
             <div className="mt-[30px] flex flex-wrap gap-[13px]">
@@ -84,7 +90,7 @@ export function ServicePage({ service }: { service: ServiceData }) {
             <div className="absolute inset-x-[18px] bottom-[18px] rounded-[14px] bg-[rgba(241,239,232,.95)] px-[18px] py-[15px] text-foreground">
               <div className="mb-[9px] flex items-center justify-between">
                 <span className="text-[10px] font-bold tracking-[.16em] text-[#9A9C8C]">
-                  FEATURED STORE
+                  {service.hero.mock.featuredLabel ?? "FEATURED STORE"}
                 </span>
                 <span className="flex size-6 items-center justify-center rounded-full bg-primary text-[12px] text-primary-foreground">
                   ↗
