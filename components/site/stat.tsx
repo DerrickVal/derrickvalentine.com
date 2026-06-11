@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-
 /** Number + caption used in About quick-facts and trust badges. */
 export function Stat({
   value,

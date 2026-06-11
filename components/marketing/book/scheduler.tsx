@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState, useSyncExternalStore } from "react";
 import { ChevronLeft, ChevronRight, CircleDollarSign, Clock, Video } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -23,16 +23,20 @@ function startOfToday() {
   return t;
 }
 
+// Client-only "today" via useSyncExternalStore: the server + hydration snapshot
+// is null (so the prerendered HTML never bakes in a stale date that would
+// hydrate-mismatch once the build ages), then it fills in on the client. Cached
+// so getSnapshot stays stable.
+let cachedToday: Date | null = null;
+const getClientToday = () => (cachedToday ??= startOfToday());
+const subscribeToday = () => () => {};
+
 export function Scheduler() {
-  // Date-derived rendering is gated on mount so the prerendered HTML never bakes
-  // in a stale "today" (which would hydrate-mismatch once the build ages).
-  const [today, setToday] = useState<Date | null>(null);
+  const today = useSyncExternalStore(subscribeToday, getClientToday, () => null);
   const [monthOffset, setMonthOffset] = useState(0);
   const [dateKey, setDateKey] = useState<string | null>(null);
   const [time, setTime] = useState<string | null>(null);
   const [confirmed, setConfirmed] = useState(false);
-
-  useEffect(() => setToday(startOfToday()), []);
 
   const month = useMemo(() => {
     if (!today) return null;
