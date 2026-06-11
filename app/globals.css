@@ -172,3 +172,33 @@
   0%, 100% { opacity: 1; }
   50% { opacity: .35; }
 }
+
+/* price-calculator range slider (forest thumb on a sand track) */
+input[type="range"].range-forest {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #D7D2C4;
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"].range-forest::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #34402A;
+  border: 3px solid #F7F5EE;
+  cursor: pointer;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, .25);
+}
+input[type="range"].range-forest::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #34402A;
+  border: 3px solid #F7F5EE;
+  cursor: pointer;
+}

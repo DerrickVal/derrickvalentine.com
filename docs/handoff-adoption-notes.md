@@ -56,3 +56,13 @@ When a handoff choice conflicts with `docs/IA.md` / `docs/MESSAGING.md` / the
   `pill*` button variants (not `ghost`/`outline`), so default shadcn variants that lean on
   `bg-accent` are effectively unused. No visual impact expected; noting in case a future
   vendored component uses `bg-accent`.
+- **Service page: `.dc.html` vs `06` spec.** The actual `<Platform> Service.dc.html` files have
+  **no "Work examples" section** (the `06` handoff listed one) and **6 FAQs** (not 5). The
+  `.dc.html` wins, so the service template omits work-examples and renders all 6 FAQs.
+- **Service testimonial highlights deferred.** The per-platform service testimonials accent two
+  phrases in sage in the `.dc.html`. The data stores a plain quote for now (rendered without the
+  inline highlights); will restore when real testimonial copy lands.
+- **Calculator default state.** Initial calculator view is taken from each `.dc.html` `class
+  Component` `state` (Shopify = redesign / 6 pages / sections+speed on). The math is ported
+  exactly. Webflow/WordPress/Squarespace currently reuse the same default pattern; verify each
+  against its `.dc.html` `state` when filling their data (cosmetic only; users change it live).
