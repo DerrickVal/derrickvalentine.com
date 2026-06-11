@@ -8,7 +8,12 @@ const navLink =
   "text-[14.5px] font-medium text-nav-fg transition-colors hover:text-foreground";
 const navActive = "font-bold text-foreground";
 
-export function SiteHeader() {
+export function SiteHeader({
+  cta = { label: "Book a call", href: "/book" },
+}: {
+  /** Right-hand primary action. Defaults to Book a call; /book swaps it to Message me. */
+  cta?: { label: string; href: string };
+} = {}) {
   return (
     <header className="relative z-20 mx-auto flex max-w-[1240px] items-center justify-between gap-6 px-8 py-6">
       <Link href="/" className="flex items-center gap-[11px] text-foreground">
@@ -44,10 +49,10 @@ export function SiteHeader() {
           Client login
         </Link>
         <Link
-          href="/book"
+          href={cta.href}
           className="whitespace-nowrap rounded-full bg-primary px-5 py-[11px] text-sm font-semibold text-primary-foreground transition-colors hover:bg-ink"
         >
-          Book a call
+          {cta.label}
         </Link>
       </div>
 

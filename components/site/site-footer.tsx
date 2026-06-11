@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { SERVICES, servicePath } from "@/lib/services";
+import { cn } from "@/lib/utils";
 import { ActiveLink } from "./active-link";
 
 const footerLink = "text-sm text-footer-fg transition-colors hover:text-[#F1EFE8]";
@@ -22,9 +23,9 @@ const CLIENTS = [
   "Invoices",
 ];
 
-function FooterBrand() {
+function FooterBrand({ className }: { className?: string }) {
   return (
-    <div className="mb-[18px] flex items-center gap-[11px]">
+    <div className={cn("flex items-center gap-[11px]", className)}>
       <span className="flex size-[34px] items-center justify-center rounded-[9px] bg-background text-[15px] font-extrabold tracking-[-0.02em] text-foreground">
         DV
       </span>
@@ -54,17 +55,15 @@ export function SiteFooter({ variant = "full" }: { variant?: "full" | "slim" }) 
   if (variant === "slim") {
     return (
       <footer className="bg-ink text-footer-fg">
-        <div className="mx-auto flex max-w-[1240px] flex-wrap items-center justify-between gap-6 px-8 py-10">
+        <div className="mx-auto flex max-w-[1240px] flex-wrap items-center justify-between gap-[18px] px-8 pt-12 pb-[30px]">
           <FooterBrand />
-          <Link
-            href="/contact"
-            className="border-b-[1.5px] border-[rgba(241,239,232,.3)] pb-1 text-sm font-semibold text-[#E3E4D8] transition-colors hover:text-[#F1EFE8]"
-          >
-            Prefer to write? Send a message →
-          </Link>
-          <div className="w-full text-[12.5px] text-[#7E836F]">
-            © 2026 Derrick Valentine. All rights reserved.
+          <div className="text-[13.5px] text-footer-muted">
+            Prefer to write?{" "}
+            <Link href="/contact" className="font-semibold text-[#F1EFE8] hover:underline">
+              Send a message →
+            </Link>
           </div>
+          <div className="text-[12.5px] text-[#7E836F]">© 2026 Derrick Valentine</div>
         </div>
       </footer>
     );
@@ -76,7 +75,7 @@ export function SiteFooter({ variant = "full" }: { variant?: "full" | "slim" }) 
         <div className="grid grid-cols-1 gap-10 border-b border-[rgba(241,239,232,.12)] pb-12 md:grid-cols-[1.6fr_1fr_1fr_1fr] md:gap-x-8">
           {/* brand + newsletter (placeholder; not wired — NOTE(handoff)) */}
           <div className="max-w-[300px]">
-            <FooterBrand />
+            <FooterBrand className="mb-[18px]" />
             <p className="mb-[18px] text-sm leading-relaxed text-footer-muted">
               One developer who builds, fixes, and looks after websites, on the
               platform you already use.
