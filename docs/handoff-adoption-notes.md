@@ -21,16 +21,20 @@ When a handoff choice conflicts with `docs/IA.md` / `docs/MESSAGING.md` / the
 - [x] `app/(marketing)/layout.tsx` group (SiteHeader / SiteFooter)
 - [x] Shared components (03): SiteHeader, PricingMenu, MobileNav, SiteFooter, CtaBanner, SectionLabel, TwoToneHeading, button variants, MediaPlaceholder, StatusPill, Stat
 
-**Pages**
+**Pages** — all built (green, committed)
 - [x] 04 Homepage `/`
 - [x] 05 Services `/services`
-- [x] 06 Service template + [x] 07 Shopify / [ ] 08 Webflow / [ ] 09 WordPress / [ ] 10 Squarespace
-- [ ] 11 Work `/work`
-- [ ] 12 About `/about`
-- [ ] 13 Process `/process`
-- [ ] 14 Contact `/contact`
-- [ ] 15 Book a Call `/book`
-- [ ] 16 Client Portal `/login` (+ `/p/[slug]`) — reskin over the existing auth backend
+- [x] 06 Service template + [x] 07 Shopify / [x] 08 Webflow / [x] 09 WordPress / [x] 10 Squarespace
+- [x] 11 Work `/work`
+- [x] 12 About `/about`
+- [x] 13 Process `/process`
+- [x] 14 Contact `/contact`
+- [x] 15 Book a Call `/book`
+- [x] 16 Client Portal `/login` (+ `/p/[slug]`) — reskinned over the existing auth backend
+
+**Every route prerenders/compiles green; `pnpm build` passes (18 routes).** The full
+1:1 page adoption is complete. Outstanding items are the design-fidelity gaps from the
+stress-test (Tier 1–3 below) and the real-backend wiring noted per page.
 
 ---
 
@@ -135,3 +139,37 @@ sub-2px / imperceptible drift; Tier 4 = intentional adaptations (logged for awar
   reload. The dc used a `noop` `preventDefault`. Harmless until wired.
 - Testimonial carousel arrows are decorative (no client logic) — the dc's are static too.
 - Home "What I do" link → `/services` (built) where the dc anchors to the same-page `#services`.
+
+---
+
+## Build decisions — milestones 1–7 (2026-06-11)
+
+Decisions taken while finishing the remaining pages (each `// NOTE`/`TODO` is in the code too):
+
+- **Service template parameterized** for two real per-platform diffs: Squarespace's hero is
+  smaller (`clamp(34px,4.7vw,62px)` / `lh .98` / `mt-7`) and the featured-card label is
+  "FEATURED SITE" vs Shopify's "FEATURED STORE". Added optional `hero.h1Size/h1Leading/leadGap`
+  + `mock.featuredLabel`; defaults keep Shopify 1:1. WordPress/Squarespace new-build blurb uses
+  the **visible** static-HTML text ("Design & build from scratch"), not the dead `TYPES.blurb`.
+- **`/work`** cards are non-navigating `<div>`s (hover border kept) — no case-study routes exist
+  yet. `lib/work.ts` is placeholder; real ~7 case studies + before/after media land later.
+- **`/contact`** is wired for real: a `submitContact` Server Action POSTs to the **Resend REST
+  API** (no SDK dep, Cloudflare-portable). **Turnstile deferred** — the design has no visible
+  captcha, so a hidden honeypot covers spam now; drop in the widget + siteverify later
+  (`TURNSTILE_*` keys exist). The displayed `hello@digitaldog.io` is placeholder; real send goes
+  to `CONTACT_TO_EMAIL`.
+- **`/book`** sits **outside `(marketing)`** (`app/book/`) with its own layout so it can pair the
+  full nav header (CTA swapped to "Message me" via a new `SiteHeader` `cta` prop) with the **slim**
+  footer. The slim `SiteFooter` was realigned to `Book a Call.dc.html` (3 items, one row; no "All
+  rights reserved."); `FooterBrand` took an optional `className` so slim drops the bottom margin.
+  The scheduler is a real month/day/time picker with **deterministic-fake** availability; "today"
+  comes from `useSyncExternalStore` (server snapshot null) to stay prerender-safe. TODO: real
+  calendar (Cal.com / Google).
+- **`/login`** reskinned **over the existing auth** — same `requestOtp`/`verifyOtp` actions,
+  invoked via `useTransition` (not `useActionState`) so the design's resend / wrong-email controls
+  work. `actions.ts`, `types.ts`, `middleware.ts` untouched.
+- **`/p/[slug]`** dashboard is a client tab island (Overview/Upload/Invoices) under the existing
+  auth-gated `(portal)` layout; **all project/stage/upload/invoice data is placeholder**
+  (`NOTE(handoff)`). Phase 2: real data under RLS (`is_project_member`), Supabase Storage uploads,
+  Stripe Checkout/Billing via the shared account with `metadata.app`. The `(portal)` layout still
+  redirects to `/login?redirect=/portal` (not the slug) — minor, left for Phase 2.
