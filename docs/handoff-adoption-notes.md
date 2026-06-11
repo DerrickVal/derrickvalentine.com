@@ -98,7 +98,7 @@ sub-2px / imperceptible drift; Tier 4 = intentional adaptations (logged for awar
    olive top color and a different angle. Visible on the Shopify hero (and every future service
    hero). Give the forest tone the mockup gradient (or pass it explicitly from the service hero).
 
-### Tier 2 — shared-component approximations (pixel-matched to the homepage, a few px off elsewhere)
+### Tier 2 — shared-component approximations  ✅ ALL FIXED 2026-06-11 (`dense` props on CtaBanner + ProcessTimeline)
 4. **`CtaBanner` is sized to the homepage CTA.** On /services + the 4 service pages the `.dc.html`
    CTA is slightly smaller: shell `clamp(44px,6vw,84px) × clamp(32px,5vw,68px)` vs built
    `clamp(48px,7vw,92px) × clamp(32px,5vw,72px)`; inner `max-w 660` vs built `680`; body `16.5px`
@@ -110,7 +110,7 @@ sub-2px / imperceptible drift; Tier 4 = intentional adaptations (logged for awar
    on the **homepage** the heading min is `30px` in the dc but `28px` in the component. Same
    shared-component tradeoff as #4 (exact on home, a touch big on /services).
 
-### Tier 3 — sub-2px / near-identical-hue drift (cosmetic, likely imperceptible)
+### Tier 3 — sub-2px / near-identical-hue drift  ✅ ALL FIXED 2026-06-11
 6. `CtaBanner` `<h2>` uses `text-primary-foreground` (#F1EFE8); dc CTA headline is **#F3F2EA**.
    (The hero H1 already uses #F3F2EA correctly.)
 7. Calculator-band `<h2>` "Build your estimate" is hardcoded **#F3F2EA**; dc inherits **#E9EAE0**.

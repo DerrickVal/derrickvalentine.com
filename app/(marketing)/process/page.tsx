@@ -208,6 +208,7 @@ export default function ProcessPage() {
 
       <CtaBanner
         className="pt-[54px]"
+        dense
         headingSize="text-[clamp(30px,4.6vw,58px)]"
         line1="Ready for"
         line2="step one?"

@@ -52,7 +52,7 @@ function FilterRow({
 function ProjectCard({ p }: { p: WorkProject }) {
   return (
     // TODO(content): link to the case study once those pages exist.
-    <div className="flex flex-col overflow-hidden rounded-[18px] border-[1.5px] border-border bg-card transition-colors hover:border-primary">
+    <div className="flex flex-col overflow-hidden rounded-[18px] border-[1.5px] border-[#E2DFD4] bg-card transition-colors hover:border-primary">
       <div className="relative h-[172px] overflow-hidden" style={{ background: CARD_BG }}>
         <div className="absolute inset-0" style={{ backgroundImage: CARD_HATCH }} />
         <span className="absolute right-3 top-3 rounded-full bg-[rgba(241,239,232,.94)] px-[11px] py-[5px] text-[11px] font-bold text-status-paid-fg">

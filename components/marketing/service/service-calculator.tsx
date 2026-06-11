@@ -203,7 +203,7 @@ export function ServiceCalculator({ service }: { service: ServiceData }) {
       </div>
 
       {/* estimate */}
-      <div className="sticky top-5 rounded-[22px] border border-white/14 bg-[#2C3522] p-7">
+      <div className="sticky top-5 rounded-[22px] border border-[rgba(241,239,232,.14)] bg-[#2C3522] p-7">
         <div className="mb-3.5 text-[11px] font-bold tracking-[.18em] text-[#9AA683]">
           YOUR ESTIMATE
         </div>
@@ -223,7 +223,7 @@ export function ServiceCalculator({ service }: { service: ServiceData }) {
             <span className="font-bold text-[#F1EFE8]">~{days} business days</span>
           </span>
         </div>
-        <div className="my-[22px] h-px bg-white/14" />
+        <div className="my-[22px] h-px bg-[rgba(241,239,232,.14)]" />
         <div className="mb-2 flex flex-col gap-[11px]">
           {items.map((it, i) => (
             <div key={i} className="flex items-center justify-between gap-3.5 text-[13.5px]">
@@ -233,7 +233,7 @@ export function ServiceCalculator({ service }: { service: ServiceData }) {
           ))}
         </div>
         {care ? (
-          <div className="mt-[3px] flex items-center justify-between gap-3.5 border-t border-dashed border-white/18 pt-[11px] text-[13.5px]">
+          <div className="mt-[3px] flex items-center justify-between gap-3.5 border-t border-dashed border-[rgba(241,239,232,.18)] pt-[11px] text-[13.5px]">
             <span className="text-[#BFC4B2]">Care plan</span>
             <span className="font-semibold text-[#E9EAE0]">{fmt(service.carePrice)} / mo</span>
           </div>

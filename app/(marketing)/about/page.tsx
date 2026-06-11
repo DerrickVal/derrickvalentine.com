@@ -221,6 +221,7 @@ export default function AboutPage() {
 
       <CtaBanner
         className="pt-[54px]"
+        dense
         headingSize="text-[clamp(30px,4.6vw,58px)]"
         line1="Let’s actually"
         line2="talk."

@@ -66,7 +66,7 @@ export function HomeServices() {
             {["Stores", "Migrations", "Speed"].map((t) => (
               <span
                 key={t}
-                className="rounded-full border border-white/20 bg-white/15 px-3 py-1.5 text-[11.5px] font-semibold"
+                className="rounded-full border border-white/20 bg-[rgba(241,239,232,.16)] px-3 py-1.5 text-[11.5px] font-semibold"
               >
                 {t}
               </span>

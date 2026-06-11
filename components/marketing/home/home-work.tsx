@@ -46,9 +46,9 @@ export function HomeWork() {
       </div>
 
       <div className="grid grid-cols-1 items-stretch gap-[18px] sm:grid-cols-[minmax(0,1fr)_150px]">
-        <MediaPlaceholder tone="sage" className="min-h-[440px] rounded-[20px]">
+        <MediaPlaceholder tone="sage-work" className="min-h-[440px] rounded-[20px]">
           {/* TODO(content): real project image + data */}
-          <div className="absolute left-[18px] top-[18px] rounded-[10px] bg-[rgba(20,24,16,.5)] px-3 py-2 text-[11px] font-semibold tracking-[.1em] text-[#EDEEE3] backdrop-blur-sm">
+          <div className="absolute left-[18px] top-[18px] rounded-[10px] bg-[rgba(20,24,16,.5)] px-[13px] py-2 text-[11px] font-semibold tracking-[.1em] text-[#EDEEE3] backdrop-blur-[3px]">
             PROJECT IMAGE · Serene Retreat
           </div>
           <div className="absolute inset-x-[18px] bottom-[18px] flex flex-wrap items-end justify-between gap-[18px]">
@@ -73,7 +73,7 @@ export function HomeWork() {
 
         <Link
           href="/work"
-          className="flex flex-col items-center justify-center gap-3.5 rounded-[20px] border-[1.5px] border-border bg-card-2 py-10 text-nav-fg transition-colors hover:border-primary"
+          className="flex flex-col items-center justify-center gap-3.5 rounded-[20px] border-[1.5px] border-[#DAD6C9] bg-card-2 py-10 text-nav-fg transition-colors hover:border-primary"
         >
           <span className="flex size-[60px] items-center justify-center rounded-full border-[1.5px] border-primary text-[18px]">
             →

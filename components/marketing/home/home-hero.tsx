@@ -21,7 +21,7 @@ export function HomeHero() {
         <div className="absolute inset-0" style={{ background: HERO_GLOW }} />
 
         {/* REC chip */}
-        <div className="absolute left-[22px] top-[22px] flex items-center gap-[9px] rounded-full border border-white/15 bg-[rgba(20,24,16,.42)] px-3.5 py-2 backdrop-blur-sm">
+        <div className="absolute left-[22px] top-[22px] flex items-center gap-[9px] rounded-full border border-white/16 bg-[rgba(20,24,16,.42)] px-3.5 py-2 backdrop-blur-sm">
           <span className="size-2 animate-[rec-pulse_1.8s_ease-in-out_infinite] rounded-full bg-[#E4684A]" />
           <span className="text-[11px] font-semibold tracking-[.14em] text-[#E9EAE0]">
             VIDEO · hero loop
@@ -67,7 +67,7 @@ export function HomeHero() {
 
         {/* hero content */}
         <div className="relative max-w-[780px]">
-          <div className="mb-[26px] inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-3.5 py-[7px]">
+          <div className="mb-[26px] inline-flex items-center gap-2 rounded-full border border-white/18 bg-[rgba(241,239,232,.16)] px-3.5 py-[7px]">
             <span className="size-[7px] rounded-full bg-[#9DB07E]" />
             <span className="text-[12.5px] font-medium tracking-[.02em] text-[#E4E5DA]">
               Solo developer · available this month

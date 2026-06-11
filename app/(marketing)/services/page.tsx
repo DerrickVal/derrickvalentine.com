@@ -100,7 +100,7 @@ export default function ServicesPage() {
             <Link
               key={s.slug}
               href={servicePath(s.slug)}
-              className="flex flex-col overflow-hidden rounded-[20px] border-[1.5px] border-border bg-card transition-colors hover:border-primary"
+              className="flex flex-col overflow-hidden rounded-[20px] border-[1.5px] border-[#E2DFD4] bg-card transition-colors hover:border-primary"
             >
               <div
                 className="relative flex h-[128px] items-end overflow-hidden p-5"
@@ -179,12 +179,14 @@ export default function ServicesPage() {
       </section>
 
       <ProcessTimeline
+        dense
         headingLines={["Same simple steps,", "whatever the platform"]}
         steps={STEPS}
       />
 
       <CtaBanner
         className="pt-16"
+        dense
         headingSize="text-[clamp(30px,4.6vw,58px)]"
         line1="Not sure which"
         line2="platform fits?"

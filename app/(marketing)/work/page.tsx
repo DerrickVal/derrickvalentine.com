@@ -35,6 +35,7 @@ export default function WorkPage() {
 
       <CtaBanner
         className="pt-6"
+        dense
         headingSize="text-[clamp(30px,4.6vw,58px)]"
         line1="Want one"
         line2="like these?"

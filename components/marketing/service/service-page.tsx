@@ -81,7 +81,7 @@ export function ServicePage({ service }: { service: ServiceData }) {
             tone="forest"
             className="aspect-[4/5] min-h-[380px] rounded-[20px]"
           >
-            <div className="absolute left-[18px] top-[18px] flex items-center gap-[9px] rounded-full border border-white/16 bg-[rgba(20,24,16,.42)] px-3.5 py-[7px]">
+            <div className="absolute left-[18px] top-[18px] flex items-center gap-[9px] rounded-full border border-white/16 bg-[rgba(20,24,16,.42)] px-[13px] py-[7px]">
               <span className="size-[7px] animate-[rec-pulse_1.8s_ease-in-out_infinite] rounded-full bg-[#E4684A]" />
               <span className="text-[11px] font-semibold tracking-[.12em] text-[#E9EAE0]">
                 {service.hero.mock.caption}
@@ -141,7 +141,7 @@ export function ServicePage({ service }: { service: ServiceData }) {
               Live estimate · no email required
             </span>
           </div>
-          <h2 className="mb-2 text-[clamp(28px,4vw,52px)] font-extrabold uppercase leading-none tracking-[-0.025em] text-[#F3F2EA]">
+          <h2 className="mb-2 text-[clamp(28px,4vw,52px)] font-extrabold uppercase leading-none tracking-[-0.025em] text-[#E9EAE0]">
             Build your estimate
           </h2>
           <p className="mb-10 max-w-[520px] text-[16px] leading-[1.55] text-[#C2C6B5]">
@@ -223,6 +223,8 @@ export function ServicePage({ service }: { service: ServiceData }) {
 
       <CtaBanner
         className="pt-16"
+        dense
+        bodyMaxWidth="max-w-[440px]"
         headingSize="text-[clamp(30px,4.6vw,58px)]"
         line1={service.cta.line1}
         line2={service.cta.line2}
